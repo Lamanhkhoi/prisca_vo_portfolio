@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selat: Rail and sea freight across Southeast Asia</title>
+<meta name="description" content="Selat runs its own rail corridor from Laem Chabang to the Mekong, then deep-water berths at three ports. One booking, one manifest, nine ports.">
+<meta name="theme-color" content="#0A0C0B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selat: Rail and sea freight across Southeast Asia">
+<meta property="og:description" content="A rail corridor from Laem Chabang to the Mekong, then deep water at three ports. Fixed transit times, one manifest, one trail you can follow.">
+<meta property="og:image" content="https://lamanhkhoi.github.io/ui-showcase/freight/media/c1271ef8ed.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0C0B'/%3E%3Crect x='6' y='8' width='20' height='4' fill='%23F5F3EC'/%3E%3Crect x='6' y='14' width='14' height='4' fill='%23F5F3EC'/%3E%3Crect x='6' y='20' width='8' height='4' fill='%23D4501E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" rel="stylesheet">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --ink:#0A0C0B;
+  --ink-2:#111512;
+  --paper:#E7E6E0;
+  --paper-2:#F2F1EA;
+  --cream:#F5F3EC;
+  --accent:#D4501E;
+  --gutter:clamp(20px,4.6vw,64px);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --display:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ui:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{background:var(--ink)}
+html{overflow-x:clip;scroll-behavior:auto;-webkit-text-size-adjust:100%}
+body{
+  margin:0;overflow-x:clip;color:var(--ink);
+  font-family:var(--ui);font-size:16px;line-height:1.6;font-weight:400;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  font-variant-numeric:tabular-nums;
+}
+::selection{background:var(--accent);color:var(--cream)}
+img,svg,video{display:block;max-width:100%}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{list-style:none;padding:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1240px,100% - (var(--gutter) * 2));margin-inline:auto}
+.grain{
+  position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.055;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>");
+  background-size:180px 180px;
+}
+/* type scale */
+.h2{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(33px,4.6vw,62px);line-height:.94;letter-spacing:-.032em;
+}
+.h2 span{color:rgba(10,12,11,.4)}
+.lede{font-size:clamp(15px,1.15vw,17px);line-height:1.62;color:#4C524E;max-width:46ch}
+.mono-label{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:12px;height:50px;padding:0 8px 0 24px;
+  border:0;border-radius:999px;background:var(--ink);color:var(--cream);
+  font-family:var(--ui);font-size:15px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;cursor:pointer;
+  transition:transform .3s var(--ease),background-color .3s var(--ease),color .3s var(--ease);
+}
+.btn__disc{
+  display:grid;place-items:center;width:34px;height:34px;border-radius:50%;
+  background:rgba(245,243,236,.16);font-size:15px;transition:transform .3s var(--ease),background-color .3s var(--ease);
+}
+.btn:hover .btn__disc{transform:translate(2px,-2px);background:var(--accent)}
+.btn:active{transform:scale(.98)}
+.btn--cream{background:var(--cream);color:var(--ink)}
+.btn--cream .btn__disc{background:rgba(10,12,11,.1)}
+.btn--ghost{
+  background:rgba(255,255,255,.08);color:var(--cream);
+  border:1px solid rgba(245,243,236,.26);padding:0 22px;
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+}
+.btn--ghost:hover{background:rgba(255,255,255,.16)}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:14px var(--gutter) 0;transition:padding .4s var(--ease)}
+.nav__inner{
+  width:min(1240px,100%);margin-inline:auto;display:flex;align-items:center;gap:20px;
+  height:56px;padding:0 8px 0 16px;border-radius:999px;
+  border:1px solid rgba(245,243,236,.16);
+  background:rgba(10,12,11,.34);
+  -webkit-backdrop-filter:blur(20px) saturate(140%);backdrop-filter:blur(20px) saturate(140%);
+  transition:background-color .45s var(--ease),border-color .45s var(--ease),color .45s var(--ease);
+  color:var(--cream);
+}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:.14em;text-transform:uppercase}
+.brand svg{width:22px;height:22px;flex:none}
+.nav__links{display:flex;align-items:center;gap:4px;margin-left:auto}
+.nav__links a{
+  position:relative;padding:8px 14px;font-size:14px;font-weight:500;color:rgba(245,243,236,.78);
+  transition:color .25s var(--ease);
+}
+.nav__links a::after{
+  content:"";position:absolute;left:14px;right:14px;bottom:4px;height:1px;background:currentColor;
+  transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease);
+}
+.nav__links a:hover{color:var(--cream)}
+.nav__links a:hover::after{transform:scaleX(1)}
+.nav__cta{height:40px;padding:0 6px 0 18px;font-size:13.5px}
+.nav__cta .btn__disc{width:28px;height:28px;font-size:13px}
+.nav.is-paper .nav__inner{
+  background:rgba(231,230,224,.78);border-color:rgba(10,12,11,.12);color:var(--ink);
+  box-shadow:0 12px 40px rgba(10,12,11,.1);
+}
+.nav.is-paper .nav__links a{color:rgba(10,12,11,.7)}
+.nav.is-paper .nav__links a:hover{color:var(--ink)}
+.nav.is-paper .nav__cta{background:var(--ink);color:var(--cream)}
+.burger{display:none;margin-left:auto;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:12px;right:12px;height:1.5px;background:currentColor;transition:transform .35s var(--ease),opacity .2s}
+.burger span:nth-child(1){top:17px}
+.burger span:nth-child(2){top:26px}
+body.menu-open .burger span:nth-child(1){transform:translateY(4.5px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){transform:translateY(-4.5px) rotate(-45deg)}
+.menu{
+  position:fixed;inset:0;z-index:45;display:none;padding:96px var(--gutter) 40px;
+  background:rgba(10,12,11,.96);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  opacity:0;pointer-events:none;transition:opacity .35s var(--ease);
+}
+.menu.is-open{opacity:1;pointer-events:auto}
+.menu a.menu__link{
+  display:block;padding:16px 0;border-bottom:1px solid rgba(245,243,236,.14);
+  font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.03em;text-transform:uppercase;color:var(--cream);
+}
+.menu .btn{margin-top:28px;width:100%;justify-content:space-between}
+.menu__foot{margin-top:auto;padding-top:40px;display:grid;gap:10px;justify-items:start}
+.menu__foot p{font-size:13px;line-height:1.5;color:rgba(245,243,236,.46);max-width:30ch}
+.menu__foot a{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:rgba(245,243,236,.82);border-bottom:1px solid rgba(245,243,236,.28);padding-bottom:2px}
+/* hero stage */
+.track{position:relative;height:calc(100svh + var(--runway,320vh));background:var(--ink)}
+.scene{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;z-index:0}
+.scene__video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 46%;
+  opacity:0;transition:opacity 1s var(--ease);
+}
+.scene__video.is-ready{opacity:1}
+.scene__tint{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(to bottom,rgba(10,12,11,.62) 0%,rgba(10,12,11,.28) 16%,rgba(10,12,11,0) 38%,rgba(10,12,11,0) 58%,rgba(10,12,11,.42) 86%,rgba(10,12,11,.7) 100%),
+    radial-gradient(120% 80% at 50% 62%,rgba(10,12,11,0) 40%,rgba(10,12,11,.34) 100%);
+}
+.content{position:absolute;inset:0;z-index:2;padding-top:24vh;padding-top:24svh}
+.intro{text-align:center;max-width:1100px;margin-inline:auto;padding:0 var(--gutter);will-change:transform,opacity}
+.intro__eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.34em;text-transform:uppercase;color:rgba(245,243,236,.72);text-shadow:0 2px 16px rgba(0,0,0,.5)}
+.intro__h1{
+  margin-top:22px;font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(31px,9vw,54px);line-height:.9;letter-spacing:-.035em;color:var(--cream);
+  text-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+.intro__h1 span{display:block}
+.intro__sub{
+  max-width:37ch;margin:24px auto 0;font-size:clamp(14px,1.1vw,16.5px);line-height:1.55;
+  color:rgba(245,243,236,.84);text-shadow:0 2px 20px rgba(0,0,0,.55);
+}
+.intro__cta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}
+.rows{
+  width:min(1180px,100% - (var(--gutter) * 2));margin:74vh auto 0;
+  display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(96px,16vw,230px);row-gap:var(--rowgap,10vh);
+  padding-bottom:10vh;
+}
+.feature{max-width:340px;color:var(--cream);text-shadow:0 2px 22px rgba(0,0,0,.6)}
+.feature__icon{font-size:32px;line-height:1;color:rgba(245,243,236,.9);margin-bottom:18px;display:block}
+.feature h3{
+  font-family:var(--display);font-weight:700;font-size:15px;line-height:1.3;letter-spacing:.055em;
+  text-transform:uppercase;color:var(--cream);
+}
+.feature p{margin-top:10px;font-size:14px;line-height:1.58;color:rgba(245,243,236,.8)}
+.feature--l{justify-self:end;text-align:right}
+.feature--r{justify-self:start;text-align:left}
+.feature--c{grid-column:1 / -1;justify-self:center;text-align:center;margin-top:4vh}
+.feature--c p{max-width:44ch;margin-inline:auto}
+.bridge{
+  position:relative;z-index:6;height:36vh;margin-top:-36vh;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(231,230,224,0) 0%,rgba(231,230,224,.55) 42%,rgba(231,230,224,.94) 78%,var(--paper) 100%);
+}
+.sentinel{height:1px}
+/* network */
+.network{position:relative;z-index:6;background:var(--paper);padding:clamp(40px,7vw,96px) 0 clamp(80px,10vw,140px)}
+.network::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(90% 60% at 78% 0%,rgba(255,255,255,.55),rgba(255,255,255,0) 70%);
+}
+.net__head{position:relative;max-width:760px}
+.net__head .lede{margin-top:22px}
+.stats{
+  position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  margin-top:clamp(44px,6vw,72px);border-top:1px solid rgba(10,12,11,.16);
+}
+.stat{padding:22px 24px 0 0}
+.stat + .stat{padding-left:26px;border-left:1px solid rgba(10,12,11,.16)}
+.stat b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(38px,5.4vw,72px);line-height:.9;letter-spacing:-.045em}
+.stat__u{display:block;margin-top:12px;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#5C625E;line-height:1.5}
+.net__body{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,4vw,64px);align-items:end;margin-top:clamp(44px,6vw,80px)}
+.net__media{margin:0}
+.net__media video{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:20px;background:#CFCEC7}
+.net__media figcaption{margin-top:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#656B67}
+.board{border-top:1px solid rgba(10,12,11,.22)}
+.board__row{
+  display:grid;grid-template-columns:1.55fr .8fr 64px;gap:14px;align-items:center;
+  padding:13px 6px;border-bottom:1px solid rgba(10,12,11,.12);
+  font-size:14px;transition:background-color .25s var(--ease);
+}
+.board__row:hover{background:rgba(10,12,11,.035)}
+.board__row--head{
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+  color:#6A706C;padding-bottom:9px;border-bottom-color:rgba(10,12,11,.22);
+}
+.board__lane{display:flex;align-items:center;gap:8px;font-weight:600;letter-spacing:-.01em}
+.board__lane i{font-size:12px;color:rgba(10,12,11,.38)}
+.board__mode{font-size:13px;color:#585E5A}
+.board__time{font-family:var(--mono);font-size:12.5px;text-align:right;color:var(--ink)}
+/* process */
+.process{
+  position:relative;z-index:7;background:var(--ink);color:var(--cream);
+  border-radius:clamp(28px,3vw,44px) clamp(28px,3vw,44px) 0 0;
+  margin-top:clamp(-44px,-3vw,-28px);
+  padding:clamp(64px,9vw,132px) 0 clamp(72px,9vw,130px);
+}
+.process__grid{display:grid;grid-template-columns:minmax(260px,.85fr) 1.15fr;gap:clamp(36px,6vw,110px);align-items:start}
+.process__side{position:sticky;top:112px}
+.process .h2{font-size:clamp(30px,3.6vw,52px);white-space:nowrap}
+.process .h2 span{color:rgba(245,243,236,.36)}
+.process__side p{margin-top:22px;max-width:34ch;font-size:15.5px;line-height:1.6;color:rgba(245,243,236,.66)}
+.process__count{display:flex;align-items:baseline;gap:6px;margin-top:38px;font-family:var(--mono)}
+.process__count b{font-size:44px;font-weight:500;line-height:1;letter-spacing:-.03em;color:var(--cream)}
+.process__count span{font-size:13px;color:rgba(245,243,236,.4)}
+.steps{border-top:1px solid rgba(245,243,236,.18)}
+.step{
+  display:grid;grid-template-columns:58px 1fr;gap:22px;
+  padding:26px 0;border-bottom:1px solid rgba(245,243,236,.14);
+  transition:border-color .4s var(--ease);
+}
+.step__idx{
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;
+  color:rgba(245,243,236,.42);padding-top:6px;transition:color .4s var(--ease)
+}
+.step__idx::after{content:"";display:block;width:18px;height:1px;margin-top:9px;background:currentColor;opacity:.4;transition:width .45s var(--ease),opacity .45s var(--ease)}
+.step.is-active .step__idx::after{width:36px;opacity:1}
+.step h3{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:-.02em;
+  font-size:clamp(21px,2.2vw,27px);line-height:1.05;color:rgba(245,243,236,.58);
+  transition:color .4s var(--ease)
+}
+.step p{margin-top:10px;max-width:52ch;font-size:14.5px;line-height:1.62;color:rgba(245,243,236,.62)}
+.step.is-active .step__idx{color:var(--accent)}
+.step.is-active h3{color:var(--cream)}
+.step.is-active p{color:rgba(245,243,236,.78)}
+/* tracking */
+.tracking{position:relative;z-index:8;background:var(--paper);border-radius:clamp(28px,3vw,44px) clamp(28px,3vw,44px) 0 0;margin-top:clamp(-44px,-3vw,-28px);padding:clamp(64px,9vw,132px) 0 clamp(72px,9vw,130px)}
+.trk__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,5vw,84px);align-items:start}
+.trk__copy .h2{font-size:clamp(30px,3.6vw,52px);white-space:nowrap}
+.trk__copy p{margin-top:22px;max-width:32ch;font-size:15.5px;line-height:1.62;color:#4C524E}
+.trk__note{margin-top:30px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#6A706C}
+.panel{
+  background:var(--paper-2);border:1px solid rgba(10,12,11,.12);border-radius:24px;
+  padding:clamp(18px,2.2vw,28px);
+  box-shadow:0 30px 60px -34px rgba(10,12,11,.4),0 2px 6px rgba(10,12,11,.05);
+}
+.panel__label{display:block;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#5C625E}
+.panel__row{display:flex;gap:8px;margin-top:10px}
+.panel__input{
+  flex:1;min-width:0;height:50px;padding:0 16px;border-radius:12px;
+  border:1px solid rgba(10,12,11,.2);background:#FBFAF5;color:var(--ink);
+  font-family:var(--mono);font-size:14px;letter-spacing:.06em;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+.panel__input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(10,12,11,.1)}
+.panel__row .btn{height:50px;padding:0 6px 0 20px;flex:none}
+.panel__help{margin-top:12px;font-size:12.5px;line-height:1.55;color:#5C625E}
+.panel__help button{
+  display:inline;padding:0;border:0;background:none;cursor:pointer;
+  font-family:var(--mono);font-size:12px;color:var(--ink);
+  border-bottom:1px solid rgba(10,12,11,.3);
+}
+.panel__help button:hover{color:var(--accent);border-color:var(--accent)}
+.panel__msg{min-height:18px;margin-top:10px;font-size:12.5px;color:#5C625E}
+.panel__msg[data-kind="error"]{color:#9C3412}
+.panel__out{margin-top:14px;border-top:1px solid rgba(10,12,11,.12);padding-top:2px}
+.pstate{display:flex;gap:14px;align-items:flex-start;padding:26px 4px 22px;color:#5C625E}
+.pstate i{font-size:20px;color:rgba(10,12,11,.4);margin-top:2px}
+.pstate p{font-size:13.5px;line-height:1.55;max-width:36ch}
+.skel{display:grid;gap:12px;padding:24px 4px 18px}
+.skel__bar{display:block;height:12px;border-radius:6px;background:linear-gradient(90deg,rgba(10,12,11,.07),rgba(10,12,11,.13),rgba(10,12,11,.07));background-size:220% 100%;animation:shimmer 1.3s linear infinite}
+@keyframes shimmer{0%{background-position:120% 0}100%{background-position:-120% 0}}
+.ship{padding:18px 2px 6px}
+.ship__head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.ship__ref{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:#6A706C}
+.ship__lane{display:flex;align-items:center;gap:9px;margin-top:6px;font-family:var(--display);font-weight:800;font-size:clamp(19px,2vw,23px);letter-spacing:-.02em;text-transform:uppercase;line-height:1.1}
+.ship__lane i{font-size:15px;color:rgba(10,12,11,.4)}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 12px;border-radius:999px;
+  background:rgba(10,12,11,.07);color:#33383A;
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;
+}
+.chip__dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+.chip--live{background:rgba(212,80,30,.13);color:#8E3410}
+.chip--live .chip__dot{animation:beat 2.4s var(--ease) infinite}
+@keyframes beat{0%,100%{opacity:1}50%{opacity:.35}}
+.ship__meta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 0;padding:14px 0;border-top:1px solid rgba(10,12,11,.1);border-bottom:1px solid rgba(10,12,11,.1)}
+.ship__meta dt{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#6A706C}
+.ship__meta dd{margin:5px 0 0;font-size:13px;font-weight:600;letter-spacing:-.01em}
+.legs{margin-top:8px}
+.leg{position:relative;display:grid;grid-template-columns:20px 1fr auto;gap:14px;padding:12px 0}
+.leg::before{content:"";position:absolute;left:9px;top:0;height:100%;width:1px;background:rgba(10,12,11,.14)}
+.leg:first-child::before{top:24px}
+.leg:last-child::before{height:22px}
+.leg__dot{position:relative;z-index:1;width:9px;height:9px;margin:7px 0 0 5px;border-radius:50%;background:#FBFAF5;border:1.5px solid rgba(10,12,11,.3)}
+.leg.is-done .leg__dot{background:var(--ink);border-color:var(--ink)}
+.leg.is-now .leg__dot{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px rgba(212,80,30,.14)}
+.leg__body b{display:block;font-size:13.5px;font-weight:600;letter-spacing:-.01em;color:#2A2F2C}
+.leg__body span{display:block;font-size:12.5px;color:#666C68}
+.leg time{font-family:var(--mono);font-size:11px;color:#6A706C;white-space:nowrap;padding-top:2px}
+.leg:not(.is-done):not(.is-now) b{color:#4B514D}
+/* quotes */
+.quotes{position:relative;z-index:8;background:var(--paper);padding:0 0 clamp(70px,10vw,130px)}
+.quotes__head{max-width:760px;padding-top:clamp(30px,5vw,60px)}
+.quotes__head p{margin-top:20px;font-size:15px;line-height:1.6;color:#4C524E;max-width:42ch}
+.qlist{margin-top:clamp(40px,6vw,70px);border-top:1px solid rgba(10,12,11,.18)}
+.q{display:grid;grid-template-columns:250px 1fr;gap:clamp(18px,4vw,56px);padding:30px 0;border-bottom:1px solid rgba(10,12,11,.18)}
+.q__who b{display:block;font-size:13px;font-weight:600;letter-spacing:-.01em}
+.q__who span{display:block;margin-top:4px;font-size:12px;line-height:1.45;color:#666C68}
+.q__text{font-size:clamp(16px,1.55vw,20px);line-height:1.5;letter-spacing:-.012em;color:#2C312E;max-width:62ch}
+/* book + footer */
+.book{
+  position:relative;z-index:9;background:var(--ink);color:var(--cream);
+  border-radius:clamp(28px,3vw,44px) clamp(28px,3vw,44px) 0 0;margin-top:0;
+  padding:clamp(70px,10vw,140px) 0 0;
+}
+.book__top{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.book__top .h2 span{color:rgba(245,243,236,.36)}
+.book__cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);margin-top:clamp(36px,5vw,60px);padding-bottom:clamp(50px,7vw,90px)}
+.book__cols p{max-width:40ch;font-size:15.5px;line-height:1.62;color:rgba(245,243,236,.66)}
+.book__contact{display:grid;gap:10px;justify-items:start}
+.book__contact a{font-family:var(--display);font-size:clamp(18px,2vw,24px);font-weight:700;letter-spacing:-.02em;border-bottom:1px solid rgba(245,243,236,.3);padding-bottom:2px;transition:color .25s,border-color .25s}
+.book__contact a:hover{color:var(--accent);border-color:var(--accent)}
+.book__contact p{font-size:13px;line-height:1.6;color:rgba(245,243,236,.5)}
+.footer{position:relative;background:var(--ink);color:var(--cream);padding-top:clamp(30px,4vw,50px)}
+.footer__grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:clamp(22px,4vw,56px);padding-bottom:clamp(40px,6vw,70px);border-top:1px solid rgba(245,243,236,.14);padding-top:clamp(26px,3vw,40px)}
+.footer__brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.footer__brand svg{width:20px;height:20px}
+.footer__col h4{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,243,236,.44)}
+.footer__col ul{margin-top:14px;display:grid;gap:8px}
+.footer__col a,.footer__col li{font-size:13.5px;color:rgba(245,243,236,.72);transition:color .25s}
+.footer__col a:hover{color:var(--cream)}
+.footer__legal{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:18px 0 10px;border-top:1px solid rgba(245,243,236,.14);font-size:11.5px;color:rgba(245,243,236,.44)}
+.footer__mark{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(64px,21vw,300px);line-height:.74;letter-spacing:-.05em;
+  color:rgba(245,243,236,.1);padding:clamp(20px,4vw,50px) 0 0;overflow:hidden;user-select:none;
+  margin-bottom:-.04em;
+}
+/* reveals */
+.js [data-reveal]{opacity:0;transform:translate3d(0,var(--y,26px),0);transition:opacity .8s var(--ease) var(--d,0s),transform .8s var(--ease) var(--d,0s)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+.no-js .track{height:auto}
+.no-js .scene{position:relative}
+.no-js .content{position:relative;padding-bottom:18vh}
+/* responsive */
+@media (min-width:761px){
+  .intro__h1{font-size:clamp(54px,6.2vw,88px)}
+  .intro__sub{font-size:16.5px;max-width:37ch}
+}
+@media (max-width:1100px){
+  .rows{column-gap:clamp(64px,10vw,140px)}
+  .net__body{grid-template-columns:1fr;align-items:start}
+  .net__media video{aspect-ratio:16/9}
+}
+@media (max-width:900px){
+  .nav__links{display:none}
+  .nav__cta{display:none}
+  .burger{display:block}
+  .menu{display:flex;flex-direction:column}
+  .process__grid,.trk__grid{grid-template-columns:1fr}
+  .process__side{position:static}
+  .process .h2,.trk__copy .h2{white-space:normal}
+  .process__count{display:none}
+  .rows{
+    grid-template-columns:1fr;margin-top:62vh;--rowgap:11vh;
+    width:min(420px,100% - 40px);padding-bottom:12vh;
+  }
+  .feature,.feature--l,.feature--r{justify-self:center;text-align:center;max-width:100%}
+  .feature--c{margin-top:0}
+  .feature p{font-size:13.5px}
+  .q{grid-template-columns:1fr;gap:12px}
+  .book__cols{grid-template-columns:1fr}
+  .footer__grid{grid-template-columns:1fr 1fr}
+  .footer__brand{grid-column:1 / -1}
+  .content{padding-top:19svh}
+  .intro__sub{font-size:14px;max-width:32ch}
+}
+@media (max-width:600px){
+  .stats{grid-template-columns:1fr}
+  .stat{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid rgba(10,12,11,.14)}
+  .stat + .stat{padding-left:0;border-left:0}
+  .stat b{font-size:34px;line-height:1}
+  .stat__u{margin-top:0;font-size:9.5px;letter-spacing:.1em;text-align:right;max-width:15ch;line-height:1.4}
+  .board__row{grid-template-columns:1fr auto;gap:6px 10px;padding:12px 4px;font-size:13px}
+  .board__row--head span:nth-child(2){display:none}
+  .board__mode{display:none}
+  .board__time{font-size:11.5px}
+  .ship__meta{grid-template-columns:1fr 1fr;gap:12px}
+  .leg{grid-template-columns:20px 1fr;gap:12px}
+  .leg time{grid-column:2;padding-top:0;font-size:10.5px}
+  .q{padding:24px 0}
+  .footer__grid{grid-template-columns:1fr 1fr;gap:26px}
+  .footer__mark{font-size:clamp(56px,20vw,120px)}
+}
+@media (max-width:380px){
+  .intro__cta{flex-direction:column;align-items:stretch}
+  .intro__cta .btn{justify-content:space-between}
+}
+@media (prefers-reduced-motion:reduce){
+  .js [data-reveal]{opacity:1;transform:none;transition:none}
+  .skel__bar{animation:none}
+  .chip--live .chip__dot{animation:none}
+  .btn,.btn__disc{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Selat home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="7" width="20" height="4.5" fill="currentColor"/><rect x="6" y="13.75" width="14" height="4.5" fill="currentColor"/><rect x="6" y="20.5" width="8" height="4.5" fill="#D4501E"/></svg>
+      Selat
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#network">Network</a>
+      <a href="#service">Service</a>
+      <a href="#tracking">Tracking</a>
+    </nav>
+    <a class="btn nav__cta" href="#book"><span>Book a lane</span><span class="btn__disc"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu">
+  <a class="menu__link" href="#network">Network</a>
+  <a class="menu__link" href="#service">Service</a>
+  <a class="menu__link" href="#tracking">Tracking</a>
+  <a class="btn btn--cream" href="#book"><span>Book a lane</span><span class="btn__disc"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+  <div class="menu__foot">
+    <p>Rail and sea freight. Nine ports, one corridor, from Vientiane to Tanjung Priok.</p>
+    <a href="mailto:desk@selat.co">desk@selat.co</a>
+  </div>
+</div>
+
+<main id="top">
+  <section class="track" aria-label="Selat freight">
+    <div class="scene">
+      <video id="heroVideo" class="scene__video" muted playsinline preload="auto" tabindex="-1" aria-hidden="true"
+        poster="media/c1271ef8ed.jpg"></video>
+      <div class="scene__tint" aria-hidden="true"></div>
+    </div>
+
+    <div class="content">
+      <div class="intro">
+        <p class="intro__eyebrow">Rail and sea freight</p>
+        <h1 class="intro__h1"><span>The short way</span><span>across</span><span>Southeast Asia</span></h1>
+        <p class="intro__sub">Our own rail corridor to the Mekong, then deep water at three ports. One booking, one rate, from gate to gate.</p>
+        <div class="intro__cta">
+          <a class="btn btn--cream" href="#book"><span>Book a lane</span><span class="btn__disc"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+          <a class="btn btn--ghost" href="#network">See the corridor</a>
+        </div>
+      </div>
+
+      <div class="rows">
+        <article class="feature feature--l" data-feature>
+          <i class="ph ph-train feature__icon" aria-hidden="true"></i>
+          <h3>Own rail slots</h3>
+          <p>Our corridor runs on our own slots. Containers leave on the day you booked them, not when a vessel has spare room.</p>
+        </article>
+        <article class="feature feature--r" data-feature>
+          <i class="ph ph-file-text feature__icon" aria-hidden="true"></i>
+          <h3>One manifest</h3>
+          <p>Customs entry, bill of lading and insurance sit in a single file. Nothing gets retyped at the border.</p>
+        </article>
+        <article class="feature feature--l" data-feature>
+          <i class="ph ph-map-pin-line feature__icon" aria-hidden="true"></i>
+          <h3>Same map we use</h3>
+          <p>Position, temperature and door state for every box, on the screen our dispatchers watch all day.</p>
+        </article>
+        <article class="feature feature--r" data-feature>
+          <i class="ph ph-seal-check feature__icon" aria-hidden="true"></i>
+          <h3>Sealed on camera</h3>
+          <p>Every container is stuffed and sealed at our yard, with photos attached to the booking reference.</p>
+        </article>
+        <article class="feature feature--c feature--last" data-feature>
+          <i class="ph ph-crosshair feature__icon" aria-hidden="true"></i>
+          <h3>Fixed days, not estimates</h3>
+          <p>We publish a transit time for each lane and credit the difference when we miss it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="bridge" aria-hidden="true"></div>
+
+  <section class="network" id="network" aria-labelledby="network-h">
+    <div class="wrap">
+      <div class="net__head" data-reveal>
+        <h2 class="h2" id="network-h">Nine ports.<br><span>One corridor.</span></h2>
+        <p class="lede">The same rails and berths every week, from Vientiane down to Tanjung Priok. Where the schedule holds, your delivery date holds.</p>
+      </div>
+
+      <div class="stats" data-stagger="140" data-stagger-base="60">
+        <div class="stat" data-reveal><b data-count="9">9</b><span class="stat__u">ports on the corridor</span></div>
+        <div class="stat" data-reveal><b data-count="640">640</b><span class="stat__u">km of rail we operate</span></div>
+        <div class="stat" data-reveal><b data-count="24">24</b><span class="stat__u">departures every week</span></div>
+      </div>
+
+      <div class="net__body">
+        <figure class="net__media" data-reveal>
+          <video muted loop playsinline autoplay preload="metadata" aria-hidden="true">
+            <source src="media/bb9b5668b8.mp4" type="video/mp4">
+          </video>
+          <figcaption>Sealing and handover, Laem Chabang yard</figcaption>
+        </figure>
+
+        <div class="board" data-reveal>
+          <div class="board__row board__row--head" aria-hidden="true"><span>Lane</span><span>Mode</span><span class="board__time">Transit</span></div>
+          <div class="board__row"><span class="board__lane">Laem Chabang <i class="ph ph-arrow-right" aria-hidden="true"></i> Hai Phong</span><span class="board__mode">Rail and feeder</span><span class="board__time">5d</span></div>
+          <div class="board__row"><span class="board__lane">Vientiane <i class="ph ph-arrow-right" aria-hidden="true"></i> Laem Chabang</span><span class="board__mode">Rail</span><span class="board__time">2d</span></div>
+          <div class="board__row"><span class="board__lane">Port Klang <i class="ph ph-arrow-right" aria-hidden="true"></i> Tanjung Priok</span><span class="board__mode">Sea</span><span class="board__time">4d</span></div>
+          <div class="board__row"><span class="board__lane">Bangkok <i class="ph ph-arrow-right" aria-hidden="true"></i> Yangon</span><span class="board__mode">Road</span><span class="board__time">6d</span></div>
+          <div class="board__row"><span class="board__lane">Hai Phong <i class="ph ph-arrow-right" aria-hidden="true"></i> Rotterdam</span><span class="board__mode">Sea</span><span class="board__time">28d</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="service" aria-labelledby="process-h">
+    <div class="wrap process__grid">
+      <div class="process__side">
+        <h2 class="h2" id="process-h">From your gate<br><span>to the quay.</span></h2>
+        <p>Five fixed points. You always know which one your cargo is sitting on.</p>
+        <div class="process__count" aria-hidden="true"><b id="stepNow">01</b><span>/ 05</span></div>
+      </div>
+
+      <ol class="steps" id="steps">
+        <li class="step">
+          <span class="step__idx" aria-hidden="true">01</span>
+          <div><h3>Book</h3><p>Send carton counts and a ready date. You get a lane, a fixed rate and a named coordinator before the call ends.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__idx" aria-hidden="true">02</span>
+          <div><h3>Collect</h3><p>Trucks pick up at your factory gate, then stuff and seal at the Laem Chabang yard with photos on file.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__idx" aria-hidden="true">03</span>
+          <div><h3>Rail</h3><p>The box runs our corridor to the Mekong in under a day. No feeder swap, no waiting for a vessel window.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__idx" aria-hidden="true">04</span>
+          <div><h3>Clear</h3><p>Our brokers file the entry before berthing, so release is stamped the moment the container lands on the quay.</p></div>
+        </li>
+        <li class="step">
+          <span class="step__idx" aria-hidden="true">05</span>
+          <div><h3>Deliver</h3><p>Final mile on our own trucks, with proof of delivery in your inbox inside the hour.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="tracking" id="tracking" aria-labelledby="tracking-h">
+    <div class="wrap trk__grid">
+      <div class="trk__copy" data-reveal>
+        <h2 class="h2" id="tracking-h">Your box,<br><span>on the record.</span></h2>
+        <p>Paste the reference from your booking and read the whole run on one clock, including the gate, the seal and the berth.</p>
+        <p class="trk__note">Live for every Selat booking</p>
+      </div>
+
+      <div class="panel" id="panel" data-state="empty" data-reveal style="--y:34px">
+        <form class="panel__form" id="refForm" novalidate>
+          <label class="panel__label" for="refInput">Tracking reference</label>
+          <div class="panel__row">
+            <input class="panel__input" id="refInput" name="ref" type="text" autocomplete="off" spellcheck="false" aria-describedby="refHelp refMsg">
+            <button class="btn" id="refBtn" type="submit"><span>Track</span><span class="btn__disc"><i class="ph ph-arrow-right" aria-hidden="true"></i></span></button>
+          </div>
+          <p class="panel__help" id="refHelp">Format SLT-0000-000. Try <button type="button" data-fill="SLT-4471-882">SLT-4471-882</button> or <button type="button" data-fill="SLT-2210-119">SLT-2210-119</button>.</p>
+          <p class="panel__msg" id="refMsg" aria-live="polite"></p>
+        </form>
+        <div class="panel__out" id="panelOut"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes" aria-labelledby="quotes-h">
+    <div class="wrap">
+      <div class="quotes__head" data-reveal>
+        <h2 class="h2" id="quotes-h">The same shippers,<br><span>every quarter.</span></h2>
+        <p>Volume renews when the dates hold. These three have been on our lanes since 2021.</p>
+      </div>
+      <ul class="qlist" data-stagger="120" data-stagger-base="0">
+        <li class="q" data-reveal>
+          <div class="q__who"><b>Tran Quoc Bao</b><span>Supply Chain Director, Long Hai Textiles</span></div>
+          <p class="q__text">&ldquo;We used to build eight days of buffer around every sailing. With the rail leg in the middle the buffer is two, and I have stopped checking the schedule twice a day.&rdquo;</p>
+        </li>
+        <li class="q" data-reveal>
+          <div class="q__who"><b>Nurul Aziz</b><span>Logistics Manager, Kawan Foods</span></div>
+          <p class="q__text">&ldquo;The reefer data arrives before our own QA asks for it. When a compressor drifted, their desk called at seven in the morning with a plan and a replacement box.&rdquo;</p>
+        </li>
+        <li class="q" data-reveal>
+          <div class="q__who"><b>Somchai Wattana</b><span>Operations Lead, Chiang Rai Ceramics</span></div>
+          <p class="q__text">&ldquo;Our crates are awkward and the volume is small. Selat still gives us the coordinator we had in 2021, and he knows which kiln our pallets come from.&rdquo;</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="book__top">
+        <h2 class="h2" id="book-h">Tell us<br><span>what moves.</span></h2>
+        <a class="btn btn--cream" href="mailto:desk@selat.co"><span>Book a lane</span><span class="btn__disc"><i class="ph ph-arrow-up-right" aria-hidden="true"></i></span></a>
+      </div>
+      <div class="book__cols">
+        <p>Rates come back within one working day. Send the lane, the volume and the date it has to land.</p>
+        <div class="book__contact">
+          <a href="mailto:desk@selat.co">desk@selat.co</a>
+          <p>12 Keppel Road, Singapore 089057<br>979 Rama IV Road, Bangkok 10500</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="7" width="20" height="4.5" fill="currentColor"/><rect x="6" y="13.75" width="14" height="4.5" fill="currentColor"/><rect x="6" y="20.5" width="8" height="4.5" fill="#D4501E"/></svg>
+            Selat
+          </div>
+          <div class="footer__col">
+            <h4>Lanes</h4>
+            <ul>
+              <li><a href="#network">Thailand</a></li>
+              <li><a href="#network">Vietnam</a></li>
+              <li><a href="#network">Malaysia</a></li>
+              <li><a href="#network">Indonesia</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#tracking">Tracking</a></li>
+              <li><a href="#book">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Desk</h4>
+            <ul>
+              <li><a href="mailto:desk@selat.co">desk@selat.co</a></li>
+              <li>Singapore, GMT+8</li>
+              <li>Bangkok, GMT+7</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__legal">
+          <p>&copy; 2026 Selat Freight Pte Ltd</p>
+          <p>Registered in Singapore, 202143009K</p>
+        </div>
+      </div>
+      <div class="footer__mark" aria-hidden="true">Selat</div>
+    </footer>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var canGSAP = typeof window.gsap !== 'undefined';
+  var canST = canGSAP && typeof window.ScrollTrigger !== 'undefined';
+  if (canST) window.gsap.registerPlugin(window.ScrollTrigger);
+
+  function safe(label, fn) { try { fn(); } catch (err) { console.warn('[motion] ' + label, err); } }
+
+  /* smooth scroll */
+  var lenis = null;
+  safe('lenis', function () {
+    if (typeof window.Lenis === 'undefined' || reduce.matches) return;
+    lenis = new window.Lenis({ duration: 1.1, wheelMultiplier: 0.9, touchMultiplier: 1.5 });
+    if (canST) {
+      lenis.on('scroll', window.ScrollTrigger.update);
+      window.gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+      window.gsap.ticker.lagSmoothing(0);
+    }
+  });
+
+  /* menu */
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  function closeMenu() {
+    if (!menu || !menu.classList.contains('is-open')) return;
+    menu.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+    if (burger) { burger.setAttribute('aria-expanded', 'false'); burger.setAttribute('aria-label', 'Open menu'); }
+    if (lenis) lenis.start();
+  }
+  function openMenu() {
+    if (!menu) return;
+    menu.classList.add('is-open');
+    document.body.classList.add('menu-open');
+    if (burger) { burger.setAttribute('aria-expanded', 'true'); burger.setAttribute('aria-label', 'Close menu'); }
+    if (lenis) lenis.stop();
+  }
+  if (burger) {
+    burger.addEventListener('click', function () {
+      if (menu.classList.contains('is-open')) closeMenu(); else openMenu();
+    });
+  }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+  function scrollToEl(el, offset) {
+    var off = typeof offset === 'number' ? offset : -70;
+    if (lenis) { lenis.scrollTo(el, { offset: off }); return; }
+    var y = el.getBoundingClientRect().top + window.pageYOffset + off;
+    window.scrollTo({ top: y, behavior: reduce.matches ? 'auto' : 'smooth' });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('a[href^="#"]'), function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (!id || id.length < 2) return;
+      var el = document.querySelector(id);
+      if (!el) return;
+      e.preventDefault();
+      closeMenu();
+      scrollToEl(el);
+    });
+  });
+
+  /* film scrub */
+  var track = document.querySelector('.track');
+  var video = document.getElementById('heroVideo');
+  var content = document.querySelector('.content');
+  var intro = document.querySelector('.intro');
+  var lastFeature = document.querySelector('.feature--last');
+  var runway = 1, knee = 0.78, clipDur = 5.04;
+
+  var CLIP_1080 = 'media/9385db76af.mp4';
+  var CLIP_720 = 'media/87e7d8936f.mp4';
+
+  safe('video', function () {
+    if (!video) return;
+    var conn = navigator.connection;
+    var small = window.matchMedia('(max-width: 900px)').matches || (conn && conn.saveData);
+    video.src = small ? CLIP_720 : CLIP_1080;
+    video.addEventListener('loadedmetadata', function () {
+      if (video.duration && isFinite(video.duration)) clipDur = video.duration;
+      try { video.currentTime = 0.04; } catch (err) {}
+    });
+    video.addEventListener('loadeddata', function () { video.classList.add('is-ready'); }, { once: true });
+    video.addEventListener('stalled', function () { if (!video.readyState) video.classList.add('is-ready'); });
+    video.load();
+  });
+
+  function measure() {
+    if (!track || !content || !lastFeature) return;
+    var cTop = content.getBoundingClientRect().top;
+    var lBottom = lastFeature.getBoundingClientRect().bottom;
+    var rel = Math.max(240, lBottom - cTop);
+    var vh = window.innerHeight;
+    runway = Math.round(rel + vh * 0.75);
+    track.style.setProperty('--runway', runway + 'px');
+    knee = Math.min(0.9, Math.max(0.42, rel / runway));
+  }
+
+  var targetP = 0, curP = 0, rafId = 0;
+  function clipTime(p) {
+    var q = p < knee ? (p / knee) * 0.46 : 0.46 + ((p - knee) / (1 - knee)) * 0.54;
+    q = Math.min(1, Math.max(0, q));
+    return q * (clipDur - 1 / 48);
+  }
+  function frame() {
+    rafId = 0;
+    curP = reduce.matches ? targetP : curP + (targetP - curP) * 0.22;
+    if (Math.abs(targetP - curP) < 0.0006) curP = targetP;
+    if (video && video.readyState > 0) {
+      var t = clipTime(curP);
+      if (!video.seeking && Math.abs(video.currentTime - t) > 0.016) {
+        try { video.currentTime = t; } catch (err) {}
+      }
+    }
+    if (Math.abs(targetP - curP) > 0.0006) rafId = window.requestAnimationFrame(frame);
+  }
+  function onProgress(p) {
+    targetP = p;
+    if (!rafId) rafId = window.requestAnimationFrame(frame);
+  }
+
+  measure();
+  if (canST) {
+    window.ScrollTrigger.addEventListener('refreshInit', measure);
+    safe('scrub', function () {
+      window.ScrollTrigger.create({
+        trigger: track,
+        start: 'top top',
+        end: function () { return '+=' + runway; },
+        invalidateOnRefresh: true,
+        onUpdate: function (self) { onProgress(self.progress); }
+      });
+    });
+    safe('intro', function () {
+      if (reduce.matches) return;
+      window.gsap.to(intro, {
+        yPercent: -12, ease: 'none',
+        scrollTrigger: {
+          trigger: track, start: 'top top',
+          end: function () { return '+=' + Math.round(window.innerHeight); },
+          scrub: 0.5
+        }
+      });
+    });
+  }
+
+  safe('nav', function () {
+    var nav = document.getElementById('nav');
+    if (!nav) return;
+    var zones = [document.querySelector('.track'), document.querySelector('.process'), document.querySelector('.book')];
+    function check() {
+      var y = 74, dark = false;
+      for (var i = 0; i < zones.length; i++) {
+        if (!zones[i]) continue;
+        var r = zones[i].getBoundingClientRect();
+        if (r.top <= y && r.bottom > y) { dark = true; break; }
+      }
+      nav.classList.toggle('is-paper', !dark);
+    }
+    check();
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    if (lenis) lenis.on('scroll', check);
+  });
+
+  /* reveals */
+  safe('reveals', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-stagger]'), function (group) {
+      var step = parseFloat(group.getAttribute('data-stagger')) || 0;
+      var base = parseFloat(group.getAttribute('data-stagger-base')) || 0;
+      Array.prototype.forEach.call(group.querySelectorAll('[data-reveal]'), function (el, i) {
+        el.style.setProperty('--d', (base + i * step) + 'ms');
+      });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-reveal]'), function (el) { io.observe(el); });
+  });
+
+  /* counters */
+  safe('counters', function () {
+    var nodes = document.querySelectorAll('[data-count]');
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        obs.unobserve(e.target);
+        var el = e.target;
+        var end = parseFloat(el.getAttribute('data-count')) || 0;
+        if (reduce.matches) { el.textContent = Math.round(end).toLocaleString('en-US'); return; }
+        var t0 = performance.now();
+        var dur = 1500;
+        function step(now) {
+          var p = Math.min(1, (now - t0) / dur);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(end * eased).toLocaleString('en-US');
+          if (p < 1) window.requestAnimationFrame(step);
+        }
+        el.textContent = '0';
+        window.requestAnimationFrame(step);
+      });
+    }, { threshold: 0.5 });
+    Array.prototype.forEach.call(nodes, function (n) { io.observe(n); });
+  });
+
+  /* active step */
+  safe('steps', function () {
+    var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
+    if (!steps.length) return;
+    var stepNow = document.getElementById('stepNow');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var i = steps.indexOf(e.target);
+        steps.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
+        if (stepNow) stepNow.textContent = (i + 1 < 10 ? '0' : '') + (i + 1);
+      });
+    }, { rootMargin: '-46% 0px -46% 0px', threshold: 0 });
+    steps.forEach(function (s) { io.observe(s); });
+  });
+
+  /* tracking panel */
+  safe('tracking', function () {
+    var SHIP = {
+      'SLT-4471-882': {
+        from: 'Ho Chi Minh City', to: 'Rotterdam', container: 'TLLU 902 411 3',
+        vessel: 'MV Selat Nusantara', eta: '14 Apr', status: 'On vessel', live: true, at: 3,
+        legs: [
+          ['Gate in', 'Cat Lai depot, HCMC', '02 Apr, 09:14'],
+          ['Loaded', 'Hai Phong terminal', '02 Apr, 21:40'],
+          ['Vessel departed', 'Hai Phong', '03 Apr, 06:05'],
+          ['In transit', 'South China Sea', 'now'],
+          ['Berth booked', 'Rotterdam, Euromax', '14 Apr, 08:00']
+        ]
+      },
+      'SLT-2210-119': {
+        from: 'Port Klang', to: 'Tanjung Priok', container: 'SELU 441 028 6',
+        vessel: 'MV Strait Kembara', eta: '09 Apr', status: 'Delivered', live: false, at: 4,
+        legs: [
+          ['Gate in', 'Port Klang, Westport', '03 Apr, 11:20'],
+          ['Loaded', 'Westport berth 4', '03 Apr, 18:55'],
+          ['Vessel departed', 'Port Klang', '04 Apr, 02:30'],
+          ['Cleared', 'Tanjung Priok', '08 Apr, 16:12'],
+          ['Delivered', 'Cakung, Jakarta', '09 Apr, 10:05']
+        ]
+      }
+    };
+
+    var panel = document.getElementById('panel');
+    var out = document.getElementById('panelOut');
+    var input = document.getElementById('refInput');
+    var msg = document.getElementById('refMsg');
+    var form = document.getElementById('refForm');
+    if (!panel || !out || !input || !msg) return;
+
+    var EMPTY = '<div class="pstate"><i class="ph ph-crosshair" aria-hidden="true"></i><p>No shipment loaded. Enter a reference above to read its run.</p></div>';
+    var LOADING = '<div class="skel" aria-hidden="true"><span class="skel__bar" style="width:54%"></span><span class="skel__bar" style="width:88%"></span><span class="skel__bar" style="width:72%"></span><span class="skel__bar" style="width:80%"></span><span class="skel__bar" style="width:64%"></span></div>';
+    var timer = 0;
+    var touched = false;
+
+    function setMsg(text, kind) {
+      msg.textContent = text || '';
+      if (kind) msg.setAttribute('data-kind', kind); else msg.removeAttribute('data-kind');
+    }
+
+    function normalize(v) {
+      var raw = String(v || '').trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
+      var m = raw.match(/^SLT(\d{4})(\d{3})$/);
+      return m ? 'SLT-' + m[1] + '-' + m[2] : String(v || '').trim().toUpperCase();
+    }
+
+    function shipHTML(id, s) {
+      var legs = s.legs.map(function (l, i) {
+        var cls = 'leg' + (i < s.at ? ' is-done' : '') + (i === s.at ? ' is-now' : '');
+        return '<li class="' + cls + '"><span class="leg__dot" aria-hidden="true"></span><div class="leg__body"><b>' + l[0] + '</b><span>' + l[1] + '</span></div><time>' + l[2] + '</time></li>';
+      }).join('');
+      return '<div class="ship">' +
+        '<div class="ship__head"><div><p class="ship__ref">' + id + '</p>' +
+        '<p class="ship__lane">' + s.from + ' <i class="ph ph-arrow-right" aria-hidden="true"></i> ' + s.to + '</p></div>' +
+        '<span class="chip' + (s.live ? ' chip--live' : '') + '"><span class="chip__dot" aria-hidden="true"></span>' + s.status + '</span></div>' +
+        '<dl class="ship__meta">' +
+        '<div><dt>Container</dt><dd>' + s.container + '</dd></div>' +
+        '<div><dt>Vessel</dt><dd>' + s.vessel + '</dd></div>' +
+        '<div><dt>' + (s.live ? 'ETA' : 'Delivered') + '</dt><dd>' + s.eta + '</dd></div>' +
+        '</dl><ol class="legs">' + legs + '</ol></div>';
+    }
+
+    function run(value) {
+      var id = normalize(value);
+      window.clearTimeout(timer);
+      setMsg('', '');
+      if (!id) { out.innerHTML = EMPTY; panel.setAttribute('data-state', 'empty'); setMsg('Enter a reference to start.', 'error'); return; }
+      if (!/^SLT-\d{4}-\d{3}$/.test(id)) {
+        out.innerHTML = EMPTY;
+        panel.setAttribute('data-state', 'error');
+        setMsg('That is not a Selat reference. The format is SLT, four digits, then three.', 'error');
+        return;
+      }
+      out.innerHTML = LOADING;
+      panel.setAttribute('data-state', 'loading');
+      setMsg('Reading the manifest.', '');
+      timer = window.setTimeout(function () {
+        var s = SHIP[id];
+        if (!s) {
+          out.innerHTML = EMPTY;
+          panel.setAttribute('data-state', 'error');
+          setMsg('No shipment under ' + id + '. Check the digits, or email desk@selat.co.', 'error');
+          return;
+        }
+        out.innerHTML = shipHTML(id, s);
+        panel.setAttribute('data-state', 'result');
+        setMsg('Showing ' + id + '.', '');
+      }, reduce.matches ? 120 : 850);
+    }
+
+    function submit(e) {
+      if (e) e.preventDefault();
+      touched = true;
+      run(input.value);
+    }
+
+    if (form) form.addEventListener('submit', submit);
+    input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); submit(); } });
+    Array.prototype.forEach.call(panel.querySelectorAll('[data-fill]'), function (b) {
+      b.addEventListener('click', function () {
+        input.value = b.getAttribute('data-fill');
+        touched = true;
+        run(input.value);
+      });
+    });
+
+    out.innerHTML = EMPTY;
+    window.setTimeout(function () {
+      if (touched || input.value) return;
+      input.value = 'SLT-4471-882';
+      run(input.value);
+    }, 700);
+  });
+
+  /* resize */
+  var rz = 0;
+  window.addEventListener('resize', function () {
+    window.clearTimeout(rz);
+    rz = window.setTimeout(function () {
+      measure();
+      if (canST) window.ScrollTrigger.refresh();
+    }, 200);
+  });
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      measure();
+      if (canST) window.ScrollTrigger.refresh();
+    }).catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selected Work | Frontend and UI/UX</title>
+<meta name="description" content="Four web projects: a bilingual personal portfolio, a cinematic logistics landing page, a product brand with a live cart, and a complete booking flow.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selected Work | Frontend and UI/UX">
+<meta property="og:description" content="Four web projects, from cinematic landing pages to a complete booking flow.">
+<meta property="og:image" content="https://lamanhkhoi.github.io/ui-showcase/assets/stays-desktop.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F2EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316140F'/%3E%3Cpath d='M18 44V20h6l16 16V20h6v24h-6L24 28v16z' fill='%23F4F2EE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+html,body{background:#F4F2EE;color:#16140F;margin:0}
+*,*::before,*::after{box-sizing:border-box}
+:root{--ink:#16140F;--muted:#6A655C;--line:rgba(22,20,15,.12);--accent:#C2410C;--ease:cubic-bezier(.22,1,.36,1);--pad:clamp(1.25rem,4vw,3.5rem)}
+body{font-family:"Instrument Sans",system-ui,sans-serif;font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--pad)}
+.skip{position:absolute;left:-999px;top:1rem;background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:999px;z-index:10}
+.skip:focus{left:1rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+header{display:flex;justify-content:space-between;align-items:center;padding-block:1.6rem;border-bottom:1px solid var(--line)}
+.mark{display:flex;align-items:center;gap:.7rem;font-weight:600;text-decoration:none;letter-spacing:-.01em}
+.mark span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:#F4F2EE;font-size:.95rem}
+header nav{display:flex;gap:1.6rem;font-size:.95rem;color:var(--muted)}
+header nav a{text-decoration:none;transition:color .3s}
+header nav a:hover{color:var(--ink)}
+
+.intro{padding-block:clamp(4rem,10vw,8rem) clamp(3rem,7vw,5rem)}
+.intro h1{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(2.6rem,6.4vw,5.6rem);line-height:1.02;letter-spacing:-.025em;margin:0;max-width:16ch}
+.intro h1 em{color:var(--accent)}
+.intro p{color:var(--muted);font-size:clamp(1.05rem,1.4vw,1.2rem);max-width:52ch;margin:1.6rem 0 0}
+
+.work{list-style:none;margin:0;padding:0}
+.project{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding-block:clamp(3rem,7vw,6rem);border-top:1px solid var(--line)}
+.project:nth-child(even) .media{order:-1}
+.num{font-family:Newsreader,Georgia,serif;font-style:italic;color:var(--accent);font-size:1.1rem}
+.project h2{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.05;letter-spacing:-.02em;margin:.6rem 0 1rem}
+.project p{color:var(--muted);margin:0 0 1.4rem;max-width:46ch}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 1.8rem;padding:0;list-style:none}
+.tags li{font-size:.8rem;padding:.3rem .75rem;border:1px solid var(--line);border-radius:999px;color:var(--ink)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem 1.5rem;margin:0 0 2rem;font-size:.92rem}
+.facts dt{color:var(--muted);font-size:.8rem}
+.facts dd{margin:0;font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:.9rem;padding:.55rem .6rem .55rem 1.3rem;border-radius:999px;background:var(--ink);color:#F4F2EE;text-decoration:none;font-weight:500;transition:transform .5s var(--ease),background .3s}
+.btn i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.12);transition:transform .5s var(--ease)}
+.btn:hover{background:#000}
+.btn:hover i{transform:translate(3px,-2px) rotate(-45deg)}
+.btn:active{transform:scale(.98)}
+
+.media{position:relative;display:block;text-decoration:none;padding-right:clamp(2.5rem,6vw,5rem);padding-bottom:clamp(2rem,4vw,3rem)}
+.shot{border-radius:14px;overflow:hidden;background:#E7E3DC;box-shadow:0 1px 0 rgba(22,20,15,.06),0 30px 60px -30px rgba(60,45,20,.35)}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform 1.1s var(--ease)}
+.phone{position:absolute;right:0;bottom:0;width:clamp(96px,19%,170px);border-radius:20px;overflow:hidden;border:5px solid var(--ink);background:var(--ink);box-shadow:0 24px 50px -20px rgba(22,20,15,.55);transition:transform .9s var(--ease)}
+.phone img{width:100%;aspect-ratio:420/880;object-fit:cover;object-position:top}
+.media:hover .shot img{transform:scale(1.035)}
+.media:hover .phone{transform:translateY(-10px)}
+
+footer{border-top:1px solid var(--line);padding-block:3rem 4rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;color:var(--muted);font-size:.92rem}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:860px){
+  .project{grid-template-columns:1fr;gap:2rem}
+  .project:nth-child(even) .media{order:0}
+  .media{order:-1 !important}
+  header nav{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .shot img,.phone,.btn,.btn i{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+<div class="wrap">
+  <header>
+    <a class="mark" href="./"><span>K</span>Lam Anh Khoi</a>
+    <nav aria-label="Primary"><a href="#work">Work</a><a href="https://github.com/Lamanhkhoi" target="_blank" rel="noopener">GitHub</a><a href="mailto:lamanhkhoi06@gmail.com">Email</a></nav>
+  </header>
+
+  <section class="intro">
+    <h1 class="reveal">Interfaces that feel <em>considered</em>, on every screen.</h1>
+    <p class="reveal">Four web projects by our team, from a bilingual personal brand to a complete booking flow. Each one opens on desktop and mobile.</p>
+  </section>
+
+  <main id="work">
+    <ol class="work">
+      <li class="project">
+        <div class="reveal">
+          <span class="num">01</span>
+          <h2>Prisca Vo, personal portfolio</h2>
+          <p>A six-page bilingual site for a global sourcing director and business lecturer. Editorial layout, red and cream palette, calm scroll motion.</p>
+          <ul class="tags"><li>EN / VI</li><li>Hash router</li><li>GSAP + Lenis</li><li>Accessibility 100</li></ul>
+          <dl class="facts"><div><dt>Type</dt><dd>Personal brand</dd></div><div><dt>Focus</dt><dd>Typography, i18n</dd></div></dl>
+          <a class="btn" href="https://lamanhkhoi.github.io/first_real_project/" target="_blank" rel="noopener">Open project <i aria-hidden="true">&rarr;</i></a>
+        </div>
+        <a class="media reveal" href="https://lamanhkhoi.github.io/first_real_project/" target="_blank" rel="noopener" aria-label="Open Prisca Vo portfolio">
+          <div class="shot"><img src="assets/prisca-desktop.webp" width="1200" height="750" alt="Dark hero with a red line network and the headline Sourcing with integrity"></div>
+          <div class="phone"><img src="assets/prisca-mobile.webp" width="420" height="880" alt="" loading="lazy"></div>
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="reveal">
+          <span class="num">02</span>
+          <h2>Selat, rail and sea freight</h2>
+          <p>A cinematic landing page where scrolling flies the camera up from a container train into the clouds. Includes a working shipment tracker.</p>
+          <ul class="tags"><li>Scroll-scrubbed video</li><li>ScrollTrigger</li><li>Live tracking UI</li></ul>
+          <dl class="facts"><div><dt>Type</dt><dd>Marketing site</dd></div><div><dt>Try it</dt><dd>Track SLT-4471-882</dd></div></dl>
+          <a class="btn" href="freight/">Open project <i aria-hidden="true">&rarr;</i></a>
+        </div>
+        <a class="media reveal" href="freight/" aria-label="Open Selat freight">
+          <div class="shot"><img src="assets/freight-desktop.webp" width="1200" height="750" alt="Aerial view of a freight train under the headline The short way across Southeast Asia" loading="lazy"></div>
+          <div class="phone"><img src="assets/freight-mobile.webp" width="420" height="880" alt="" loading="lazy"></div>
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="reveal">
+          <span class="num">03</span>
+          <h2>squish, cold-pressed juice</h2>
+          <p>A bright product brand. Each flavour floods the screen in its own colour, then a build-your-box cart prices the order live with a subscription discount.</p>
+          <ul class="tags"><li>Colour-driven slider</li><li>Swipe + keyboard</li><li>Cart logic</li></ul>
+          <dl class="facts"><div><dt>Type</dt><dd>E-commerce</dd></div><div><dt>Try it</dt><dd>Arrow keys, then build a box</dd></div></dl>
+          <a class="btn" href="juice/">Open project <i aria-hidden="true">&rarr;</i></a>
+        </div>
+        <a class="media reveal" href="juice/" aria-label="Open squish juice">
+          <div class="shot"><img src="assets/juice-desktop.webp" width="1200" height="750" alt="Purple juice bottle with floating berries in front of the word Punch" loading="lazy"></div>
+          <div class="phone"><img src="assets/juice-mobile.webp" width="420" height="880" alt="" loading="lazy"></div>
+        </a>
+      </li>
+
+      <li class="project">
+        <div class="reveal">
+          <span class="num">04</span>
+          <h2>N&#7871;p Stays, boutique booking</h2>
+          <p>A complete booking flow for stays across Viet Nam: search, filters, gallery, checkout with validation and a downloadable calendar invite.</p>
+          <ul class="tags"><li>5-screen flow</li><li>Loading + empty states</li><li>Dark mode</li><li>Keyboard first</li></ul>
+          <dl class="facts"><div><dt>Type</dt><dd>Product UX</dd></div><div><dt>Try it</dt><dd>Book a stay end to end</dd></div></dl>
+          <a class="btn" href="stays/">Open project <i aria-hidden="true">&rarr;</i></a>
+        </div>
+        <a class="media reveal" href="stays/" aria-label="Open Nep Stays">
+          <div class="shot"><img src="assets/stays-desktop.webp" width="1200" height="750" alt="Results page with filters and stay cards for Ha Giang and Sa Pa" loading="lazy"></div>
+          <div class="phone"><img src="assets/stays-mobile.webp" width="420" height="880" alt="" loading="lazy"></div>
+        </a>
+      </li>
+    </ol>
+  </main>
+
+  <footer>
+    <span>Frontend and UI/UX by Lam Anh Khoi, FPT University, Ho Chi Minh City.</span>
+    <span>Brands in projects 02 to 04 are fictional.</span>
+  </footer>
+</div>
+<script>
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(e => e.classList.add('in')); return;
+  }
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(e => io.observe(e));
+})();
+</script>
+</body>
+</html>
