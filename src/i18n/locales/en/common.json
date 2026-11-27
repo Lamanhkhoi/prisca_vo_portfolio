@@ -1,15 +1,15 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
     "research": "Research",
-    "talks": "Talks & Events",
-    "recognition": "Recognition",
-    "other": "Other",
+    "talks": "Talks & Community",
     "primary": "Primary navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "teaching": "Teaching",
+    "industry": "Industry",
+    "evidence": "Evidence"
   },
   "lang": {
     "label": "Language",
@@ -19,8 +19,8 @@
     "viName": "Tiếng Việt"
   },
   "brand": {
-    "name": "Prisca Vo",
-    "suffix": "MBA",
+    "name": "Prisca Vo, MBA",
+    "suffix": "Lecturer & Subject Leader",
     "home": "Prisca Vo, home"
   },
   "actions": {

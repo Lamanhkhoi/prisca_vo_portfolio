@@ -1,9 +1,11 @@
 {
-  "meta": { "title": "Other | Prisca Vo, MBA" },
+  "meta": {
+    "title": "Industry Experience | Prisca Vo, MBA"
+  },
   "header": {
-    "eyebrow": "Other",
-    "title": "Beyond the classroom",
-    "lead": "The industry leadership that informs her teaching, and her engagement in community well-being."
+    "eyebrow": "Industry",
+    "title": "Industry experience",
+    "lead": "27+ years of buyer-side global sourcing leadership with Walmart, Li & Fung, William E. Connor and Decathlon: the practice behind her teaching and research."
   },
   "industry": {
     "title": "Industry leadership experience",
@@ -52,20 +54,7 @@
         "org": "Bumin Corporation (Korea)",
         "text": "Executed end-to-end garment merchandising, production follow-up and buyer coordination for international retail accounts."
       }
-    ]
-  },
-  "community": {
-    "title": "Community well-being & mindfulness talks",
-    "period": "2024 - 2025",
-    "items": [
-      {
-        "title": "The Secret of a Smile: The Power of Mindfulness",
-        "org": "FPT University, 2024"
-      },
-      {
-        "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
-        "org": "International Healing 2025, FPT University Da Nang & Hue University, organised by LGL Yoga International School"
-      }
-    ]
+    ],
+    "orgsTitle": "Organisations"
   }
 }

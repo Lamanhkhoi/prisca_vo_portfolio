@@ -1,72 +1,16 @@
 {
-  "meta": { "title": "Talks & Events | Prisca Vo, MBA" },
+  "meta": {
+    "title": "Talks & Community | Prisca Vo, MBA"
+  },
   "header": {
-    "eyebrow": "Talks & Events",
-    "title": "Teaching, talks & events",
-    "lead": "Lecturing, invited talks, industry forums and mentoring that connect students with real business practice."
-  },
-  "teaching": {
-    "title": "Teaching appointments",
-    "items": [
-      {
-        "period": "05/2022 - Present",
-        "role": "Lecturer, Business Administration & Subject Leader",
-        "org": "FPT University, Ho Chi Minh City (Faculty of Economics and Law)",
-        "text": "Integrates practitioner case studies, role-based simulations and real sourcing scenarios to build analytical reasoning and managerial judgment. Co-organised the LogiChain student competition."
-      },
-      {
-        "period": "04/2022 - 12/2022",
-        "role": "Invited Practitioner Lecturer & Master's Thesis Panel Member",
-        "org": "CFVG, Master in Supply Chain Management",
-        "text": "Delivered 'Operations Strategy and Supply Chain Management' (Focus Hours module, 04/2022) and served on the Master's Thesis Advisory and Assessment Panel."
-      },
-      {
-        "period": "2022 - 2023",
-        "role": "Visiting Lecturer",
-        "org": "Greenwich Vietnam, Ho Chi Minh City",
-        "text": "Taught 'Organisational Behaviour: Leadership & Management Skills'."
-      },
-      {
-        "period": "20 - 22/06/2024",
-        "role": "Faculty Development Trainer",
-        "org": "Vietnam Association for Logistics Young Talent Development (VALOMA)",
-        "text": "Trained early-career university lecturers from Central and Southern Viet Nam in Global Sourcing and Supply Chain teaching methodologies."
-      }
-    ]
-  },
-  "courses": {
-    "title": "Courses taught",
-    "total": "{{count}} courses",
-    "groups": [
-      {
-        "name": "Core Supply Chain, Sourcing, Trade & International Business",
-        "tier": "Tier 1",
-        "items": [
-          "Global Supply Chain Management",
-          "Procurement and Global Sourcing",
-          "Logistics and Transportation Management",
-          "Air / Sea Transport",
-          "Import & Export Operations",
-          "International Business Strategy",
-          "Cross-Cultural Management"
-        ]
-      },
-      {
-        "name": "Marketing, Negotiation, Organisational/HR & Enterprise Management",
-        "tier": "Tier 2",
-        "items": [
-          "Marketing",
-          "Negotiation",
-          "Human Resource Management",
-          "Organisational Behaviour / Leadership & Management Skills",
-          "Entrepreneurship",
-          "Introduction to Management"
-        ]
-      }
-    ]
+    "eyebrow": "Talks & Community",
+    "title": "Talks, forums & community",
+    "lead": "Invited talks, university-industry forums, student mentoring and community well-being engagement."
   },
   "events": {
     "title": "Talks, forums & mentoring",
+    "badge": "Engagements",
+    "summary": "Invited lectures, university-industry executive forums, practical sourcing workshops, and talent mentoring connecting students and faculty with multinational supply chain leaders.",
     "filterLabel": "Filter by type",
     "filters": {
       "all": "All",
@@ -124,6 +68,26 @@
         "role": "Mentor for Talent Students",
         "org": "BKSIM Talent Mentoring Program, HCMUT",
         "text": "Guides high-potential students in designing and executing Individual Development Plans (IDPs), supporting their placement into multinational corporations."
+      }
+    ]
+  },
+  "community": {
+    "title": "Community well-being & mindfulness talks",
+    "period": "2024 - 2025",
+    "items": [
+      {
+        "role": "Invited Speaker",
+        "date": "2024",
+        "title": "The Secret of a Smile: The Power of Mindfulness",
+        "org": "FPT University, Ho Chi Minh City Campus — Community Well-Being & Mindfulness Talk, 2024",
+        "text": "Invited speaker session for the university community at FPT University HCMC exploring mindful awareness, emotional balance, and everyday positive presence to support student and faculty well-being."
+      },
+      {
+        "role": "Invited Speaker",
+        "date": "2025",
+        "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
+        "org": "International Healing 2025, FPT University Da Nang & Hue University, organised by LGL Yoga International School",
+        "text": "Invited community well-being talks delivered across FPT University Da Nang and Hue University on cultivating inner resilience, self-healing, and returning to mindful presence."
       }
     ]
   }

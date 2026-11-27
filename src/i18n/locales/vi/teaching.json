@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Giảng dạy & Ghi nhận | Prisca Vo, MBA"
+  },
+  "header": {
+    "eyebrow": "Giảng dạy",
+    "title": "Giảng dạy & ghi nhận",
+    "lead": "Giảng viên và Trưởng bộ môn tại Đại học FPT từ năm 2022, giảng viên thỉnh giảng tại CFVG và Greenwich Việt Nam, hai lần nhận giải Giảng viên Xuất sắc."
+  },
+  "appointments": {
+    "title": "Vị trí giảng dạy",
+    "items": [
+      {
+        "period": "05/2022 - Nay",
+        "role": "Giảng viên Quản trị Kinh doanh & Trưởng bộ môn",
+        "org": "Đại học FPT TP. Hồ Chí Minh (Khoa Kinh tế và Luật)",
+        "text": "Lồng ghép tình huống thực tiễn, mô phỏng theo vai trò và kịch bản tìm nguồn thực tế để rèn luyện tư duy phân tích và năng lực ra quyết định quản lý. Đồng tổ chức cuộc thi sinh viên LogiChain."
+      },
+      {
+        "period": "04/2022 - 12/2022",
+        "role": "Giảng viên thỉnh giảng từ doanh nghiệp & Thành viên hội đồng luận văn thạc sĩ",
+        "org": "CFVG, Thạc sĩ Quản trị Chuỗi cung ứng",
+        "text": "Giảng dạy học phần 'Operations Strategy and Supply Chain Management' (Focus Hours, 04/2022) và là thành viên Hội đồng Tư vấn và Đánh giá Luận văn Thạc sĩ."
+      },
+      {
+        "period": "2022 - 2023",
+        "role": "Giảng viên thỉnh giảng",
+        "org": "Greenwich Việt Nam, TP. Hồ Chí Minh",
+        "text": "Giảng dạy học phần 'Organisational Behaviour: Leadership & Management Skills'."
+      },
+      {
+        "period": "20 - 22/06/2024",
+        "role": "Giảng viên bồi dưỡng đội ngũ giảng viên",
+        "org": "Hội Phát triển Nhân lực Logistics Việt Nam (VALOMA)",
+        "text": "Đào tạo giảng viên đại học trẻ khu vực miền Trung và miền Nam về phương pháp giảng dạy Tìm nguồn hàng toàn cầu và Chuỗi cung ứng."
+      }
+    ]
+  },
+  "courses": {
+    "title": "Môn học đã giảng dạy",
+    "total": "{{count}} môn học",
+    "groups": [
+      {
+        "name": "Chuỗi cung ứng, Tìm nguồn, Thương mại & Kinh doanh quốc tế",
+        "tier": "Nhóm 1",
+        "items": [
+          "Global Supply Chain Management",
+          "Procurement and Global Sourcing",
+          "Logistics and Transportation Management",
+          "Air / Sea Transport",
+          "Import & Export Operations",
+          "International Business Strategy",
+          "Cross-Cultural Management"
+        ]
+      },
+      {
+        "name": "Marketing, Đàm phán, Tổ chức/Nhân sự & Quản trị doanh nghiệp",
+        "tier": "Nhóm 2",
+        "items": [
+          "Marketing",
+          "Negotiation",
+          "Human Resource Management",
+          "Organisational Behaviour / Leadership & Management Skills",
+          "Entrepreneurship",
+          "Introduction to Management"
+        ]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Danh hiệu & giải thưởng",
+    "items": [
+      {
+        "date": "Summer 2024",
+        "title": "Giải thưởng Giảng viên Xuất sắc",
+        "org": "Đại học FPT",
+        "featured": true
+      },
+      {
+        "date": "06/2024",
+        "title": "Giấy chứng nhận Tri ân",
+        "org": "Hội Phát triển Nhân lực Logistics Việt Nam (VALOMA)",
+        "featured": false
+      },
+      {
+        "date": "2024",
+        "title": "Giấy chứng nhận Ghi nhận",
+        "org": "Tổ chức Giáo dục FPT, vì đã tổ chức thành công cuộc thi sinh viên LogiChain",
+        "featured": false
+      },
+      {
+        "date": "Spring 2023",
+        "title": "Khen thưởng Giảng viên",
+        "org": "Đánh giá học kỳ, Bộ môn Quản trị Kinh doanh, Đại học FPT",
+        "featured": false
+      },
+      {
+        "date": "Fall 2022",
+        "title": "Giải thưởng Giảng viên Xuất sắc",
+        "org": "Đại học FPT",
+        "featured": true
+      }
+    ]
+  },
+  "certs": {
+    "title": "Chứng chỉ & phát triển chuyên môn",
+    "items": [
+      {
+        "date": "11/2026",
+        "title": "Strategic Sourcing",
+        "org": "Rutgers University"
+      },
+      {
+        "date": "11/2026",
+        "title": "ESG Investing: Setting Standards & Conducting Analysis",
+        "org": ""
+      },
+      {
+        "date": "06/2026",
+        "title": "Chứng chỉ Lãnh đạo",
+        "org": "Crestcom International"
+      },
+      {
+        "date": "11/2025",
+        "title": "Google Project Management Professional Certificate",
+        "org": "Google"
+      }
+    ],
+    "additionalTitle": "Chứng chỉ khác",
+    "additional": [
+      "Lãnh đạo nhân sự (HRCI, Macquarie University, University of Minnesota)",
+      "AI in Office",
+      "Chuyên ngành Generative AI for Educators & Teachers",
+      "Các workshop học thuật"
+    ]
+  }
+}

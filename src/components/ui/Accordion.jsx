@@ -14,7 +14,7 @@ export default function Accordion({ openLabel, closeLabel, children, className }
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((v) => !v)}
-        className="inline-flex items-center gap-2 rounded-full text-sm font-bold text-navy underline decoration-lime decoration-2 underline-offset-4 hover:decoration-navy"
+        className="inline-flex items-center gap-2 rounded-full text-sm font-bold text-navy underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy"
       >
         {open ? closeLabel : openLabel}
         <ChevronDown className={cn('size-4 transition-transform duration-300', open && 'rotate-180')} aria-hidden="true" />
