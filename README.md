@@ -4,6 +4,8 @@ Read-only, bilingual (English / Vietnamese) academic portfolio for **Vo Thi Minh
 
 Built with React 19, Vite, Tailwind CSS v4, React Router, react-i18next and Motion.
 
+> Working on this repo with an AI assistant? Start with **`PROJECT_HISTORY.md`**: decisions, timeline, open items and tool pitfalls.
+
 ## Getting started
 
 ```bash
