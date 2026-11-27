@@ -1,6 +1,10 @@
-import { BookMarked, CheckCircle2, FlaskConical } from 'lucide-react'
+import { useState } from 'react'
+import { BookMarked, CheckCircle2, ExternalLink, FlaskConical } from 'lucide-react'
 import { useContent, useDocumentTitle } from '@/hooks/useContent'
+import { SITE } from '@/config/site'
+import { cn } from '@/lib/utils'
 import { Card, Chip, IconBadge, Section, SectionHeading } from '@/components/ui/Primitives'
+import Button from '@/components/ui/Button'
 import PageHeader from '@/components/ui/PageHeader'
 import CopyButton from '@/components/ui/CopyButton'
 import Accordion from '@/components/ui/Accordion'
@@ -8,6 +12,8 @@ import Reveal from '@/components/motion/Reveal'
 
 function Publication() {
   const { t, list } = useContent('research')
+  const common = useContent('common')
+  const [abstractOpen, setAbstractOpen] = useState(false)
   return (
     <Section aria-labelledby="pub-title">
       <SectionHeading id="pub-title" title={t('publication.title')} />
@@ -22,8 +28,64 @@ function Publication() {
             {t('publication.paperTitle')}
           </h3>
           <p className="mt-3 font-semibold text-navy-700">{t('publication.authors')}</p>
+          <p className="mt-1 text-sm text-navy-600">{t('publication.affiliations')}</p>
 
-          <dl className="mt-8 grid gap-x-8 gap-y-5 border-t border-navy-100 pt-6 sm:grid-cols-2 lg:grid-cols-4">
+          <blockquote className="mt-8 border-l-4 border-lime pl-5 text-lg font-semibold leading-relaxed text-navy md:text-xl">
+            <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-lime-700">
+              {t('publication.findingLabel')}
+            </span>
+            {t('publication.finding')}
+          </blockquote>
+
+          <div className="mt-10 grid gap-10 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-navy-600">{t('publication.abstractLabel')}</h4>
+              <p className={cn('mt-3 leading-relaxed text-navy-700', !abstractOpen && 'line-clamp-6 md:line-clamp-none')}>
+                {t('publication.abstract')}
+              </p>
+              <button
+                type="button"
+                aria-expanded={abstractOpen}
+                onClick={() => setAbstractOpen((v) => !v)}
+                className="mt-2 text-sm font-bold text-navy underline decoration-lime decoration-2 underline-offset-4 md:hidden"
+              >
+                {abstractOpen ? common.t('actions.showLess') : common.t('actions.showMore')}
+              </button>
+            </div>
+
+            <div className="space-y-8 lg:col-span-5">
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-navy-600">{t('publication.methodLabel')}</h4>
+                <dl className="mt-3 grid grid-cols-3 gap-3">
+                  {list('publication.methodStats').map((s) => (
+                    <div key={s.label} className="flex flex-col rounded-xl bg-navy p-4 text-white">
+                      <dt className="order-2 mt-1 text-xs leading-snug text-navy-200">{s.label}</dt>
+                      <dd className="order-1 text-2xl font-extrabold">{s.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {list('publication.methods').map((m) => (
+                    <li key={m}>
+                      <Chip tone="soft">{m}</Chip>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-navy-600">{t('publication.keywordsLabel')}</h4>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {list('publication.keywords').map((k) => (
+                    <li key={k}>
+                      <Chip tone="lime">{k}</Chip>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <dl className="mt-10 grid gap-x-8 gap-y-5 border-t border-navy-100 pt-6 sm:grid-cols-2 lg:grid-cols-4">
             {list('publication.meta').map((row) => (
               <div key={row.label}>
                 <dt className="text-xs font-bold uppercase tracking-wider text-navy-600">{row.label}</dt>
@@ -39,6 +101,13 @@ function Publication() {
             </div>
             <p className="mt-4 text-sm leading-relaxed text-navy-700">{t('publication.citation')}</p>
           </div>
+
+          {SITE.publicationUrl && (
+            <Button href={SITE.publicationUrl} target="_blank" rel="noopener noreferrer" variant="outline" className="mt-6">
+              {t('publication.publisherLink')}
+              <ExternalLink className="size-4" aria-hidden="true" />
+            </Button>
+          )}
         </Card>
       </Reveal>
     </Section>

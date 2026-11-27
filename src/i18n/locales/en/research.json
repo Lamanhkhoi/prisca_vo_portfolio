@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Research | Prisca Vo, MBA" },
+  "meta": {
+    "title": "Research | Prisca Vo, MBA"
+  },
   "header": {
     "eyebrow": "Research",
     "title": "Research & publications",
@@ -13,13 +15,61 @@
     "authors": "Ha, M. T., & Vo, T. M. P.",
     "role": "Corresponding author",
     "meta": [
-      { "label": "Conference", "value": "IU-AGBA-ULAW International Conference, 6 July 2025" },
-      { "label": "Publisher", "value": "VNU-HCM Press" },
-      { "label": "Pages", "value": "pp. 1784-1813" },
-      { "label": "ISBN", "value": "978-632-608-802-1" }
+      {
+        "label": "Conference",
+        "value": "IU-AGBA-ULAW International Conference, 6 July 2025"
+      },
+      {
+        "label": "Publisher",
+        "value": "VNU-HCM Press"
+      },
+      {
+        "label": "Pages",
+        "value": "pp. 1784-1813"
+      },
+      {
+        "label": "ISBN",
+        "value": "978-632-608-802-1"
+      }
     ],
     "citationLabel": "Citation (APA)",
-    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1."
+    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1.",
+    "affiliations": "School of Business, International University, VNU-HCM; FPT University, Ho Chi Minh City Campus",
+    "abstractLabel": "Abstract",
+    "abstract": "Strategic sourcing has been recognized for its significance in enhancing sourcing performance across industries, including apparel. This study investigates its function within Vietnam's apparel industry and its contribution to global sourcing competitiveness, where outsourcing drives supply chain efficiency. The research measures strategic sourcing and its core components of the relationships of buyer-supplier, supplier evaluation, and sourcing performance from the perspective of multinational apparel buyers. Based on a theory-driven strategic management model integrating resource and relationship-based views, the study identifies and analyzes four key constructs. We conducted interviews and a large-scale survey of Vietnamese apparel firms, yielding 189 valid responses from 245 distributed. The model was tested using Cronbach's alpha, exploratory factor analysis (EFA), confirmatory factor analysis (CFA), and structural equation modeling (SEM). Results affirm that strategic sourcing strengthens supplier evaluation and buyer-supplier relationships, both of which contribute to improved sourcing performance with managerial implications for strategic sourcing practices in Vietnam's apparel industry.",
+    "keywordsLabel": "Keywords",
+    "keywords": [
+      "Strategic sourcing",
+      "Buyer-supplier relationships",
+      "Supplier evaluation",
+      "Sourcing performance",
+      "Vietnam"
+    ],
+    "methodLabel": "Method",
+    "methodStats": [
+      {
+        "value": "189",
+        "label": "valid survey responses"
+      },
+      {
+        "value": "245",
+        "label": "questionnaires distributed"
+      },
+      {
+        "value": "4",
+        "label": "constructs tested"
+      }
+    ],
+    "methods": [
+      "Interviews",
+      "Cronbach's alpha",
+      "EFA",
+      "CFA",
+      "SEM"
+    ],
+    "findingLabel": "Key finding",
+    "finding": "Strategic sourcing strengthens supplier evaluation and buyer-supplier relationships, and both improve sourcing performance.",
+    "publisherLink": "View on VNU-HCM Press"
   },
   "thesis": {
     "title": "MBA thesis",

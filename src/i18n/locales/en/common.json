@@ -32,7 +32,9 @@
     "readLess": "Hide summary",
     "backToTop": "Back to top",
     "viewPage": "View page",
-    "openEvidence": "Open evidence portfolio"
+    "openEvidence": "Open evidence portfolio",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "contact": {
     "title": "Contact",

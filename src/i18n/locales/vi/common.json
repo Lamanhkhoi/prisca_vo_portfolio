@@ -32,7 +32,9 @@
     "readLess": "Thu gọn tóm tắt",
     "backToTop": "Lên đầu trang",
     "viewPage": "Xem trang",
-    "openEvidence": "Mở hồ sơ minh chứng"
+    "openEvidence": "Mở hồ sơ minh chứng",
+    "showMore": "Xem thêm",
+    "showLess": "Thu gọn"
   },
   "contact": {
     "title": "Liên hệ",

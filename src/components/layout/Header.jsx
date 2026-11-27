@@ -6,15 +6,13 @@ import { Menu, X } from 'lucide-react'
 import { NAV } from '@/config/site'
 import { EASE, cn } from '@/lib/utils'
 import LanguageSwitcher from './LanguageSwitcher'
+import logoMark from '@/assets/logo-mark.png'
 
 function Brand() {
   const { t } = useTranslation()
   return (
     <Link to="/" aria-label={t('brand.home')} className="flex items-center gap-3">
-      <span className="relative grid size-10 place-items-center rounded-xl bg-navy text-sm font-extrabold text-white">
-        PV
-        <span aria-hidden="true" className="absolute -right-1 -top-1 size-3 rounded-full border-2 border-white bg-lime" />
-      </span>
+      <img src={logoMark} alt="" width="40" height="40" className="size-10 shrink-0" />
       <span className="leading-tight">
         <span className="block text-base font-bold">{t('brand.name')}</span>
         <span className="block text-[11px] font-semibold tracking-[0.24em] text-navy-600">{t('brand.suffix')}</span>

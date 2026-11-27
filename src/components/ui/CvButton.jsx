@@ -9,7 +9,7 @@ export default function CvButton({ variant = 'outline', className }) {
 
   if (SITE.cvUrl) {
     return (
-      <Button href={SITE.cvUrl} download variant={variant} className={className}>
+      <Button href={SITE.cvUrl} download="Vo-Thi-Minh-Phuong-CV.pdf" variant={variant} className={className}>
         <Download className="size-4" aria-hidden="true" />
         {t('actions.downloadCv')}
       </Button>

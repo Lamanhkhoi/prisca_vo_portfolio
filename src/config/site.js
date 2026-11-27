@@ -2,11 +2,13 @@
 
 export const SITE = {
   // Set these when the files are ready, e.g. '/files/Prisca-Vo-CV.pdf' (put the file in /public/files)
-  cvUrl: '',
+  cvUrl: '/files/Prisca-Vo-CV.pdf',
   // e.g. '/images/portrait.jpg' (put the file in /public/images)
   portraitUrl: '',
   // Link to the Evidence Portfolio (Google Drive or a PDF in /public/files)
   evidenceUrl: '',
+  // Publisher page of the 2026 conference proceedings (the full paper is not hosted here, see its copyright page)
+  publicationUrl: 'https://vnuhcmpress.edu.vn',
 }
 
 export const CONTACT = {

@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Nghiên cứu | Prisca Vo, MBA" },
+  "meta": {
+    "title": "Nghiên cứu | Prisca Vo, MBA"
+  },
   "header": {
     "eyebrow": "Nghiên cứu",
     "title": "Nghiên cứu & công bố khoa học",
@@ -13,13 +15,61 @@
     "authors": "Ha, M. T., & Vo, T. M. P.",
     "role": "Tác giả liên hệ",
     "meta": [
-      { "label": "Hội thảo", "value": "Hội thảo Quốc tế IU-AGBA-ULAW, ngày 6/7/2025" },
-      { "label": "Nhà xuất bản", "value": "NXB Đại học Quốc gia TP.HCM" },
-      { "label": "Trang", "value": "tr. 1784-1813" },
-      { "label": "ISBN", "value": "978-632-608-802-1" }
+      {
+        "label": "Hội thảo",
+        "value": "Hội thảo Quốc tế IU-AGBA-ULAW, ngày 6/7/2025"
+      },
+      {
+        "label": "Nhà xuất bản",
+        "value": "NXB Đại học Quốc gia TP.HCM"
+      },
+      {
+        "label": "Trang",
+        "value": "tr. 1784-1813"
+      },
+      {
+        "label": "ISBN",
+        "value": "978-632-608-802-1"
+      }
     ],
     "citationLabel": "Trích dẫn (APA)",
-    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1."
+    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1.",
+    "affiliations": "School of Business, Trường Đại học Quốc tế, ĐHQG TP.HCM; Đại học FPT, cơ sở TP. Hồ Chí Minh",
+    "abstractLabel": "Tóm tắt",
+    "abstract": "Tìm nguồn chiến lược được ghi nhận là yếu tố quan trọng giúp nâng cao hiệu quả tìm nguồn ở nhiều ngành, trong đó có may mặc. Nghiên cứu này xem xét vai trò của tìm nguồn chiến lược trong ngành may mặc Việt Nam và đóng góp của nó vào năng lực cạnh tranh tìm nguồn toàn cầu, nơi thuê ngoài là động lực tạo ra hiệu quả chuỗi cung ứng. Nghiên cứu đo lường tìm nguồn chiến lược cùng các thành phần cốt lõi gồm quan hệ người mua và nhà cung cấp, đánh giá nhà cung cấp và hiệu quả tìm nguồn, từ góc nhìn của các nhà mua hàng may mặc đa quốc gia. Dựa trên mô hình quản trị chiến lược kết hợp quan điểm dựa trên nguồn lực và dựa trên quan hệ, nghiên cứu xác định và phân tích bốn khái niệm chính. Nhóm tác giả thực hiện phỏng vấn và khảo sát quy mô lớn các doanh nghiệp may mặc Việt Nam, thu được 189 phản hồi hợp lệ trên 245 phiếu phát ra. Mô hình được kiểm định bằng Cronbach's alpha, phân tích nhân tố khám phá (EFA), phân tích nhân tố khẳng định (CFA) và mô hình cấu trúc tuyến tính (SEM). Kết quả khẳng định tìm nguồn chiến lược củng cố việc đánh giá nhà cung cấp và quan hệ người mua và nhà cung cấp, cả hai đều góp phần nâng cao hiệu quả tìm nguồn, đồng thời đưa ra hàm ý quản trị cho hoạt động tìm nguồn chiến lược trong ngành may mặc Việt Nam.",
+    "keywordsLabel": "Từ khoá",
+    "keywords": [
+      "Tìm nguồn chiến lược",
+      "Quan hệ người mua và nhà cung cấp",
+      "Đánh giá nhà cung cấp",
+      "Hiệu quả tìm nguồn",
+      "Việt Nam"
+    ],
+    "methodLabel": "Phương pháp",
+    "methodStats": [
+      {
+        "value": "189",
+        "label": "phản hồi khảo sát hợp lệ"
+      },
+      {
+        "value": "245",
+        "label": "phiếu khảo sát phát ra"
+      },
+      {
+        "value": "4",
+        "label": "khái niệm được kiểm định"
+      }
+    ],
+    "methods": [
+      "Phỏng vấn",
+      "Cronbach's alpha",
+      "EFA",
+      "CFA",
+      "SEM"
+    ],
+    "findingLabel": "Kết quả chính",
+    "finding": "Tìm nguồn chiến lược củng cố việc đánh giá nhà cung cấp và quan hệ người mua và nhà cung cấp, và cả hai đều nâng cao hiệu quả tìm nguồn.",
+    "publisherLink": "Xem tại NXB ĐHQG TP.HCM"
   },
   "thesis": {
     "title": "Luận văn MBA",
