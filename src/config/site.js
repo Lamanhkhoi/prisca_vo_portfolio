@@ -1,12 +1,9 @@
 // Values that do not change with language. Text lives in src/i18n/locales.
 
 export const SITE = {
-  // Set these when the files are ready, e.g. '/files/Prisca-Vo-CV.pdf' (put the file in /public/files)
+  // Files live in /public: put the file there and set the path, e.g. '/files/Prisca-Vo-CV.pdf'
   cvUrl: '/files/Prisca-Vo-CV.pdf',
-  // e.g. '/images/portrait.jpg' (put the file in /public/images)
   portraitUrl: '/images/portrait.jpg',
-  // Link to the Evidence Portfolio (Google Drive or a PDF in /public/files)
-  evidenceUrl: '',
   // Publisher page of the 2026 conference proceedings (the full paper is not hosted here, see its copyright page)
   publicationUrl: 'https://vnuhcmpress.edu.vn',
 }
@@ -21,9 +18,41 @@ export const CONTACT = {
 
 export const NAV = [
   { path: '/', key: 'home' },
-  { path: '/about', key: 'about' },
+  { path: '/teaching', key: 'teaching' },
   { path: '/research', key: 'research' },
-  { path: '/talks-events', key: 'talks' },
-  { path: '/recognition', key: 'recognition' },
-  { path: '/other', key: 'other' },
+  { path: '/industry', key: 'industry' },
+  { path: '/talks', key: 'talks' },
+  { path: '/evidence', key: 'evidence' },
 ]
+
+export const INDUSTRY_ORGS = [
+  'Walmart Global Sourcing',
+  'Li & Fung',
+  'William E. Connor',
+  'Decathlon',
+  'Bioworld Merchandising',
+  'Goldbug',
+  'Bumin Corporation',
+  'PHTSO',
+]
+
+/**
+ * Evidence scans, keyed by evidence code (text is in locales/<lang>/evidence.json).
+ * thumb: small preview image in /public/evidence, file: full scan or PDF opened on click.
+ * Example: 'E-04': { thumb: '/evidence/E-04.jpg', file: '/evidence/E-04.pdf' }
+ */
+export const EVIDENCE_FILES = {
+  'E-01': { thumb: '', file: '' },
+  'E-02': { thumb: '', file: '' },
+  'E-03': { thumb: '', file: '' },
+  'E-04': { thumb: '', file: '' },
+  'E-05': { thumb: '', file: '' },
+  'E-06': { thumb: '', file: '' },
+  'E-07': { thumb: '', file: '' },
+  'E-08': { thumb: '', file: '' },
+  'E-09': { thumb: '', file: '' },
+  'E-10': { thumb: '', file: '' },
+  'E-11': { thumb: '', file: '' },
+  'E-12': { thumb: '', file: '' },
+  'E-13': { thumb: '', file: '' },
+}

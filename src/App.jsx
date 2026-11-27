@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import RootLayout from '@/layouts/RootLayout'
 import HomePage from '@/pages/HomePage'
-import AboutPage from '@/pages/AboutPage'
+import TeachingPage from '@/pages/TeachingPage'
 import ResearchPage from '@/pages/ResearchPage'
-import TalksEventsPage from '@/pages/TalksEventsPage'
-import RecognitionPage from '@/pages/RecognitionPage'
-import OtherPage from '@/pages/OtherPage'
+import IndustryPage from '@/pages/IndustryPage'
+import TalksPage from '@/pages/TalksPage'
+import EvidencePage from '@/pages/EvidencePage'
 import NotFoundPage from '@/pages/NotFoundPage'
 
 const router = createBrowserRouter([
@@ -13,11 +13,16 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: '/', element: <HomePage /> },
-      { path: '/about', element: <AboutPage /> },
+      { path: '/teaching', element: <TeachingPage /> },
       { path: '/research', element: <ResearchPage /> },
-      { path: '/talks-events', element: <TalksEventsPage /> },
-      { path: '/recognition', element: <RecognitionPage /> },
-      { path: '/other', element: <OtherPage /> },
+      { path: '/industry', element: <IndustryPage /> },
+      { path: '/talks', element: <TalksPage /> },
+      { path: '/evidence', element: <EvidencePage /> },
+      // Old URLs from the first version
+      { path: '/about', element: <Navigate to="/" replace /> },
+      { path: '/recognition', element: <Navigate to="/teaching" replace /> },
+      { path: '/talks-events', element: <Navigate to="/talks" replace /> },
+      { path: '/other', element: <Navigate to="/industry" replace /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

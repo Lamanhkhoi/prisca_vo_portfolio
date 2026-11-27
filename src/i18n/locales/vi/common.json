@@ -1,15 +1,15 @@
 {
   "nav": {
     "home": "Trang chủ",
-    "about": "Giới thiệu",
     "research": "Nghiên cứu",
-    "talks": "Hội thảo & Sự kiện",
-    "recognition": "Ghi nhận",
-    "other": "Khác",
+    "talks": "Hội thảo & Cộng đồng",
     "primary": "Điều hướng chính",
     "openMenu": "Mở menu",
     "closeMenu": "Đóng menu",
-    "skip": "Bỏ qua đến nội dung"
+    "skip": "Bỏ qua đến nội dung",
+    "teaching": "Giảng dạy",
+    "industry": "Doanh nghiệp",
+    "evidence": "Minh chứng"
   },
   "lang": {
     "label": "Ngôn ngữ",
@@ -19,8 +19,8 @@
     "viName": "Tiếng Việt"
   },
   "brand": {
-    "name": "Prisca Vo",
-    "suffix": "MBA",
+    "name": "Prisca Vo, MBA",
+    "suffix": "Giảng viên & Trưởng bộ môn",
     "home": "Prisca Vo, trang chủ"
   },
   "actions": {

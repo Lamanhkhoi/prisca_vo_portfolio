@@ -22,7 +22,7 @@ function Publication() {
           <div className="flex flex-wrap items-center gap-2">
             <Chip tone="navy">{t('publication.type')}</Chip>
             <Chip tone="outline">{t('publication.year')}</Chip>
-            <Chip tone="lime">{t('publication.role')}</Chip>
+            <Chip tone="gold">{t('publication.role')}</Chip>
           </div>
           <h3 className="mt-5 max-w-3xl text-2xl font-extrabold leading-tight tracking-tight md:text-3xl">
             {t('publication.paperTitle')}
@@ -30,8 +30,8 @@ function Publication() {
           <p className="mt-3 font-semibold text-navy-700">{t('publication.authors')}</p>
           <p className="mt-1 text-sm text-navy-600">{t('publication.affiliations')}</p>
 
-          <blockquote className="mt-8 border-l-4 border-lime pl-5 text-lg font-semibold leading-relaxed text-navy md:text-xl">
-            <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-lime-700">
+          <blockquote className="mt-8 border-l-4 border-gold pl-5 text-lg font-semibold leading-relaxed text-navy md:text-xl">
+            <span className="mb-1 block text-xs font-bold uppercase tracking-wider text-gold-dark">
               {t('publication.findingLabel')}
             </span>
             {t('publication.finding')}
@@ -47,7 +47,7 @@ function Publication() {
                 type="button"
                 aria-expanded={abstractOpen}
                 onClick={() => setAbstractOpen((v) => !v)}
-                className="mt-2 text-sm font-bold text-navy underline decoration-lime decoration-2 underline-offset-4 md:hidden"
+                className="mt-2 text-sm font-bold text-navy underline decoration-gold decoration-2 underline-offset-4 md:hidden"
               >
                 {abstractOpen ? common.t('actions.showLess') : common.t('actions.showMore')}
               </button>
@@ -77,7 +77,7 @@ function Publication() {
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {list('publication.keywords').map((k) => (
                     <li key={k}>
-                      <Chip tone="lime">{k}</Chip>
+                      <Chip tone="gold">{k}</Chip>
                     </li>
                   ))}
                 </ul>
@@ -131,7 +131,7 @@ function Projects() {
 
         <Reveal delay={0.08} className="lg:col-span-3">
           <Card className="h-full border-navy bg-navy text-white">
-            <span className="grid size-11 place-items-center rounded-xl bg-lime text-navy">
+            <span className="grid size-11 place-items-center rounded-xl bg-gold text-navy">
               <FlaskConical className="size-5" aria-hidden="true" />
             </span>
             <h2 className="mt-5 text-sm font-bold uppercase tracking-wider text-navy-200">{t('phd.title')}</h2>
@@ -166,7 +166,7 @@ function Interests() {
         {list('interests.items').map((item, i) => (
           <Reveal as="li" key={item} delay={i * 0.05}>
             <div className="flex h-full items-start gap-3 rounded-2xl border border-navy-100 bg-white p-5">
-              <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-lime-700" aria-hidden="true" />
+              <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-gold-dark" aria-hidden="true" />
               <span className="font-semibold leading-snug">{item}</span>
             </div>
           </Reveal>

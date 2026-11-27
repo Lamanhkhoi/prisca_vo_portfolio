@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "Minh chứng | Prisca Vo, MBA"
+  },
+  "header": {
+    "eyebrow": "Minh chứng",
+    "title": "Hồ sơ minh chứng",
+    "lead": "Văn bằng, minh chứng công bố, giải thưởng giảng dạy và chứng chỉ, mỗi mục có một mã minh chứng."
+  },
+  "filterLabel": "Lọc theo loại",
+  "filters": {
+    "all": "Tất cả",
+    "degree": "Văn bằng",
+    "publication": "Công bố",
+    "award": "Giải thưởng",
+    "certificate": "Chứng chỉ",
+    "event": "Sự kiện"
+  },
+  "pending": "Bản scan sẽ được bổ sung",
+  "open": "Mở tài liệu",
+  "codeLabel": "Mã minh chứng",
+  "note": "Mã minh chứng khớp với Hồ sơ minh chứng (Evidence Portfolio) đi kèm.",
+  "items": [
+    {
+      "code": "E-01",
+      "type": "degree",
+      "title": "Thạc sĩ Quản trị Kinh doanh (MBA)",
+      "issuer": "Maastricht School of Management",
+      "date": "2018"
+    },
+    {
+      "code": "E-02",
+      "type": "degree",
+      "title": "Cử nhân Tiếng Anh và Hội hoạ",
+      "issuer": "Trường Đại học Sư phạm Huế",
+      "date": "1997"
+    },
+    {
+      "code": "E-03",
+      "type": "publication",
+      "title": "Strategic sourcing in the apparel industry in Vietnam",
+      "issuer": "Kỷ yếu IU-AGBA-ULAW, NXB ĐHQG TP.HCM",
+      "date": "2026"
+    },
+    {
+      "code": "E-04",
+      "type": "award",
+      "title": "Giải thưởng Giảng viên Xuất sắc",
+      "issuer": "Đại học FPT",
+      "date": "Summer 2024"
+    },
+    {
+      "code": "E-05",
+      "type": "award",
+      "title": "Giải thưởng Giảng viên Xuất sắc",
+      "issuer": "Đại học FPT",
+      "date": "Fall 2022"
+    },
+    {
+      "code": "E-06",
+      "type": "award",
+      "title": "Khen thưởng Giảng viên",
+      "issuer": "Đại học FPT, Bộ môn Quản trị Kinh doanh",
+      "date": "Spring 2023"
+    },
+    {
+      "code": "E-07",
+      "type": "award",
+      "title": "Giấy chứng nhận Tri ân",
+      "issuer": "VALOMA",
+      "date": "06/2024"
+    },
+    {
+      "code": "E-08",
+      "type": "award",
+      "title": "Giấy chứng nhận Ghi nhận, cuộc thi LogiChain",
+      "issuer": "Tổ chức Giáo dục FPT",
+      "date": "2024"
+    },
+    {
+      "code": "E-09",
+      "type": "certificate",
+      "title": "Strategic Sourcing",
+      "issuer": "Rutgers University",
+      "date": "11/2026"
+    },
+    {
+      "code": "E-10",
+      "type": "certificate",
+      "title": "ESG Investing: Setting Standards & Conducting Analysis",
+      "issuer": "",
+      "date": "11/2026"
+    },
+    {
+      "code": "E-11",
+      "type": "certificate",
+      "title": "Chứng chỉ Lãnh đạo",
+      "issuer": "Crestcom International",
+      "date": "06/2026"
+    },
+    {
+      "code": "E-12",
+      "type": "certificate",
+      "title": "Google Project Management Professional Certificate",
+      "issuer": "Google",
+      "date": "11/2025"
+    },
+    {
+      "code": "E-13",
+      "type": "event",
+      "title": "Workshop và tham quan thực tế HCMC Export 2026",
+      "issuer": "WTC Expo, TP. Hồ Chí Minh",
+      "date": "10/2026"
+    }
+  ]
+}

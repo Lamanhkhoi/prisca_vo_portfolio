@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "Evidence | Prisca Vo, MBA"
+  },
+  "header": {
+    "eyebrow": "Evidence",
+    "title": "Evidence portfolio",
+    "lead": "Degrees, publication proof, teaching awards and certificates, each indexed with an evidence code."
+  },
+  "filterLabel": "Filter by type",
+  "filters": {
+    "all": "All",
+    "degree": "Degrees",
+    "publication": "Publication",
+    "award": "Awards",
+    "certificate": "Certificates",
+    "event": "Events"
+  },
+  "pending": "Scan to be added",
+  "open": "Open document",
+  "codeLabel": "Evidence code",
+  "note": "Evidence codes match the accompanying Evidence Portfolio.",
+  "items": [
+    {
+      "code": "E-01",
+      "type": "degree",
+      "title": "Master of Business Administration (MBA)",
+      "issuer": "Maastricht School of Management",
+      "date": "2018"
+    },
+    {
+      "code": "E-02",
+      "type": "degree",
+      "title": "Bachelor's Degree in English and Painting",
+      "issuer": "Hue University of Education",
+      "date": "1997"
+    },
+    {
+      "code": "E-03",
+      "type": "publication",
+      "title": "Strategic sourcing in the apparel industry in Vietnam",
+      "issuer": "IU-AGBA-ULAW Proceedings, VNU-HCM Press",
+      "date": "2026"
+    },
+    {
+      "code": "E-04",
+      "type": "award",
+      "title": "Excellent Lecturer Award",
+      "issuer": "FPT University",
+      "date": "Summer 2024"
+    },
+    {
+      "code": "E-05",
+      "type": "award",
+      "title": "Excellent Lecturer Award",
+      "issuer": "FPT University",
+      "date": "Fall 2022"
+    },
+    {
+      "code": "E-06",
+      "type": "award",
+      "title": "Lecturer Commendation",
+      "issuer": "FPT University, Business Administration",
+      "date": "Spring 2023"
+    },
+    {
+      "code": "E-07",
+      "type": "award",
+      "title": "Certificate of Appreciation",
+      "issuer": "VALOMA",
+      "date": "06/2024"
+    },
+    {
+      "code": "E-08",
+      "type": "award",
+      "title": "Certificate of Recognition, LogiChain competition",
+      "issuer": "FPT Education",
+      "date": "2024"
+    },
+    {
+      "code": "E-09",
+      "type": "certificate",
+      "title": "Strategic Sourcing",
+      "issuer": "Rutgers University",
+      "date": "11/2026"
+    },
+    {
+      "code": "E-10",
+      "type": "certificate",
+      "title": "ESG Investing: Setting Standards & Conducting Analysis",
+      "issuer": "",
+      "date": "11/2026"
+    },
+    {
+      "code": "E-11",
+      "type": "certificate",
+      "title": "Leadership Certification",
+      "issuer": "Crestcom International",
+      "date": "06/2026"
+    },
+    {
+      "code": "E-12",
+      "type": "certificate",
+      "title": "Google Project Management Professional Certificate",
+      "issuer": "Google",
+      "date": "11/2025"
+    },
+    {
+      "code": "E-13",
+      "type": "event",
+      "title": "HCMC Export 2026 workshop and field visit",
+      "issuer": "WTC Expo, Ho Chi Minh City",
+      "date": "10/2026"
+    }
+  ]
+}

@@ -1,22 +1,20 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
-import { ArrowRight, ArrowUpRight, Award, BookOpen, GraduationCap, MapPin, Users } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Award, Building2, MapPin, Star } from 'lucide-react'
 import { useContent, useDocumentTitle } from '@/hooks/useContent'
 import { NAV } from '@/config/site'
 import { EASE } from '@/lib/utils'
-import { Card, Chip, Container, IconBadge, Section, SectionHeading } from '@/components/ui/Primitives'
+import { Card, Chip, Container, Label, Section, SectionHeading } from '@/components/ui/Primitives'
 import Button from '@/components/ui/Button'
 import CvButton from '@/components/ui/CvButton'
 import Portrait from '@/components/ui/Portrait'
 import Reveal from '@/components/motion/Reveal'
 import CountUp from '@/components/motion/CountUp'
 
-const ICONS = { graduation: GraduationCap, book: BookOpen, award: Award, users: Users }
-
 const rise = (delay) => ({
-  initial: { opacity: 0, y: 22 },
+  initial: { opacity: 0, y: 18 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay, ease: EASE },
+  transition: { duration: 0.65, delay, ease: EASE },
 })
 
 function Hero() {
@@ -24,49 +22,49 @@ function Hero() {
   const common = useContent('common')
 
   return (
-    <section className="relative overflow-hidden">
-      <div aria-hidden="true" className="absolute inset-y-0 right-0 hidden w-[38%] bg-navy-50 lg:block" />
-      <Container className="relative grid items-center gap-14 py-14 md:py-20 lg:grid-cols-12 lg:gap-10 lg:py-24">
-        <div className="lg:col-span-7 xl:pr-4">
-          <motion.p {...rise(0)} className="inline-flex items-center gap-2 rounded-full bg-lime-100 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-lime-700">
-            <span aria-hidden="true" className="size-2 rounded-full bg-lime" />
+    <section className="relative overflow-hidden bg-navy-950 text-white">
+      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(55%_80%_at_85%_10%,rgba(201,161,90,0.18),transparent_60%)]" />
+      <Container className="relative grid items-center gap-10 pb-24 pt-12 md:pb-28 md:pt-16 lg:grid-cols-12 lg:gap-12">
+        <div className="lg:col-span-7">
+          <motion.p {...rise(0)} className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-gold-light">
+            <span aria-hidden="true" className="h-px w-8 bg-gold-light" />
             {t('hero.eyebrow')}
           </motion.p>
-          <motion.h1 {...rise(0.08)} className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.35rem] xl:text-[3.6rem]">
+          <motion.h1 {...rise(0.06)} className="mt-5 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]">
             {t('hero.name')}
-            <span className="mt-2 block text-2xl font-bold text-navy-600 sm:text-3xl">{t('hero.alias')}</span>
+            <span className="mt-2 block text-xl font-semibold text-navy-200 sm:text-2xl">{t('hero.alias')}</span>
           </motion.h1>
-          <motion.p {...rise(0.16)} className="mt-5 text-base font-bold uppercase tracking-wide text-navy-700 sm:text-lg">
+          <motion.p {...rise(0.12)} className="mt-5 text-sm font-bold uppercase tracking-[0.12em] text-gold-light sm:text-base">
             {t('hero.role')}
           </motion.p>
-          <motion.ul {...rise(0.22)} className="mt-5 flex flex-wrap gap-2">
+          <motion.p {...rise(0.18)} className="mt-4 max-w-xl leading-relaxed text-navy-200 md:text-lg">
+            {t('hero.intro')}
+          </motion.p>
+          <motion.ul {...rise(0.22)} className="mt-6 flex flex-wrap gap-2">
             {list('hero.fields').map((field) => (
               <li key={field}>
-                <Chip>{field}</Chip>
+                <Chip tone="dark">{field}</Chip>
               </li>
             ))}
           </motion.ul>
-          <motion.p {...rise(0.28)} className="mt-6 max-w-xl text-base leading-relaxed text-navy-600 md:text-lg">
-            {t('hero.intro')}
-          </motion.p>
-          <motion.div {...rise(0.34)} className="mt-8 flex flex-wrap items-center gap-3">
-            <Button to="/research">
+          <motion.div {...rise(0.28)} className="mt-8 flex flex-wrap items-center gap-3">
+            <Button to="/research" variant="gold">
               {t('hero.cta')}
               <ArrowRight className="size-4" aria-hidden="true" />
             </Button>
-            <CvButton />
+            <CvButton variant="light" />
+            <span className="ml-1 flex items-center gap-2 text-sm text-navy-300">
+              <MapPin className="size-4 text-gold-light" aria-hidden="true" />
+              {common.t('contact.location')}
+            </span>
           </motion.div>
-          <motion.p {...rise(0.4)} className="mt-6 flex items-center gap-2 text-sm font-medium text-navy-600">
-            <MapPin className="size-4 text-lime-700" aria-hidden="true" />
-            {common.t('contact.location')}
-          </motion.p>
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, delay: 0.15, ease: EASE }}
-          className="mx-auto w-full max-w-sm lg:col-span-5 lg:max-w-none lg:pl-10"
+          transition={{ duration: 0.85, delay: 0.12, ease: EASE }}
+          className="mx-auto w-full max-w-[19rem] lg:col-span-5 lg:mr-0 lg:max-w-[22rem]"
         >
           <Portrait />
         </motion.div>
@@ -78,19 +76,18 @@ function Hero() {
 function Stats() {
   const { t, list } = useContent('home')
   return (
-    <section aria-labelledby="stats-title" className="py-6">
+    <section aria-labelledby="stats-title" className="relative z-10 -mt-14">
       <Container>
-        <Reveal className="rounded-3xl bg-navy px-6 py-10 text-white md:px-12 md:py-12">
+        <Reveal className="rounded-xl border border-navy-100 bg-white shadow-[0_24px_50px_-30px_rgba(10,35,56,0.55)]">
           <h2 id="stats-title" className="sr-only">
             {t('stats.title')}
           </h2>
-          <dl className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <dl className="grid grid-cols-2 divide-navy-100 lg:grid-cols-4 lg:divide-x">
             {list('stats.items').map((item, i) => (
-              <div key={i} className="flex flex-col lg:border-l lg:border-white/15 lg:pl-6 lg:first:border-0 lg:first:pl-0">
-                <dt className="order-2 mt-3 text-sm leading-snug text-navy-200">{item.label}</dt>
-                <dd className="text-4xl font-extrabold tracking-tight md:text-5xl">
+              <div key={i} className="flex flex-col border-navy-100 p-5 even:border-l md:p-7 [&:nth-child(n+3)]:border-t lg:[&:nth-child(n+3)]:border-t-0 lg:even:border-l-0">
+                <dt className="order-2 mt-2 text-[13px] leading-snug text-navy-600">{item.label}</dt>
+                <dd className="order-1 text-3xl font-extrabold tracking-tight text-navy md:text-[2.6rem]">
                   <CountUp value={item.value} decimals={item.decimals} suffix={item.suffix} />
-                  <span aria-hidden="true" className="mt-3 block h-1 w-8 rounded-full bg-lime" />
                 </dd>
               </div>
             ))}
@@ -101,23 +98,127 @@ function Stats() {
   )
 }
 
-function Highlights() {
+function Profile() {
   const { t, list } = useContent('home')
+  const common = useContent('common')
+
   return (
-    <Section aria-labelledby="highlights-title">
-      <SectionHeading id="highlights-title" title={t('highlights.title')} />
-      <div className="grid gap-5 md:grid-cols-2">
-        {list('highlights.items').map((item, i) => (
-          <Reveal key={item.title} delay={i * 0.06}>
-            <Card interactive className="flex h-full gap-5">
-              <IconBadge icon={ICONS[item.icon] ?? Award} />
-              <div>
-                <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
-                <p className="mt-2 leading-relaxed text-navy-600">{item.text}</p>
-              </div>
+    <Section aria-labelledby="profile-title">
+      <div className="grid gap-10 lg:grid-cols-12">
+        <div className="lg:col-span-7">
+          <SectionHeading id="profile-title" title={t('profile.title')} />
+          <Reveal>
+            <p className="leading-relaxed text-navy-700 md:text-[17px]">{t('profile.text')}</p>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <div className="mt-8 rounded-xl border-l-2 border-gold bg-navy-50 p-5 md:p-6">
+              <Label>{t('objective.title')}</Label>
+              <p className="mt-2 flex items-center gap-2 text-sm font-bold text-navy">
+                <Building2 className="size-4 text-gold-dark" aria-hidden="true" />
+                {t('objective.org')}
+              </p>
+              <p className="mt-3 text-[15px] leading-relaxed text-navy-700">{t('objective.text')}</p>
+            </div>
+          </Reveal>
+        </div>
+
+        <aside className="space-y-5 lg:col-span-5">
+          <Reveal delay={0.06}>
+            <Card>
+              <Label as="h3">{t('education.title')}</Label>
+              <ol className="mt-4 space-y-4">
+                {list('education.items').map((e) => (
+                  <li key={e.year} className="grid grid-cols-[3.25rem_1fr] gap-3">
+                    <span className="text-sm font-extrabold text-gold-dark">{e.year}</span>
+                    <span>
+                      <span className="block font-bold leading-snug">{e.degree}</span>
+                      <span className="mt-0.5 block text-sm text-navy-600">{e.school}</span>
+                    </span>
+                  </li>
+                ))}
+              </ol>
             </Card>
           </Reveal>
-        ))}
+          <Reveal delay={0.1}>
+            <Card>
+              <Label as="h3">{t('languages.title')}</Label>
+              <dl className="mt-4 space-y-3">
+                {list('languages.items').map((l) => (
+                  <div key={l.name}>
+                    <dt className="font-bold">{l.name}</dt>
+                    <dd className="mt-0.5 text-sm leading-relaxed text-navy-600">{l.level}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="mt-4 border-t border-navy-100 pt-4 text-sm font-semibold text-navy-700">{common.t('contact.location')}</p>
+            </Card>
+          </Reveal>
+        </aside>
+      </div>
+    </Section>
+  )
+}
+
+function Featured() {
+  const { t } = useContent('home')
+  const research = useContent('research')
+  const teaching = useContent('teaching')
+  const allAwards = teaching.list('awards.items')
+  const awards = [...allAwards.filter((a) => a.featured), ...allAwards.filter((a) => !a.featured)].slice(0, 3)
+
+  return (
+    <Section tone="muted">
+      <div className="grid gap-5 lg:grid-cols-12">
+        <Reveal className="lg:col-span-7">
+          <Link
+            to="/research"
+            className="group flex h-full flex-col rounded-xl border border-navy-100 bg-white p-6 transition duration-300 hover:border-navy-300 hover:shadow-[0_18px_40px_-24px_rgba(10,35,56,0.45)] md:p-8"
+          >
+            <Label>{t('featured.title')}</Label>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Chip tone="navy">{research.t('publication.type')}</Chip>
+              <Chip>{research.t('publication.year')}</Chip>
+              <Chip tone="gold">{research.t('publication.role')}</Chip>
+            </div>
+            <h3 className="mt-4 text-2xl font-extrabold leading-tight tracking-tight">{research.t('publication.paperTitle')}</h3>
+            <p className="mt-2 text-sm font-semibold text-navy-600">{research.t('publication.authors')}</p>
+            <p className="mt-5 border-l-2 border-gold pl-4 leading-relaxed text-navy-700">{research.t('publication.finding')}</p>
+            <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold">
+              {t('featured.cta')}
+              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+            </span>
+          </Link>
+        </Reveal>
+
+        <Reveal delay={0.06} className="lg:col-span-5">
+          <Link
+            to="/teaching"
+            className="group flex h-full flex-col rounded-xl bg-navy p-6 text-white transition duration-300 hover:bg-navy-800 md:p-8"
+          >
+            <Label className="text-gold-light">{t('recognitionTeaser.title')}</Label>
+            <ul className="mt-5 space-y-4">
+              {awards.map((a) => (
+                <li key={`${a.date}-${a.title}`} className="flex gap-3">
+                  {a.featured ? (
+                    <Star className="mt-0.5 size-5 shrink-0 fill-gold-light text-gold-light" aria-hidden="true" />
+                  ) : (
+                    <Award className="mt-0.5 size-5 shrink-0 text-gold-light" aria-hidden="true" />
+                  )}
+                  <span>
+                    <span className="block font-bold leading-snug">{a.title}</span>
+                    <span className="mt-0.5 block text-sm text-navy-300">
+                      {a.org} · {a.date}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-gold-light">
+              {t('recognitionTeaser.cta')}
+              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+            </span>
+          </Link>
+        </Reveal>
       </div>
     </Section>
   )
@@ -129,30 +230,22 @@ function Explore() {
   const pages = NAV.filter((item) => item.key !== 'home')
 
   return (
-    <Section aria-labelledby="explore-title" className="bg-navy-50">
+    <Section aria-labelledby="explore-title">
       <SectionHeading id="explore-title" title={t('explore.title')} />
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
+      <ul className="grid gap-px overflow-hidden rounded-xl border border-navy-100 bg-navy-100 sm:grid-cols-2 lg:grid-cols-5">
         {pages.map((page, i) => (
-          <Reveal key={page.key} delay={i * 0.05} className={i < 2 ? 'lg:col-span-3' : 'lg:col-span-2'}>
-            <Link
-              to={page.path}
-              className="group flex h-full flex-col justify-between gap-6 rounded-2xl border border-navy-100 bg-white p-6 transition duration-300 ease-(--ease-brand) hover:-translate-y-1 hover:border-navy hover:shadow-[0_22px_44px_-26px_rgba(10,35,56,0.45)]"
-            >
-              <div>
-                <p className="text-xs font-bold tracking-[0.18em] text-navy-600">{String(i + 1).padStart(2, '0')}</p>
-                <h3 className="mt-3 text-xl font-bold">{common.t(`nav.${page.key}`)}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-navy-600">{t(`explore.items.${page.key}`)}</p>
-              </div>
-              <span className="inline-flex items-center gap-2 text-sm font-bold">
-                {common.t('actions.viewPage')}
-                <span className="grid size-8 place-items-center rounded-full bg-navy-50 transition duration-300 group-hover:bg-lime">
-                  <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:rotate-45" aria-hidden="true" />
-                </span>
+          <Reveal as="li" key={page.key} delay={i * 0.04} className="bg-white">
+            <Link to={page.path} className="group flex h-full flex-col gap-3 p-5 transition-colors hover:bg-navy-50">
+              <span className="flex items-center justify-between">
+                <span className="text-xs font-bold text-gold-dark">{String(i + 1).padStart(2, '0')}</span>
+                <ArrowUpRight className="size-4 text-navy-400 transition duration-300 group-hover:rotate-45 group-hover:text-navy" aria-hidden="true" />
               </span>
+              <span className="font-bold">{common.t(`nav.${page.key}`)}</span>
+              <span className="text-sm leading-relaxed text-navy-600">{t(`explore.items.${page.key}`)}</span>
             </Link>
           </Reveal>
         ))}
-      </div>
+      </ul>
     </Section>
   )
 }
@@ -165,7 +258,8 @@ export default function HomePage() {
     <>
       <Hero />
       <Stats />
-      <Highlights />
+      <Profile />
+      <Featured />
       <Explore />
     </>
   )

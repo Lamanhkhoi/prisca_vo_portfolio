@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Teaching & Recognition | Prisca Vo, MBA"
+  },
+  "header": {
+    "eyebrow": "Teaching",
+    "title": "Teaching & recognition",
+    "lead": "Lecturer and Subject Leader at FPT University since 2022, invited lecturer at CFVG and Greenwich Vietnam, recognised twice as an Excellent Lecturer."
+  },
+  "appointments": {
+    "title": "Teaching appointments",
+    "items": [
+      {
+        "period": "05/2022 - Present",
+        "role": "Lecturer, Business Administration & Subject Leader",
+        "org": "FPT University, Ho Chi Minh City (Faculty of Economics and Law)",
+        "text": "Integrates practitioner case studies, role-based simulations and real sourcing scenarios to build analytical reasoning and managerial judgment. Co-organised the LogiChain student competition."
+      },
+      {
+        "period": "04/2022 - 12/2022",
+        "role": "Invited Practitioner Lecturer & Master's Thesis Panel Member",
+        "org": "CFVG, Master in Supply Chain Management",
+        "text": "Delivered 'Operations Strategy and Supply Chain Management' (Focus Hours module, 04/2022) and served on the Master's Thesis Advisory and Assessment Panel."
+      },
+      {
+        "period": "2022 - 2023",
+        "role": "Visiting Lecturer",
+        "org": "Greenwich Vietnam, Ho Chi Minh City",
+        "text": "Taught 'Organisational Behaviour: Leadership & Management Skills'."
+      },
+      {
+        "period": "20 - 22/06/2024",
+        "role": "Faculty Development Trainer",
+        "org": "Vietnam Association for Logistics Young Talent Development (VALOMA)",
+        "text": "Trained early-career university lecturers from Central and Southern Viet Nam in Global Sourcing and Supply Chain teaching methodologies."
+      }
+    ]
+  },
+  "courses": {
+    "title": "Courses taught",
+    "total": "{{count}} courses",
+    "groups": [
+      {
+        "name": "Core Supply Chain, Sourcing, Trade & International Business",
+        "tier": "Tier 1",
+        "items": [
+          "Global Supply Chain Management",
+          "Procurement and Global Sourcing",
+          "Logistics and Transportation Management",
+          "Air / Sea Transport",
+          "Import & Export Operations",
+          "International Business Strategy",
+          "Cross-Cultural Management"
+        ]
+      },
+      {
+        "name": "Marketing, Negotiation, Organisational/HR & Enterprise Management",
+        "tier": "Tier 2",
+        "items": [
+          "Marketing",
+          "Negotiation",
+          "Human Resource Management",
+          "Organisational Behaviour / Leadership & Management Skills",
+          "Entrepreneurship",
+          "Introduction to Management"
+        ]
+      }
+    ]
+  },
+  "awards": {
+    "title": "Honours & awards",
+    "items": [
+      {
+        "date": "Summer 2024",
+        "title": "Excellent Lecturer Award",
+        "org": "FPT University",
+        "featured": true
+      },
+      {
+        "date": "06/2024",
+        "title": "Certificate of Appreciation",
+        "org": "Vietnam Association for Logistics Young Talent Development (VALOMA)",
+        "featured": false
+      },
+      {
+        "date": "2024",
+        "title": "Certificate of Recognition",
+        "org": "FPT Education, for the successful organisation of the LogiChain student competition",
+        "featured": false
+      },
+      {
+        "date": "Spring 2023",
+        "title": "Lecturer Commendation",
+        "org": "Semester Evaluation, Business Administration Subject Group, FPT University",
+        "featured": false
+      },
+      {
+        "date": "Fall 2022",
+        "title": "Excellent Lecturer Award",
+        "org": "FPT University",
+        "featured": true
+      }
+    ]
+  },
+  "certs": {
+    "title": "Certifications & professional development",
+    "items": [
+      {
+        "date": "11/2026",
+        "title": "Strategic Sourcing",
+        "org": "Rutgers University"
+      },
+      {
+        "date": "11/2026",
+        "title": "ESG Investing: Setting Standards & Conducting Analysis",
+        "org": ""
+      },
+      {
+        "date": "06/2026",
+        "title": "Leadership Certification",
+        "org": "Crestcom International"
+      },
+      {
+        "date": "11/2025",
+        "title": "Google Project Management Professional Certificate",
+        "org": "Google"
+      }
+    ],
+    "additionalTitle": "Additional credentials",
+    "additional": [
+      "HR leadership (HRCI, Macquarie University, University of Minnesota)",
+      "AI in Office",
+      "Generative AI for Educators & Teachers specialization",
+      "Academic workshops"
+    ]
+  }
+}

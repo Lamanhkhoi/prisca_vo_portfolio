@@ -32,7 +32,7 @@ export default function CopyButton({ text, className }) {
       onClick={copy}
       className={cn(
         'inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition duration-300',
-        copied ? 'border-lime-700 bg-lime-100 text-lime-700' : 'border-navy-200 bg-white text-navy hover:border-navy',
+        copied ? 'border-gold-dark bg-gold-50 text-gold-dark' : 'border-navy-200 bg-white text-navy hover:border-navy',
         className,
       )}
     >
