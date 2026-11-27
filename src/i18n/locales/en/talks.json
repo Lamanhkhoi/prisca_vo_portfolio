@@ -1,0 +1,130 @@
+{
+  "meta": { "title": "Talks & Events | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Talks & Events",
+    "title": "Teaching, talks & events",
+    "lead": "Lecturing, invited talks, industry forums and mentoring that connect students with real business practice."
+  },
+  "teaching": {
+    "title": "Teaching appointments",
+    "items": [
+      {
+        "period": "05/2022 - Present",
+        "role": "Lecturer, Business Administration & Subject Leader",
+        "org": "FPT University, Ho Chi Minh City (Faculty of Economics and Law)",
+        "text": "Integrates practitioner case studies, role-based simulations and real sourcing scenarios to build analytical reasoning and managerial judgment. Co-organised the LogiChain student competition."
+      },
+      {
+        "period": "04/2022 - 12/2022",
+        "role": "Invited Practitioner Lecturer & Master's Thesis Panel Member",
+        "org": "CFVG, Master in Supply Chain Management",
+        "text": "Delivered 'Operations Strategy and Supply Chain Management' (Focus Hours module, 04/2022) and served on the Master's Thesis Advisory and Assessment Panel."
+      },
+      {
+        "period": "2022 - 2023",
+        "role": "Visiting Lecturer",
+        "org": "Greenwich Vietnam, Ho Chi Minh City",
+        "text": "Taught 'Organisational Behaviour: Leadership & Management Skills'."
+      },
+      {
+        "period": "20 - 22/06/2024",
+        "role": "Faculty Development Trainer",
+        "org": "Vietnam Association for Logistics Young Talent Development (VALOMA)",
+        "text": "Trained early-career university lecturers from Central and Southern Viet Nam in Global Sourcing and Supply Chain teaching methodologies."
+      }
+    ]
+  },
+  "courses": {
+    "title": "Courses taught",
+    "total": "{{count}} courses",
+    "groups": [
+      {
+        "name": "Core Supply Chain, Sourcing, Trade & International Business",
+        "tier": "Tier 1",
+        "items": [
+          "Global Supply Chain Management",
+          "Procurement and Global Sourcing",
+          "Logistics and Transportation Management",
+          "Air / Sea Transport",
+          "Import & Export Operations",
+          "International Business Strategy",
+          "Cross-Cultural Management"
+        ]
+      },
+      {
+        "name": "Marketing, Negotiation, Organisational/HR & Enterprise Management",
+        "tier": "Tier 2",
+        "items": [
+          "Marketing",
+          "Negotiation",
+          "Human Resource Management",
+          "Organisational Behaviour / Leadership & Management Skills",
+          "Entrepreneurship",
+          "Introduction to Management"
+        ]
+      }
+    ]
+  },
+  "events": {
+    "title": "Talks, forums & mentoring",
+    "filterLabel": "Filter by type",
+    "filters": {
+      "all": "All",
+      "talk": "Talks",
+      "workshop": "Workshops",
+      "forum": "Forums",
+      "mentoring": "Mentoring"
+    },
+    "items": [
+      {
+        "type": "talk",
+        "date": "11/2026",
+        "role": "Invited Speaker & Facilitator",
+        "org": "Temasek Polytechnic x FPT University HCMC",
+        "text": "Delivered 'From Culture to Business: Understanding People, Markets & Innovation' for international exchange students."
+      },
+      {
+        "type": "workshop",
+        "date": "10/2026",
+        "role": "Workshop Leader & Student Field-Visit Organiser",
+        "org": "HCMC Export 2026, WTC Expo",
+        "text": "Led about 50 FPT University students on an industry field visit and delivered 'Job-Ready: From Purchase Requirement to Shipment'. Post-event survey average: 4.9/5 across six criteria."
+      },
+      {
+        "type": "talk",
+        "date": "05/2026",
+        "role": "Invited Industry & Academic Speaker",
+        "org": "BKSIM (HCMUT) & Vietnam Supply Chain Network (VSCN)",
+        "text": "Delivered 'ESG-Linked Supply Chain Financing' for Bach Khoa International Master Programs (16/05/2026) and 'Professional Presentation for Supply Chain & Logistics' at VSCN (22/05/2026)."
+      },
+      {
+        "type": "talk",
+        "date": "04/2026",
+        "role": "Invited Seminar Speaker",
+        "org": "BKSIM Seminar, HCMUT (MBA Programme)",
+        "text": "Delivered 'Why Talent Stays, Leaves & Thrives'."
+      },
+      {
+        "type": "talk",
+        "date": "01/2025",
+        "role": "Invited Cross-Cultural Business Speaker",
+        "org": "BKSIM Seminar, HCMUT",
+        "text": "Delivered 'Introduction to Business in Vietnam & Culture' for 30-40 French international students."
+      },
+      {
+        "type": "forum",
+        "date": "2022 - 2025",
+        "role": "Executive Forum Host & Industry Talkshow Moderator",
+        "org": "FPT University HCMC x Multinational Corporations (annual series)",
+        "text": "Hosted and moderated annual university-industry forums and executive talkshows with senior practitioners from Unilever, Johnson & Johnson, Coca-Cola, L'Oréal, William E. Connor, Itochu / Prominent US, Adidas and Maersk Logistics."
+      },
+      {
+        "type": "mentoring",
+        "date": "2023 - Present",
+        "role": "Mentor for Talent Students",
+        "org": "BKSIM Talent Mentoring Program, HCMUT",
+        "text": "Guides high-potential students in designing and executing Individual Development Plans (IDPs), supporting their placement into multinational corporations."
+      }
+    ]
+  }
+}

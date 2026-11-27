@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "Ghi nhận | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Ghi nhận",
+    "title": "Giải thưởng & chứng chỉ",
+    "lead": "Giải thưởng giảng dạy, chứng chỉ chuyên môn và minh chứng đi kèm."
+  },
+  "awards": {
+    "title": "Danh hiệu & giải thưởng",
+    "items": [
+      { "date": "Summer 2024", "title": "Giải thưởng Giảng viên Xuất sắc", "org": "Đại học FPT", "featured": true },
+      { "date": "06/2024", "title": "Giấy chứng nhận Tri ân", "org": "Hội Phát triển Nhân lực Logistics Việt Nam (VALOMA)", "featured": false },
+      { "date": "2024", "title": "Giấy chứng nhận Ghi nhận", "org": "Tổ chức Giáo dục FPT, vì đã tổ chức thành công cuộc thi sinh viên LogiChain", "featured": false },
+      { "date": "Spring 2023", "title": "Khen thưởng Giảng viên", "org": "Đánh giá học kỳ, Bộ môn Quản trị Kinh doanh, Đại học FPT", "featured": false },
+      { "date": "Fall 2022", "title": "Giải thưởng Giảng viên Xuất sắc", "org": "Đại học FPT", "featured": true }
+    ]
+  },
+  "certs": {
+    "title": "Chứng chỉ & phát triển chuyên môn",
+    "items": [
+      { "date": "11/2026", "title": "Strategic Sourcing", "org": "Rutgers University" },
+      { "date": "11/2026", "title": "ESG Investing: Setting Standards & Conducting Analysis", "org": "" },
+      { "date": "06/2026", "title": "Chứng chỉ Lãnh đạo", "org": "Crestcom International" },
+      { "date": "11/2025", "title": "Google Project Management Professional Certificate", "org": "Google" }
+    ],
+    "additionalTitle": "Chứng chỉ khác",
+    "additional": [
+      "Lãnh đạo nhân sự (HRCI, Macquarie University, University of Minnesota)",
+      "AI in Office",
+      "Chuyên ngành Generative AI for Educators & Teachers",
+      "Các workshop học thuật"
+    ]
+  },
+  "evidence": {
+    "title": "Hồ sơ minh chứng",
+    "text": "Văn bằng, bảng điểm, minh chứng công bố, giải thưởng giảng dạy và tổng kết sự kiện được lập chỉ mục trong Hồ sơ minh chứng (Evidence Portfolio) đi kèm.",
+    "pending": "Tài liệu sẽ sớm được cập nhật."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "meta": { "title": "Vo Thi Minh Phuong (Prisca Vo), MBA | Lecturer & Subject Leader" },
+  "hero": {
+    "eyebrow": "Academic portfolio",
+    "name": "Vo Thi Minh Phuong",
+    "alias": "(Prisca Vo), MBA",
+    "role": "Lecturer & Subject Leader | Industry Practitioner",
+    "fields": [
+      "Global Sourcing",
+      "Supply Chain Management",
+      "International Business",
+      "Responsible Sourcing (CSR / ESG)"
+    ],
+    "intro": "University lecturer and subject leader who brings 27+ years of buyer-side global sourcing leadership into the classroom and into research on responsible sourcing in Viet Nam.",
+    "cta": "View research"
+  },
+  "stats": {
+    "title": "At a glance",
+    "items": [
+      { "value": 4, "suffix": "+", "decimals": 0, "label": "years of undergraduate and postgraduate teaching" },
+      { "value": 13, "suffix": "", "decimals": 0, "label": "courses taught at FPT University" },
+      { "value": 2, "suffix": "", "decimals": 0, "label": "Excellent Lecturer Awards" },
+      { "value": 4.9, "suffix": "/5", "decimals": 1, "label": "student rating at the HCMC Export 2026 workshop" }
+    ]
+  },
+  "highlights": {
+    "title": "Highlights",
+    "items": [
+      {
+        "icon": "graduation",
+        "title": "MBA, Maastricht School of Management",
+        "text": "2018. Thesis: Strategic Sourcing in the Apparel Industry in Vietnam."
+      },
+      {
+        "icon": "book",
+        "title": "Conference publication, 2026",
+        "text": "IU-AGBA-ULAW International Conference Proceedings, VNU-HCM Press, pp. 1784-1813. Corresponding author."
+      },
+      {
+        "icon": "award",
+        "title": "Teaching recognition",
+        "text": "Excellent Lecturer Award, FPT University (Fall 2022, Summer 2024) and Lecturer Commendation (Spring 2023)."
+      },
+      {
+        "icon": "users",
+        "title": "Subject Leader since 2022",
+        "text": "Business Administration, Faculty of Economics and Law, FPT University, Ho Chi Minh City."
+      }
+    ]
+  },
+  "explore": {
+    "title": "Explore the portfolio",
+    "items": {
+      "about": "Academic profile, doctoral objective, education and languages.",
+      "research": "Publication, proposed PhD research and research interests.",
+      "talks": "Teaching appointments, courses, invited talks, forums and mentoring.",
+      "recognition": "Honours, awards, certifications and supporting evidence.",
+      "other": "Industry leadership experience and community engagement."
+    }
+  }
+}

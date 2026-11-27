@@ -1,0 +1,55 @@
+import { useTranslation } from 'react-i18next'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { LinkedinIcon } from './icons'
+import { CONTACT } from '@/config/site'
+import { cn } from '@/lib/utils'
+
+/** Phone, both emails, LinkedIn and location. tone="dark" for the navy footer. */
+export default function ContactList({ tone = 'light', className }) {
+  const { t } = useTranslation()
+  const dark = tone === 'dark'
+  const link = cn(
+    'break-words underline-offset-4 transition-colors hover:underline',
+    dark ? 'text-white decoration-lime' : 'text-navy decoration-lime decoration-2',
+  )
+  const icon = cn('mt-0.5 size-4 shrink-0', dark ? 'text-lime' : 'text-lime-700')
+  const label = cn('block text-xs font-semibold uppercase tracking-wider', dark ? 'text-navy-300' : 'text-navy-600')
+
+  return (
+    <ul className={cn('space-y-4 text-sm', className)}>
+      <li className="flex gap-3">
+        <Phone className={icon} aria-hidden="true" />
+        <span>
+          <span className={label}>{t('contact.phone')}</span>
+          <a href={CONTACT.phoneHref} className={link}>
+            {CONTACT.phone}
+          </a>
+        </span>
+      </li>
+      <li className="flex gap-3">
+        <Mail className={icon} aria-hidden="true" />
+        <span>
+          <span className={label}>{t('contact.email')}</span>
+          {CONTACT.emails.map((email) => (
+            <a key={email} href={`mailto:${email}`} className={cn(link, 'block')}>
+              {email}
+            </a>
+          ))}
+        </span>
+      </li>
+      <li className="flex gap-3">
+        <LinkedinIcon className={icon} aria-hidden="true" />
+        <span>
+          <span className={label}>{t('contact.linkedin')}</span>
+          <a href={CONTACT.linkedinHref} target="_blank" rel="noopener noreferrer" className={link}>
+            {CONTACT.linkedin}
+          </a>
+        </span>
+      </li>
+      <li className="flex gap-3">
+        <MapPin className={icon} aria-hidden="true" />
+        <span className={dark ? 'text-navy-100' : 'text-navy-700'}>{t('contact.location')}</span>
+      </li>
+    </ul>
+  )
+}

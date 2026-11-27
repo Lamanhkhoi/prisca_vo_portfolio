@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Brand tokens: White 60% / Maastricht Blue 30% / Lime Green 10% */
+@theme {
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy: #0a2338;
+  --color-navy-800: #22384b;
+  --color-navy-700: #3a4e5f;
+  --color-navy-600: #536573;
+  --color-navy-300: #b5bdc3;
+  --color-navy-200: #ced3d7;
+  --color-navy-100: #e6e9eb;
+  --color-navy-50: #f3f4f5;
+
+  --color-lime: #30d848;
+  --color-lime-700: #1c812b;
+  --color-lime-200: #d5f7da;
+  --color-lime-100: #eafbec;
+
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+  }
+
+  ::selection {
+    background: var(--color-lime);
+    color: var(--color-navy);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-lime-700);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  [lang="vi"] h1,
+  [lang="vi"] h2,
+  [lang="vi"] h3 {
+    line-height: 1.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

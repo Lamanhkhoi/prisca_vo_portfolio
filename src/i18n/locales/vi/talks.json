@@ -1,0 +1,130 @@
+{
+  "meta": { "title": "Hội thảo & Sự kiện | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Hội thảo & Sự kiện",
+    "title": "Giảng dạy, hội thảo & sự kiện",
+    "lead": "Giảng dạy, báo cáo mời, diễn đàn doanh nghiệp và cố vấn, giúp sinh viên tiếp cận thực tiễn kinh doanh."
+  },
+  "teaching": {
+    "title": "Vị trí giảng dạy",
+    "items": [
+      {
+        "period": "05/2022 - Nay",
+        "role": "Giảng viên Quản trị Kinh doanh & Trưởng bộ môn",
+        "org": "Đại học FPT TP. Hồ Chí Minh (Khoa Kinh tế và Luật)",
+        "text": "Lồng ghép tình huống thực tiễn, mô phỏng theo vai trò và kịch bản tìm nguồn thực tế để rèn luyện tư duy phân tích và năng lực ra quyết định quản lý. Đồng tổ chức cuộc thi sinh viên LogiChain."
+      },
+      {
+        "period": "04/2022 - 12/2022",
+        "role": "Giảng viên thỉnh giảng từ doanh nghiệp & Thành viên hội đồng luận văn thạc sĩ",
+        "org": "CFVG, Thạc sĩ Quản trị Chuỗi cung ứng",
+        "text": "Giảng dạy học phần 'Operations Strategy and Supply Chain Management' (Focus Hours, 04/2022) và là thành viên Hội đồng Tư vấn và Đánh giá Luận văn Thạc sĩ."
+      },
+      {
+        "period": "2022 - 2023",
+        "role": "Giảng viên thỉnh giảng",
+        "org": "Greenwich Việt Nam, TP. Hồ Chí Minh",
+        "text": "Giảng dạy học phần 'Organisational Behaviour: Leadership & Management Skills'."
+      },
+      {
+        "period": "20 - 22/06/2024",
+        "role": "Giảng viên bồi dưỡng đội ngũ giảng viên",
+        "org": "Hội Phát triển Nhân lực Logistics Việt Nam (VALOMA)",
+        "text": "Đào tạo giảng viên đại học trẻ khu vực miền Trung và miền Nam về phương pháp giảng dạy Tìm nguồn hàng toàn cầu và Chuỗi cung ứng."
+      }
+    ]
+  },
+  "courses": {
+    "title": "Môn học đã giảng dạy",
+    "total": "{{count}} môn học",
+    "groups": [
+      {
+        "name": "Chuỗi cung ứng, Tìm nguồn, Thương mại & Kinh doanh quốc tế",
+        "tier": "Nhóm 1",
+        "items": [
+          "Global Supply Chain Management",
+          "Procurement and Global Sourcing",
+          "Logistics and Transportation Management",
+          "Air / Sea Transport",
+          "Import & Export Operations",
+          "International Business Strategy",
+          "Cross-Cultural Management"
+        ]
+      },
+      {
+        "name": "Marketing, Đàm phán, Tổ chức/Nhân sự & Quản trị doanh nghiệp",
+        "tier": "Nhóm 2",
+        "items": [
+          "Marketing",
+          "Negotiation",
+          "Human Resource Management",
+          "Organisational Behaviour / Leadership & Management Skills",
+          "Entrepreneurship",
+          "Introduction to Management"
+        ]
+      }
+    ]
+  },
+  "events": {
+    "title": "Báo cáo, diễn đàn & cố vấn",
+    "filterLabel": "Lọc theo loại hoạt động",
+    "filters": {
+      "all": "Tất cả",
+      "talk": "Báo cáo",
+      "workshop": "Workshop",
+      "forum": "Diễn đàn",
+      "mentoring": "Cố vấn"
+    },
+    "items": [
+      {
+        "type": "talk",
+        "date": "11/2026",
+        "role": "Diễn giả khách mời & Người điều phối",
+        "org": "Temasek Polytechnic x Đại học FPT TP.HCM",
+        "text": "Trình bày chủ đề 'From Culture to Business: Understanding People, Markets & Innovation' cho sinh viên trao đổi quốc tế."
+      },
+      {
+        "type": "workshop",
+        "date": "10/2026",
+        "role": "Chủ trì workshop & Tổ chức tham quan thực tế cho sinh viên",
+        "org": "HCMC Export 2026, WTC Expo",
+        "text": "Dẫn khoảng 50 sinh viên Đại học FPT tham quan thực tế doanh nghiệp và trình bày 'Job-Ready: From Purchase Requirement to Shipment'. Điểm khảo sát sau sự kiện trung bình 4.9/5 trên sáu tiêu chí."
+      },
+      {
+        "type": "talk",
+        "date": "05/2026",
+        "role": "Diễn giả khách mời từ doanh nghiệp & học thuật",
+        "org": "BKSIM (ĐH Bách khoa TP.HCM) & Vietnam Supply Chain Network (VSCN)",
+        "text": "Trình bày 'ESG-Linked Supply Chain Financing' cho các Chương trình Thạc sĩ Quốc tế Bách Khoa (16/05/2026) và 'Professional Presentation for Supply Chain & Logistics' tại VSCN (22/05/2026)."
+      },
+      {
+        "type": "talk",
+        "date": "04/2026",
+        "role": "Diễn giả seminar khách mời",
+        "org": "Seminar BKSIM, ĐH Bách khoa TP.HCM (Chương trình MBA)",
+        "text": "Trình bày chủ đề 'Why Talent Stays, Leaves & Thrives'."
+      },
+      {
+        "type": "talk",
+        "date": "01/2025",
+        "role": "Diễn giả khách mời về kinh doanh liên văn hoá",
+        "org": "Seminar BKSIM, ĐH Bách khoa TP.HCM",
+        "text": "Trình bày 'Introduction to Business in Vietnam & Culture' cho 30-40 sinh viên quốc tế người Pháp."
+      },
+      {
+        "type": "forum",
+        "date": "2022 - 2025",
+        "role": "Chủ trì diễn đàn lãnh đạo & Điều phối talkshow doanh nghiệp",
+        "org": "Đại học FPT TP.HCM x các tập đoàn đa quốc gia (chuỗi sự kiện thường niên)",
+        "text": "Chủ trì và điều phối các diễn đàn nhà trường và doanh nghiệp, talkshow thường niên với lãnh đạo cấp cao từ Unilever, Johnson & Johnson, Coca-Cola, L'Oréal, William E. Connor, Itochu / Prominent US, Adidas và Maersk Logistics."
+      },
+      {
+        "type": "mentoring",
+        "date": "2023 - Nay",
+        "role": "Cố vấn sinh viên tài năng",
+        "org": "Chương trình BKSIM Talent Mentoring, ĐH Bách khoa TP.HCM",
+        "text": "Hướng dẫn sinh viên tiềm năng xây dựng và thực hiện Kế hoạch Phát triển Cá nhân (IDP), hỗ trợ các em đầu quân vào các tập đoàn đa quốc gia."
+      }
+    ]
+  }
+}

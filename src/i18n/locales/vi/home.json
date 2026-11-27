@@ -1,0 +1,61 @@
+{
+  "meta": { "title": "Võ Thị Minh Phương (Prisca Vo), MBA | Giảng viên & Trưởng bộ môn" },
+  "hero": {
+    "eyebrow": "Hồ sơ học thuật",
+    "name": "Võ Thị Minh Phương",
+    "alias": "(Prisca Vo), MBA",
+    "role": "Giảng viên & Trưởng bộ môn | Chuyên gia thực tiễn ngành",
+    "fields": [
+      "Tìm nguồn hàng toàn cầu",
+      "Quản trị chuỗi cung ứng",
+      "Kinh doanh quốc tế",
+      "Tìm nguồn có trách nhiệm (CSR / ESG)"
+    ],
+    "intro": "Giảng viên đại học và trưởng bộ môn, mang hơn 27 năm kinh nghiệm lãnh đạo tìm nguồn hàng toàn cầu phía bên mua vào giảng đường và vào nghiên cứu về tìm nguồn có trách nhiệm tại Việt Nam.",
+    "cta": "Xem nghiên cứu"
+  },
+  "stats": {
+    "title": "Tổng quan",
+    "items": [
+      { "value": 4, "suffix": "+", "decimals": 0, "label": "năm giảng dạy bậc đại học và sau đại học" },
+      { "value": 13, "suffix": "", "decimals": 0, "label": "môn học đã giảng dạy tại Đại học FPT" },
+      { "value": 2, "suffix": "", "decimals": 0, "label": "giải thưởng Giảng viên Xuất sắc" },
+      { "value": 4.9, "suffix": "/5", "decimals": 1, "label": "điểm đánh giá của sinh viên tại workshop HCMC Export 2026" }
+    ]
+  },
+  "highlights": {
+    "title": "Nổi bật",
+    "items": [
+      {
+        "icon": "graduation",
+        "title": "Thạc sĩ MBA, Maastricht School of Management",
+        "text": "Năm 2018. Luận văn: Strategic Sourcing in the Apparel Industry in Vietnam."
+      },
+      {
+        "icon": "book",
+        "title": "Công bố hội thảo, 2026",
+        "text": "Kỷ yếu Hội thảo Quốc tế IU-AGBA-ULAW, NXB ĐHQG TP.HCM, tr. 1784-1813. Tác giả liên hệ."
+      },
+      {
+        "icon": "award",
+        "title": "Ghi nhận giảng dạy",
+        "text": "Giải thưởng Giảng viên Xuất sắc, Đại học FPT (Fall 2022, Summer 2024) và Khen thưởng Giảng viên (Spring 2023)."
+      },
+      {
+        "icon": "users",
+        "title": "Trưởng bộ môn từ năm 2022",
+        "text": "Quản trị Kinh doanh, Khoa Kinh tế và Luật, Đại học FPT TP. Hồ Chí Minh."
+      }
+    ]
+  },
+  "explore": {
+    "title": "Khám phá hồ sơ",
+    "items": {
+      "about": "Hồ sơ học thuật, mục tiêu nghiên cứu sinh, học vấn và ngoại ngữ.",
+      "research": "Công bố khoa học, đề tài tiến sĩ dự kiến và hướng nghiên cứu.",
+      "talks": "Vị trí giảng dạy, môn học, báo cáo mời, diễn đàn và cố vấn.",
+      "recognition": "Danh hiệu, giải thưởng, chứng chỉ và minh chứng.",
+      "other": "Kinh nghiệm lãnh đạo trong ngành và hoạt động cộng đồng."
+    }
+  }
+}

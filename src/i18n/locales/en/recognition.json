@@ -1,0 +1,39 @@
+{
+  "meta": { "title": "Recognition | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Recognition",
+    "title": "Awards & certifications",
+    "lead": "Teaching awards, professional certificates and the evidence behind them."
+  },
+  "awards": {
+    "title": "Honours & awards",
+    "items": [
+      { "date": "Summer 2024", "title": "Excellent Lecturer Award", "org": "FPT University", "featured": true },
+      { "date": "06/2024", "title": "Certificate of Appreciation", "org": "Vietnam Association for Logistics Young Talent Development (VALOMA)", "featured": false },
+      { "date": "2024", "title": "Certificate of Recognition", "org": "FPT Education, for the successful organisation of the LogiChain student competition", "featured": false },
+      { "date": "Spring 2023", "title": "Lecturer Commendation", "org": "Semester Evaluation, Business Administration Subject Group, FPT University", "featured": false },
+      { "date": "Fall 2022", "title": "Excellent Lecturer Award", "org": "FPT University", "featured": true }
+    ]
+  },
+  "certs": {
+    "title": "Certifications & professional development",
+    "items": [
+      { "date": "11/2026", "title": "Strategic Sourcing", "org": "Rutgers University" },
+      { "date": "11/2026", "title": "ESG Investing: Setting Standards & Conducting Analysis", "org": "" },
+      { "date": "06/2026", "title": "Leadership Certification", "org": "Crestcom International" },
+      { "date": "11/2025", "title": "Google Project Management Professional Certificate", "org": "Google" }
+    ],
+    "additionalTitle": "Additional credentials",
+    "additional": [
+      "HR leadership (HRCI, Macquarie University, University of Minnesota)",
+      "AI in Office",
+      "Generative AI for Educators & Teachers specialization",
+      "Academic workshops"
+    ]
+  },
+  "evidence": {
+    "title": "Evidence portfolio",
+    "text": "Supporting degrees, transcripts, publication proofs, teaching awards and event recaps are indexed in the accompanying Evidence Portfolio.",
+    "pending": "Documents will be added soon."
+  }
+}

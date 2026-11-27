@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "research": "Research",
+    "talks": "Talks & Events",
+    "recognition": "Recognition",
+    "other": "Other",
+    "primary": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skip": "Skip to content"
+  },
+  "lang": {
+    "label": "Language",
+    "en": "EN",
+    "vi": "VI",
+    "enName": "English",
+    "viName": "Tiếng Việt"
+  },
+  "brand": {
+    "name": "Prisca Vo",
+    "suffix": "MBA",
+    "home": "Prisca Vo, home"
+  },
+  "actions": {
+    "downloadCv": "Download CV",
+    "cvSoon": "CV available soon",
+    "copyCitation": "Copy citation",
+    "copied": "Copied",
+    "readMore": "Read summary",
+    "readLess": "Hide summary",
+    "backToTop": "Back to top",
+    "viewPage": "View page",
+    "openEvidence": "Open evidence portfolio"
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "location": "Ho Chi Minh City, Viet Nam"
+  },
+  "footer": {
+    "tagline": "Lecturer & Subject Leader in global sourcing, supply chain management and responsible sourcing.",
+    "explore": "Explore",
+    "rights": "© {{year}} Vo Thi Minh Phuong (Prisca Vo). All rights reserved."
+  },
+  "placeholder": {
+    "portrait": "Portrait coming soon",
+    "portraitAlt": "Portrait of Vo Thi Minh Phuong (Prisca Vo)"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "back": "Back to home"
+  },
+  "error": {
+    "title": "This section could not be displayed",
+    "text": "Please reload the page. If the problem continues, contact the site owner.",
+    "reload": "Reload page"
+  }
+}

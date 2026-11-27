@@ -1,0 +1,50 @@
+{
+  "meta": { "title": "Research | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Research",
+    "title": "Research & publications",
+    "lead": "Responsible sourcing, sustainable supplier selection and buyer-supplier governance in Vietnam's export garment supply chain."
+  },
+  "publication": {
+    "title": "Publication",
+    "type": "Conference proceedings",
+    "year": "2026",
+    "paperTitle": "Strategic sourcing in the apparel industry in Vietnam",
+    "authors": "Ha, M. T., & Vo, T. M. P.",
+    "role": "Corresponding author",
+    "meta": [
+      { "label": "Conference", "value": "IU-AGBA-ULAW International Conference, 6 July 2025" },
+      { "label": "Publisher", "value": "VNU-HCM Press" },
+      { "label": "Pages", "value": "pp. 1784-1813" },
+      { "label": "ISBN", "value": "978-632-608-802-1" }
+    ],
+    "citationLabel": "Citation (APA)",
+    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1."
+  },
+  "thesis": {
+    "title": "MBA thesis",
+    "name": "Strategic Sourcing in the Apparel Industry in Vietnam",
+    "school": "Maastricht School of Management, 2018"
+  },
+  "phd": {
+    "title": "Proposed doctoral research (PhD)",
+    "name": "The Relationship Between Corporate Social Responsibility and Supplier Selection Decisions in the Global Garment Supply Chain: The Case of Vietnam",
+    "summary": "Examines how the economic, social, environmental and governance dimensions of CSR/ESG influence international buyers' supplier-selection decisions, integrating a systematic literature review, an empirical investigation of buyer-side sourcing stakeholders and garment manufacturers in Vietnam, and a multi-criteria decision framework.",
+    "methods": [
+      "Systematic literature review",
+      "Empirical study of buyers and manufacturers",
+      "Multi-criteria decision framework"
+    ]
+  },
+  "interests": {
+    "title": "Core research interests",
+    "items": [
+      "Responsible sourcing",
+      "Sustainable supplier selection",
+      "Buyer-supplier governance",
+      "Social compliance and supply chain due diligence",
+      "Traceability",
+      "ESG-linked supply chain finance"
+    ]
+  }
+}

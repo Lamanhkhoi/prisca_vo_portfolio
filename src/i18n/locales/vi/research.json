@@ -1,0 +1,50 @@
+{
+  "meta": { "title": "Nghiên cứu | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Nghiên cứu",
+    "title": "Nghiên cứu & công bố khoa học",
+    "lead": "Tìm nguồn có trách nhiệm, lựa chọn nhà cung cấp bền vững và quản trị quan hệ người mua và nhà cung cấp trong chuỗi cung ứng may mặc xuất khẩu của Việt Nam."
+  },
+  "publication": {
+    "title": "Công bố khoa học",
+    "type": "Kỷ yếu hội thảo",
+    "year": "2026",
+    "paperTitle": "Strategic sourcing in the apparel industry in Vietnam",
+    "authors": "Ha, M. T., & Vo, T. M. P.",
+    "role": "Tác giả liên hệ",
+    "meta": [
+      { "label": "Hội thảo", "value": "Hội thảo Quốc tế IU-AGBA-ULAW, ngày 6/7/2025" },
+      { "label": "Nhà xuất bản", "value": "NXB Đại học Quốc gia TP.HCM" },
+      { "label": "Trang", "value": "tr. 1784-1813" },
+      { "label": "ISBN", "value": "978-632-608-802-1" }
+    ],
+    "citationLabel": "Trích dẫn (APA)",
+    "citation": "Ha, M. T., & Vo, T. M. P. (2026). Strategic sourcing in the apparel industry in Vietnam. In T. N. Pham, M. T. Ha, M. T. Cao, & Z. U. Ahmed (Eds.), Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025) (pp. 1784-1813). VNU-HCM Press. ISBN 978-632-608-802-1."
+  },
+  "thesis": {
+    "title": "Luận văn MBA",
+    "name": "Strategic Sourcing in the Apparel Industry in Vietnam",
+    "school": "Maastricht School of Management, 2018"
+  },
+  "phd": {
+    "title": "Đề tài nghiên cứu tiến sĩ dự kiến (PhD)",
+    "name": "Mối quan hệ giữa Trách nhiệm xã hội doanh nghiệp và Quyết định lựa chọn nhà cung cấp trong chuỗi cung ứng may mặc toàn cầu: Trường hợp Việt Nam",
+    "summary": "Nghiên cứu cách các khía cạnh kinh tế, xã hội, môi trường và quản trị của CSR/ESG ảnh hưởng đến quyết định lựa chọn nhà cung cấp của người mua quốc tế, kết hợp tổng quan tài liệu có hệ thống, khảo sát thực nghiệm các bên liên quan phía người mua và doanh nghiệp may mặc tại Việt Nam, cùng một khung ra quyết định đa tiêu chí.",
+    "methods": [
+      "Tổng quan tài liệu có hệ thống",
+      "Khảo sát thực nghiệm người mua và nhà sản xuất",
+      "Khung ra quyết định đa tiêu chí"
+    ]
+  },
+  "interests": {
+    "title": "Hướng nghiên cứu chính",
+    "items": [
+      "Tìm nguồn có trách nhiệm",
+      "Lựa chọn nhà cung cấp bền vững",
+      "Quản trị quan hệ người mua và nhà cung cấp",
+      "Tuân thủ xã hội và thẩm định chuỗi cung ứng",
+      "Truy xuất nguồn gốc",
+      "Tài chính chuỗi cung ứng gắn với ESG"
+    ]
+  }
+}
