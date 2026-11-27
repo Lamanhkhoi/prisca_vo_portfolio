@@ -1,62 +1,88 @@
 @import "tailwindcss";
 
-/* Brand: 60-30-10 palette — 60% White, 30% Maastricht Blue (#0A2338), 10% Lime Green (#30D848). */
+/*
+ * Editorial & Bespoke Web Craft Design System (60 / 30 / 10):
+ * - 60% Warm Alabaster canvas (#F8F7F4) & crisp white surfaces (#FFFFFF) with hairlines
+ * - 30% Deep Maastricht Navy (#0A2338) typography & dark anchor sections (#061521)
+ * - 10% Deep Emerald ESG accent (#0F766E) & subtle muted brass (#B08D57) for honours
+ */
 @theme {
   --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Menlo, Consolas, monospace;
 
-  /* 30% Maastricht Blue (#0a2338) shades & tints */
+  /* 60% Warm Neutral Surfaces */
+  --color-canvas: #f8f7f4;
+  --color-stone: #f0eee8;
+  --color-surface: #ffffff;
+
+  /* 30% Deep Maastricht Navy Structure */
   --color-navy-950: #061521;
   --color-navy: #0a2338;
-  --color-navy-800: #22384b;
-  --color-navy-700: #3a4e5f;
-  --color-navy-600: #536573;
-  --color-navy-400: #84919b;
-  --color-navy-300: #b5bdc3;
-  --color-navy-200: #ced3d7;
-  --color-navy-100: #e6e9eb;
-  --color-navy-50: #f3f5f7;
+  --color-navy-800: #1b344a;
+  --color-navy-700: #334a5d;
+  --color-navy-600: #516575;
+  --color-navy-400: #84939f;
+  --color-navy-300: #b5bfc6;
+  --color-navy-200: #d6dde1;
+  --color-navy-100: #e5e8ea;
+  --color-navy-50: #f0eee8;
 
-  /* 10% Lime Green (#30d848) shades & tints */
-  --color-lime: #30d848;
-  --color-lime-light: #44db5a;
-  --color-lime-dark: #1c812b;
-  --color-lime-700: #219732;
-  --color-lime-100: #d5f7da;
-  --color-lime-50: #eafbec;
+  /* 10% Sustainable Academic Accent (Deep Emerald) */
+  --color-accent: #0f766e;
+  --color-accent-dark: #115e59;
+  --color-accent-light: #5eead4;
+  --color-accent-soft: #e6f4f1;
 
-  /* Legacy aliases mapped to Lime Green palette */
-  --color-gold: #30d848;
-  --color-gold-light: #44db5a;
-  --color-gold-dark: #1c812b;
-  --color-gold-50: #eafbec;
+  /* Subtle Prestige Accent (Muted Brass — used sparingly for academic honours) */
+  --color-brass: #b08d57;
+  --color-brass-light: #d6ba86;
 
   --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
+  html {
+    background-color: var(--color-canvas);
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-white font-sans text-navy antialiased;
+    @apply bg-canvas font-sans text-navy antialiased;
   }
 
   ::selection {
-    background: var(--color-lime);
-    color: var(--color-navy);
+    background: var(--color-navy);
+    color: #ffffff;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-lime-dark);
+    outline: 2px solid var(--color-accent);
     outline-offset: 3px;
     border-radius: 6px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   [lang="vi"] h1,
   [lang="vi"] h2,
   [lang="vi"] h3 {
-    line-height: 1.25;
+    line-height: 1.2;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {

@@ -20,24 +20,37 @@ export default function IndustryPage() {
 
   return (
     <>
-      <PageHeader eyebrow={t('header.eyebrow')} title={t('header.title')} lead={t('header.lead')} />
+      <PageHeader
+        eyebrow={t('header.eyebrow')}
+        title={t('header.title')}
+        lead={t('header.lead')}
+        stats={[
+          { label: t('industry.badge'), value: '27+' },
+          { label: t('industry.orgsTitle'), value: String(INDUSTRY_ORGS.length) },
+        ]}
+      />
       <Section aria-labelledby="industry-title">
-        <div className="grid gap-10 lg:grid-cols-12">
+        <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
           <aside className="lg:col-span-4">
             <Reveal className="space-y-5 lg:sticky lg:top-24">
-              <div className="rounded-xl bg-navy p-6 text-white">
-                <p className="text-5xl font-extrabold tracking-tight">
+              <div className="rounded-xl border border-white/10 bg-navy p-6 text-white">
+                <p className="font-mono text-5xl font-bold tabular-nums tracking-[-0.03em]">
                   <CountUp value={27} suffix="+" />
                 </p>
-                <p className="mt-1 text-sm font-semibold text-gold-light">{t('industry.badge')}</p>
-                <p className="mt-4 text-sm leading-relaxed text-navy-200">{t('industry.summary')}</p>
+                <p className="mt-1.5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-accent-light">
+                  {t('industry.badge')}
+                </p>
+                <p className="mt-4 text-sm leading-[1.68] text-navy-200">{t('industry.summary')}</p>
               </div>
-              <div className="rounded-xl border border-navy-100 p-5">
+              <div className="rounded-xl border border-navy/10 bg-surface p-5">
                 <Label as="h3">{t('industry.orgsTitle')}</Label>
-                <ul className="mt-3 flex flex-wrap gap-2">
-                  {INDUSTRY_ORGS.map((org) => (
-                    <li key={org} className="rounded-md bg-navy-50 px-2.5 py-1 text-xs font-bold text-navy-700">
-                      {org}
+                <ul className="mt-3.5 divide-y divide-navy/8">
+                  {INDUSTRY_ORGS.map((org, idx) => (
+                    <li key={org} className="flex items-baseline justify-between py-2 text-sm font-semibold text-navy first:pt-0 last:pb-0">
+                      <span>{org}</span>
+                      <span className="font-mono text-[11px] tabular-nums text-navy-400">
+                        {String(idx + 1).padStart(2, '0')}
+                      </span>
                     </li>
                   ))}
                 </ul>

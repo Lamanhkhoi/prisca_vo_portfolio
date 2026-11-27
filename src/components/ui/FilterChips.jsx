@@ -1,10 +1,10 @@
 import { motion } from 'motion/react'
 import { cn } from '@/lib/utils'
 
-/** Single-select filter pills with a sliding active background and a count per option. */
+/** Single-select editorial filter pills with sliding active indicator and tabular-nums count. */
 export default function FilterChips({ label, options, value, onChange, getLabel, getCount, layoutId }) {
   return (
-    <div role="group" aria-label={label} className="mb-6 flex flex-wrap gap-2">
+    <div role="group" aria-label={label} className="mb-8 flex flex-wrap gap-2">
       {options
         .filter((o) => getCount(o) > 0)
         .map((o) => {
@@ -16,8 +16,10 @@ export default function FilterChips({ label, options, value, onChange, getLabel,
               aria-pressed={active}
               onClick={() => onChange(o)}
               className={cn(
-                'relative rounded-full border px-4 py-2 text-sm font-semibold transition-colors duration-300',
-                active ? 'border-navy text-white' : 'border-navy-200 text-navy-700 hover:border-navy',
+                'relative rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors duration-200 active:scale-[0.98]',
+                active
+                  ? 'border-navy text-white'
+                  : 'border-navy/12 bg-surface text-navy-700 hover:border-navy/35 hover:text-navy',
               )}
             >
               {active && (
@@ -28,8 +30,11 @@ export default function FilterChips({ label, options, value, onChange, getLabel,
                   transition={{ type: 'spring', stiffness: 420, damping: 36 }}
                 />
               )}
-              <span className="relative">
-                {getLabel(o)} <span className={active ? 'text-gold-light' : 'text-navy-400'}>{getCount(o)}</span>
+              <span className="relative inline-flex items-center gap-1.5">
+                {getLabel(o)}
+                <span className={cn('font-mono text-xs tabular-nums', active ? 'text-accent-light' : 'text-navy-400')}>
+                  {getCount(o)}
+                </span>
               </span>
             </button>
           )

@@ -2,27 +2,26 @@ import { useTranslation } from 'react-i18next'
 import { SITE } from '@/config/site'
 import { cn } from '@/lib/utils'
 
-/** Portrait with an offset gold frame. Falls back to initials until SITE.portraitUrl is set. */
+/** Clean editorial portrait with crisp inner hairline ring — no decorative offset boxes. */
 export default function Portrait({ className }) {
   const { t } = useTranslation()
 
   return (
-    <div className={cn('relative', className)}>
-      <div aria-hidden="true" className="absolute -bottom-3 -right-3 h-full w-full rounded-2xl border border-gold/70" />
-      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-navy-800">
+    <figure className={cn('relative', className)}>
+      <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-navy-800 ring-1 ring-inset ring-white/15 shadow-[0_28px_64px_-28px_rgba(0,0,0,0.65)]">
         {SITE.portraitUrl ? (
           <img
             src={SITE.portraitUrl}
             alt={t('placeholder.portraitAlt')}
             width="960"
             height="1280"
-            className="size-full object-cover object-[60%_20%]"
+            className="size-full object-cover object-top"
             fetchPriority="high"
           />
         ) : (
-          <div className="grid size-full place-items-center text-7xl font-extrabold text-navy-600">PV</div>
+          <div className="grid size-full place-items-center font-mono text-6xl font-bold text-navy-400">PV</div>
         )}
       </div>
-    </div>
+    </figure>
   )
 }

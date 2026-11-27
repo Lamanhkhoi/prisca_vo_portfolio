@@ -10,7 +10,7 @@ export default function CvButton({ variant = 'outline', className }) {
   if (SITE.cvUrl) {
     return (
       <Button href={SITE.cvUrl} download="Vo-Thi-Minh-Phuong-CV.pdf" variant={variant} className={className}>
-        <Download className="size-4" aria-hidden="true" />
+        <Download className="size-4" strokeWidth={1.75} aria-hidden="true" />
         {t('actions.downloadCv')}
       </Button>
     )
@@ -18,7 +18,7 @@ export default function CvButton({ variant = 'outline', className }) {
 
   return (
     <Button variant={variant} className={className} disabled title={t('actions.cvSoon')}>
-      <Download className="size-4" aria-hidden="true" />
+      <Download className="size-4" strokeWidth={1.75} aria-hidden="true" />
       {t('actions.downloadCv')}
     </Button>
   )

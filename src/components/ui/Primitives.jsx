@@ -1,30 +1,44 @@
 import { cn } from '@/lib/utils'
 
 export function Container({ className, children }) {
-  return <div className={cn('mx-auto w-full max-w-6xl px-5 md:px-8', className)}>{children}</div>
+  return <div className={cn('mx-auto w-full max-w-6xl px-6 md:px-10', className)}>{children}</div>
 }
 
 const TONES = {
-  white: 'bg-white',
-  muted: 'bg-navy-50',
-  navy: 'bg-navy text-white',
+  canvas: 'bg-canvas',
+  white: 'bg-surface border-y border-navy/8',
+  stone: 'bg-stone border-y border-navy/8',
+  navy: 'bg-navy-950 text-white',
 }
 
-export function Section({ className, tone = 'white', children, ...rest }) {
+export function Section({ className, tone = 'canvas', children, ...rest }) {
   return (
-    <section className={cn('py-12 md:py-16', TONES[tone], className)} {...rest}>
+    <section className={cn('py-16 md:py-24', TONES[tone] ?? TONES.canvas, className)} {...rest}>
       <Container>{children}</Container>
     </section>
   )
 }
 
-/** Section title with a short lime rule. */
-export function SectionHeading({ title, aside, id, className, light = false }) {
+/** Editorial section heading with crisp hairline & optional mono index. */
+export function SectionHeading({ title, eyebrow, aside, id, className, light = false }) {
   return (
-    <div className={cn('mb-6 flex flex-wrap items-end justify-between gap-3 md:mb-8', className)}>
+    <div className={cn('mb-8 flex flex-wrap items-end justify-between gap-4 md:mb-10', className)}>
       <div>
-        <span aria-hidden="true" className="mb-3 block h-0.5 w-8 bg-lime" />
-        <h2 id={id} className={cn('text-xl font-bold tracking-tight md:text-2xl', light && 'text-white')}>
+        {eyebrow ? (
+          <p className={cn('mb-2.5 flex items-center gap-2.5 font-mono text-xs font-semibold uppercase tracking-[0.16em]', light ? 'text-accent-light' : 'text-accent')}>
+            <span aria-hidden="true" className={cn('h-px w-6', light ? 'bg-accent-light' : 'bg-accent')} />
+            {eyebrow}
+          </p>
+        ) : (
+          <span aria-hidden="true" className={cn('mb-3 block h-0.5 w-8', light ? 'bg-accent-light' : 'bg-accent')} />
+        )}
+        <h2
+          id={id}
+          className={cn(
+            'text-2xl font-extrabold tracking-[-0.025em] leading-[1.15] md:text-[1.75rem]',
+            light ? 'text-white' : 'text-navy',
+          )}
+        >
           {title}
         </h2>
       </div>
@@ -37,9 +51,9 @@ export function Card({ className, children, interactive = false, as: Tag = 'div'
   return (
     <Tag
       className={cn(
-        'group relative overflow-hidden rounded-xl border border-navy-100 bg-white p-5 md:p-6',
+        'group relative overflow-hidden rounded-xl border border-navy/10 bg-surface p-6 md:p-7',
         interactive &&
-          'transition duration-300 ease-(--ease-brand) hover:-translate-y-0.5 hover:border-navy-300 hover:shadow-[0_18px_40px_-24px_rgba(10,35,56,0.45)]',
+          'transition-all duration-300 ease-(--ease-brand) hover:-translate-y-0.5 hover:border-navy/20 hover:shadow-[0_18px_40px_-28px_rgba(10,35,56,0.35)]',
         className,
       )}
       {...rest}
@@ -47,7 +61,7 @@ export function Card({ className, children, interactive = false, as: Tag = 'div'
       {interactive && (
         <span
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-lime transition-transform duration-500 ease-(--ease-brand) group-hover:scale-x-100"
+          className="absolute inset-x-0 top-0 h-[2px] origin-left scale-x-0 bg-accent transition-transform duration-400 ease-(--ease-brand) group-hover:scale-x-100"
         />
       )}
       {children}
@@ -57,29 +71,24 @@ export function Card({ className, children, interactive = false, as: Tag = 'div'
 
 export function Chip({ className, children, tone = 'outline' }) {
   const tones = {
-    outline: 'border border-navy-200 bg-white text-navy',
+    outline: 'border border-navy/12 bg-surface text-navy-700',
     navy: 'bg-navy text-white',
-    lime: 'bg-lime-50 text-lime-dark ring-1 ring-lime/40',
-    gold: 'bg-lime-50 text-lime-dark ring-1 ring-lime/40',
-    soft: 'bg-navy-50 text-navy-700',
-    dark: 'border border-white/20 text-navy-100',
+    accent: 'bg-accent-soft text-accent-dark ring-1 ring-inset ring-accent/20',
+    soft: 'bg-stone text-navy-700',
+    dark: 'border border-white/15 bg-white/5 text-navy-200',
   }
   return (
-    <span className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold', tones[tone], className)}>
+    <span className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-[11px] font-semibold tracking-wide', tones[tone] ?? tones.outline, className)}>
       {children}
     </span>
   )
 }
 
-export function IconBadge({ icon: Icon, className }) {
-  return (
-    <span className={cn('grid size-10 shrink-0 place-items-center rounded-lg bg-navy text-lime', className)}>
-      <Icon className="size-5" strokeWidth={1.8} aria-hidden="true" />
-    </span>
-  )
-}
-
-/** Small uppercase label used above blocks inside cards. */
+/** Small mono uppercase label used above blocks inside editorial layouts. */
 export function Label({ className, children, as: Tag = 'p' }) {
-  return <Tag className={cn('text-xs font-bold uppercase tracking-wider text-navy-600', className)}>{children}</Tag>
+  return (
+    <Tag className={cn('font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-navy-600', className)}>
+      {children}
+    </Tag>
+  )
 }

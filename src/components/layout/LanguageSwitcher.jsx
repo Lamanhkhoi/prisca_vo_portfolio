@@ -8,7 +8,11 @@ export default function LanguageSwitcher({ className, id = 'lang' }) {
   const current = i18n.resolvedLanguage
 
   return (
-    <div role="group" aria-label={t('lang.label')} className={cn('flex rounded-full border border-navy-200 bg-white p-1', className)}>
+    <div
+      role="group"
+      aria-label={t('lang.label')}
+      className={cn('flex rounded-full border border-navy/15 bg-surface p-0.5', className)}
+    >
       {LANGUAGES.map((lng) => {
         const active = current === lng
         return (
@@ -20,7 +24,7 @@ export default function LanguageSwitcher({ className, id = 'lang' }) {
             aria-label={t(`lang.${lng}Name`)}
             onClick={() => i18n.changeLanguage(lng)}
             className={cn(
-              'relative min-w-10 rounded-full px-3 py-1.5 text-xs font-bold transition-colors duration-300',
+              'relative min-w-9 rounded-full px-2.5 py-1 font-mono text-[11px] font-bold transition-colors duration-200',
               active ? 'text-white' : 'text-navy-600 hover:text-navy',
             )}
           >

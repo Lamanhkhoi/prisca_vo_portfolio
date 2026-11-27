@@ -31,12 +31,18 @@ export default function CopyButton({ text, className }) {
       type="button"
       onClick={copy}
       className={cn(
-        'inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition duration-300',
-        copied ? 'border-gold-dark bg-gold-50 text-gold-dark' : 'border-navy-200 bg-white text-navy hover:border-navy',
+        'inline-flex items-center gap-2 rounded-lg border px-3.5 py-1.5 text-xs font-semibold transition-all duration-200 active:scale-[0.98]',
+        copied
+          ? 'border-accent/40 bg-accent-soft text-accent-dark'
+          : 'border-navy/15 bg-surface text-navy hover:border-navy/40',
         className,
       )}
     >
-      {copied ? <Check className="size-4" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}
+      {copied ? (
+        <Check className="size-3.5" strokeWidth={1.75} aria-hidden="true" />
+      ) : (
+        <Copy className="size-3.5" strokeWidth={1.75} aria-hidden="true" />
+      )}
       <span aria-live="polite">{copied ? t('actions.copied') : t('actions.copyCitation')}</span>
     </button>
   )

@@ -12,9 +12,9 @@ import Reveal from '@/components/motion/Reveal'
 import CountUp from '@/components/motion/CountUp'
 
 const rise = (delay) => ({
-  initial: { opacity: 0, y: 18 },
+  initial: { opacity: 0, y: 14 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.65, delay, ease: EASE },
+  transition: { duration: 0.55, delay, ease: EASE },
 })
 
 function Hero() {
@@ -23,48 +23,65 @@ function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(55%_80%_at_85%_10%,rgba(48,216,72,0.16),transparent_60%)]" />
-      <Container className="relative grid items-center gap-10 pb-24 pt-12 md:pb-28 md:pt-16 lg:grid-cols-12 lg:gap-12">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[radial-gradient(55%_80%_at_82%_15%,rgba(15,118,110,0.22),transparent_65%)]"
+      />
+      <Container className="relative grid items-center gap-12 pb-20 pt-12 md:pb-24 md:pt-16 lg:grid-cols-12">
         <div className="lg:col-span-7">
-          <motion.p {...rise(0)} className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-lime">
-            <span aria-hidden="true" className="h-px w-8 bg-lime" />
+          <motion.p
+            {...rise(0)}
+            className="flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.18em] text-accent-light"
+          >
+            <span aria-hidden="true" className="h-px w-8 bg-accent-light" />
             {t('hero.eyebrow')}
           </motion.p>
-          <motion.h1 {...rise(0.06)} className="mt-5 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]">
+          <motion.h1
+            {...rise(0.05)}
+            className="mt-5 text-4xl font-extrabold leading-[1.08] tracking-[-0.03em] sm:text-5xl lg:text-[3.35rem]"
+          >
             {t('hero.name')}
-            <span className="mt-2 block text-xl font-semibold text-navy-200 sm:text-2xl">{t('hero.alias')}</span>
+            <span className="mt-2 block text-xl font-medium tracking-[-0.01em] text-navy-300 sm:text-2xl">
+              {t('hero.alias')}
+            </span>
           </motion.h1>
-          <motion.p {...rise(0.12)} className="mt-5 text-sm font-bold uppercase tracking-[0.12em] text-lime sm:text-base">
+          <motion.p
+            {...rise(0.1)}
+            className="mt-5 font-mono text-xs font-semibold uppercase tracking-[0.14em] text-accent-light sm:text-[13px]"
+          >
             {t('hero.role')}
           </motion.p>
-          <motion.p {...rise(0.18)} className="mt-4 max-w-xl leading-relaxed text-navy-200 md:text-lg">
+          <motion.p
+            {...rise(0.15)}
+            className="mt-4 max-w-[54ch] text-[16px] leading-[1.68] text-navy-200 md:text-[17px]"
+          >
             {t('hero.intro')}
           </motion.p>
-          <motion.ul {...rise(0.22)} className="mt-6 flex flex-wrap gap-2">
+          <motion.ul {...rise(0.2)} className="mt-6 flex flex-wrap gap-2">
             {list('hero.fields').map((field) => (
               <li key={field}>
                 <Chip tone="dark">{field}</Chip>
               </li>
             ))}
           </motion.ul>
-          <motion.div {...rise(0.28)} className="mt-8 flex flex-wrap items-center gap-3">
-            <Button to="/research" variant="lime">
+          <motion.div {...rise(0.24)} className="mt-8 flex flex-wrap items-center gap-3">
+            <Button to="/research" variant="accent">
               {t('hero.cta')}
-              <ArrowRight className="size-4" aria-hidden="true" />
+              <ArrowRight className="size-4" strokeWidth={1.75} aria-hidden="true" />
             </Button>
             <CvButton variant="light" />
-            <span className="ml-1 flex items-center gap-2 text-sm text-navy-300">
-              <MapPin className="size-4 text-lime" aria-hidden="true" />
+            <span className="ml-1 flex items-center gap-1.5 text-xs font-medium text-navy-300">
+              <MapPin className="size-3.5 text-accent-light" strokeWidth={1.75} aria-hidden="true" />
               {common.t('contact.location')}
             </span>
           </motion.div>
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.97 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.85, delay: 0.12, ease: EASE }}
-          className="mx-auto w-full max-w-[19rem] lg:col-span-5 lg:mr-0 lg:max-w-[22rem]"
+          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
+          className="mx-auto w-full max-w-[18.5rem] lg:col-span-5 lg:mr-0 lg:max-w-[21.5rem]"
         >
           <Portrait />
         </motion.div>
@@ -73,20 +90,23 @@ function Hero() {
   )
 }
 
-function Stats() {
+function ImpactStrip() {
   const { t, list } = useContent('home')
   return (
-    <section aria-labelledby="stats-title" className="relative z-10 -mt-14">
+    <section aria-labelledby="stats-title" className="relative z-10 -mt-10">
       <Container>
-        <Reveal className="rounded-xl border border-navy-100 bg-white shadow-[0_24px_50px_-30px_rgba(10,35,56,0.55)]">
+        <Reveal className="rounded-xl border border-navy/10 bg-surface shadow-[0_20px_48px_-32px_rgba(10,35,56,0.45)]">
           <h2 id="stats-title" className="sr-only">
             {t('stats.title')}
           </h2>
-          <dl className="grid grid-cols-2 divide-navy-100 lg:grid-cols-4 lg:divide-x">
+          <dl className="grid grid-cols-2 divide-navy/10 lg:grid-cols-4 lg:divide-x">
             {list('stats.items').map((item, i) => (
-              <div key={i} className="flex flex-col border-navy-100 p-5 even:border-l md:p-7 [&:nth-child(n+3)]:border-t lg:[&:nth-child(n+3)]:border-t-0 lg:even:border-l-0">
+              <div
+                key={i}
+                className="flex flex-col border-navy/10 p-5 even:border-l md:p-7 [&:nth-child(n+3)]:border-t lg:[&:nth-child(n+3)]:border-t-0 lg:even:border-l-0"
+              >
                 <dt className="order-2 mt-2 text-[13px] leading-snug text-navy-600">{item.label}</dt>
-                <dd className="order-1 text-3xl font-extrabold tracking-tight text-navy md:text-[2.6rem]">
+                <dd className="order-1 font-mono text-3xl font-bold tabular-nums tracking-[-0.03em] text-navy md:text-[2.4rem]">
                   <CountUp value={item.value} decimals={item.decimals} suffix={item.suffix} />
                 </dd>
               </div>
@@ -104,20 +124,22 @@ function Profile() {
 
   return (
     <Section aria-labelledby="profile-title">
-      <div className="grid gap-10 lg:grid-cols-12">
+      <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
           <SectionHeading id="profile-title" title={t('profile.title')} />
           <Reveal>
-            <p className="leading-relaxed text-navy-700 md:text-[17px]">{t('profile.text')}</p>
+            <p className="max-w-[62ch] text-[16px] leading-[1.7] text-navy-700 md:text-[17px]">
+              {t('profile.text')}
+            </p>
           </Reveal>
           <Reveal delay={0.05}>
-            <div className="mt-8 rounded-xl border-l-2 border-gold bg-navy-50 p-5 md:p-6">
-              <Label>{t('objective.title')}</Label>
-              <p className="mt-2 flex items-center gap-2 text-sm font-bold text-navy">
-                <Building2 className="size-4 text-gold-dark" aria-hidden="true" />
+            <div className="mt-8 rounded-xl border border-navy/10 border-l-2 border-l-accent bg-surface p-6 md:p-7">
+              <Label className="text-accent">{t('objective.title')}</Label>
+              <p className="mt-2.5 flex items-center gap-2 text-sm font-bold text-navy">
+                <Building2 className="size-4 shrink-0 text-accent" strokeWidth={1.75} aria-hidden="true" />
                 {t('objective.org')}
               </p>
-              <p className="mt-3 text-[15px] leading-relaxed text-navy-700">{t('objective.text')}</p>
+              <p className="mt-3 max-w-[60ch] text-[15px] leading-[1.68] text-navy-700">{t('objective.text')}</p>
             </div>
           </Reveal>
         </div>
@@ -126,13 +148,14 @@ function Profile() {
           <Reveal delay={0.06}>
             <Card>
               <Label as="h3">{t('education.title')}</Label>
-              <ol className="mt-4 space-y-4">
+              <ol className="mt-5 divide-y divide-navy/8">
                 {list('education.items').map((e) => (
-                  <li key={e.year} className="grid grid-cols-[3.25rem_1fr] gap-3">
-                    <span className="text-sm font-extrabold text-gold-dark">{e.year}</span>
+                  <li key={e.year} className="grid grid-cols-[3.5rem_1fr] gap-3 py-4 first:pt-0 last:pb-0">
+                    <span className="font-mono text-xs font-bold tabular-nums text-accent">{e.year}</span>
                     <span>
-                      <span className="block font-bold leading-snug">{e.degree}</span>
+                      <span className="block text-[15px] font-bold leading-snug text-navy">{e.degree}</span>
                       <span className="mt-0.5 block text-sm text-navy-600">{e.school}</span>
+                      {e.note && <span className="mt-1.5 block text-xs leading-relaxed text-navy-600">{e.note}</span>}
                     </span>
                   </li>
                 ))}
@@ -142,15 +165,18 @@ function Profile() {
           <Reveal delay={0.1}>
             <Card>
               <Label as="h3">{t('languages.title')}</Label>
-              <dl className="mt-4 space-y-3">
+              <dl className="mt-4 divide-y divide-navy/8">
                 {list('languages.items').map((l) => (
-                  <div key={l.name}>
-                    <dt className="font-bold">{l.name}</dt>
+                  <div key={l.name} className="py-3 first:pt-0 last:pb-0">
+                    <dt className="text-[15px] font-bold text-navy">{l.name}</dt>
                     <dd className="mt-0.5 text-sm leading-relaxed text-navy-600">{l.level}</dd>
                   </div>
                 ))}
               </dl>
-              <p className="mt-4 border-t border-navy-100 pt-4 text-sm font-semibold text-navy-700">{common.t('contact.location')}</p>
+              <p className="mt-4 flex items-center gap-2 border-t border-navy/10 pt-4 font-mono text-xs font-medium text-navy-600">
+                <MapPin className="size-3.5 text-accent" strokeWidth={1.75} aria-hidden="true" />
+                {common.t('contact.location')}
+              </p>
             </Card>
           </Reveal>
         </aside>
@@ -167,25 +193,35 @@ function Featured() {
   const awards = [...allAwards.filter((a) => a.featured), ...allAwards.filter((a) => !a.featured)].slice(0, 3)
 
   return (
-    <Section tone="muted">
-      <div className="grid gap-5 lg:grid-cols-12">
+    <Section tone="stone">
+      <div className="grid gap-6 lg:grid-cols-12">
         <Reveal className="lg:col-span-7">
           <Link
             to="/research"
-            className="group flex h-full flex-col rounded-xl border border-navy-100 bg-white p-6 transition duration-300 hover:border-navy-300 hover:shadow-[0_18px_40px_-24px_rgba(10,35,56,0.45)] md:p-8"
+            className="group flex h-full flex-col rounded-xl border border-navy/10 bg-surface p-6 transition-all duration-300 ease-(--ease-brand) hover:-translate-y-0.5 hover:border-navy/25 hover:shadow-[0_18px_40px_-28px_rgba(10,35,56,0.35)] md:p-8"
           >
-            <Label>{t('featured.title')}</Label>
+            <Label className="text-accent">{t('featured.title')}</Label>
             <div className="mt-4 flex flex-wrap gap-2">
               <Chip tone="navy">{research.t('publication.type')}</Chip>
-              <Chip>{research.t('publication.year')}</Chip>
-              <Chip tone="gold">{research.t('publication.role')}</Chip>
+              <Chip tone="outline" className="tabular-nums">
+                {research.t('publication.year')}
+              </Chip>
+              <Chip tone="accent">{research.t('publication.role')}</Chip>
             </div>
-            <h3 className="mt-4 text-2xl font-extrabold leading-tight tracking-tight">{research.t('publication.paperTitle')}</h3>
+            <h3 className="mt-5 text-2xl font-extrabold leading-[1.2] tracking-[-0.02em] text-navy">
+              {research.t('publication.paperTitle')}
+            </h3>
             <p className="mt-2 text-sm font-semibold text-navy-600">{research.t('publication.authors')}</p>
-            <p className="mt-5 border-l-2 border-gold pl-4 leading-relaxed text-navy-700">{research.t('publication.finding')}</p>
-            <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold">
+            <p className="mt-5 max-w-[58ch] border-l-2 border-accent pl-4 text-[15px] leading-[1.68] text-navy-700">
+              {research.t('publication.finding')}
+            </p>
+            <span className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-bold text-navy">
               {t('featured.cta')}
-              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              <ArrowRight
+                className="size-4 text-accent transition-transform duration-200 ease-(--ease-brand) group-hover:translate-x-1"
+                strokeWidth={1.75}
+                aria-hidden="true"
+              />
             </span>
           </Link>
         </Reveal>
@@ -193,29 +229,37 @@ function Featured() {
         <Reveal delay={0.06} className="lg:col-span-5">
           <Link
             to="/teaching"
-            className="group flex h-full flex-col rounded-xl bg-navy p-6 text-white transition duration-300 hover:bg-navy-800 md:p-8"
+            className="group flex h-full flex-col rounded-xl border border-white/10 bg-navy p-6 text-white transition-all duration-300 ease-(--ease-brand) hover:-translate-y-0.5 hover:bg-navy-800 md:p-8"
           >
-            <Label className="text-gold-light">{t('recognitionTeaser.title')}</Label>
-            <ul className="mt-5 space-y-4">
+            <Label className="text-accent-light">{t('recognitionTeaser.title')}</Label>
+            <ul className="mt-5 divide-y divide-white/10">
               {awards.map((a) => (
-                <li key={`${a.date}-${a.title}`} className="flex gap-3">
+                <li key={`${a.date}-${a.title}`} className="flex gap-3 py-4 first:pt-0 last:pb-0">
                   {a.featured ? (
-                    <Star className="mt-0.5 size-5 shrink-0 fill-gold-light text-gold-light" aria-hidden="true" />
+                    <Star
+                      className="mt-0.5 size-4 shrink-0 fill-brass-light text-brass-light"
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <Award className="mt-0.5 size-5 shrink-0 text-gold-light" aria-hidden="true" />
+                    <Award className="mt-0.5 size-4 shrink-0 text-accent-light" strokeWidth={1.5} aria-hidden="true" />
                   )}
                   <span>
-                    <span className="block font-bold leading-snug">{a.title}</span>
-                    <span className="mt-0.5 block text-sm text-navy-300">
-                      {a.org} · {a.date}
+                    <span className="block text-[15px] font-bold leading-snug">{a.title}</span>
+                    <span className="mt-1 block font-mono text-xs text-navy-300">
+                      {a.org} · <span className="tabular-nums">{a.date}</span>
                     </span>
                   </span>
                 </li>
               ))}
             </ul>
-            <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-gold-light">
+            <span className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-bold text-accent-light">
               {t('recognitionTeaser.cta')}
-              <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              <ArrowRight
+                className="size-4 transition-transform duration-200 ease-(--ease-brand) group-hover:translate-x-1"
+                strokeWidth={1.75}
+                aria-hidden="true"
+              />
             </span>
           </Link>
         </Reveal>
@@ -224,6 +268,7 @@ function Featured() {
   )
 }
 
+/** Sticky Split Editorial Directory replacing 5 shallow boxes. */
 function Explore() {
   const { t } = useContent('home')
   const common = useContent('common')
@@ -231,21 +276,38 @@ function Explore() {
 
   return (
     <Section aria-labelledby="explore-title">
-      <SectionHeading id="explore-title" title={t('explore.title')} />
-      <ul className="grid gap-px overflow-hidden rounded-xl border border-navy-100 bg-navy-100 sm:grid-cols-2 lg:grid-cols-5">
-        {pages.map((page, i) => (
-          <Reveal as="li" key={page.key} delay={i * 0.04} className="bg-white">
-            <Link to={page.path} className="group flex h-full flex-col gap-3 p-5 transition-colors hover:bg-navy-50">
-              <span className="flex items-center justify-between">
-                <span className="text-xs font-bold text-gold-dark">{String(i + 1).padStart(2, '0')}</span>
-                <ArrowUpRight className="size-4 text-navy-400 transition duration-300 group-hover:rotate-45 group-hover:text-navy" aria-hidden="true" />
-              </span>
-              <span className="font-bold">{common.t(`nav.${page.key}`)}</span>
-              <span className="text-sm leading-relaxed text-navy-600">{t(`explore.items.${page.key}`)}</span>
-            </Link>
-          </Reveal>
-        ))}
-      </ul>
+      <div className="grid gap-10 lg:grid-cols-12">
+        <div className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
+          <SectionHeading id="explore-title" title={t('explore.title')} className="mb-4" />
+          <p className="max-w-[32ch] text-sm leading-[1.68] text-navy-600">{common.t('footer.tagline')}</p>
+        </div>
+
+        <div className="lg:col-span-8">
+          <ul className="divide-y divide-navy/10 border-y border-navy/10">
+            {pages.map((page, i) => (
+              <Reveal as="li" key={page.key} delay={i * 0.03}>
+                <Link
+                  to={page.path}
+                  className="group grid items-baseline gap-2 py-5 transition-colors duration-200 hover:bg-surface/70 sm:grid-cols-[3rem_13rem_1fr_auto] sm:items-center sm:gap-5 sm:px-4"
+                >
+                  <span className="font-mono text-xs font-semibold tabular-nums text-accent">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <span className="text-base font-bold text-navy group-hover:text-accent-dark">
+                    {common.t(`nav.${page.key}`)}
+                  </span>
+                  <span className="text-sm leading-relaxed text-navy-600">{t(`explore.items.${page.key}`)}</span>
+                  <ArrowUpRight
+                    className="hidden size-4 shrink-0 text-navy-400 transition-transform duration-200 ease-(--ease-brand) group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent sm:block"
+                    strokeWidth={1.75}
+                    aria-hidden="true"
+                  />
+                </Link>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </div>
     </Section>
   )
 }
@@ -257,7 +319,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Stats />
+      <ImpactStrip />
       <Profile />
       <Featured />
       <Explore />

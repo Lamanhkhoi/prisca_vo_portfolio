@@ -4,30 +4,30 @@ import { LinkedinIcon } from './icons'
 import { CONTACT } from '@/config/site'
 import { cn } from '@/lib/utils'
 
-/** Phone, both emails, LinkedIn and location. tone="dark" for the navy footer. */
+/** Phone, both emails, LinkedIn and location. tone="dark" for the dark navy footer. */
 export default function ContactList({ tone = 'light', className }) {
   const { t } = useTranslation()
   const dark = tone === 'dark'
   const link = cn(
-    'break-words underline-offset-4 transition-colors hover:underline',
-    dark ? 'text-white decoration-gold' : 'text-navy decoration-gold decoration-2',
+    'break-words underline-offset-4 transition-colors duration-200 hover:underline',
+    dark ? 'text-white decoration-accent-light' : 'text-navy decoration-accent decoration-2',
   )
-  const icon = cn('mt-0.5 size-4 shrink-0', dark ? 'text-gold-light' : 'text-gold-dark')
-  const label = cn('block text-xs font-semibold uppercase tracking-wider', dark ? 'text-navy-300' : 'text-navy-600')
+  const icon = cn('mt-0.5 size-4 shrink-0', dark ? 'text-accent-light' : 'text-accent')
+  const label = cn('block font-mono text-[11px] font-semibold uppercase tracking-[0.14em]', dark ? 'text-navy-400' : 'text-navy-600')
 
   return (
     <ul className={cn('space-y-4 text-sm', className)}>
       <li className="flex gap-3">
-        <Phone className={icon} aria-hidden="true" />
+        <Phone className={icon} strokeWidth={1.5} aria-hidden="true" />
         <span>
           <span className={label}>{t('contact.phone')}</span>
-          <a href={CONTACT.phoneHref} className={link}>
+          <a href={CONTACT.phoneHref} className={cn(link, 'font-mono tabular-nums')}>
             {CONTACT.phone}
           </a>
         </span>
       </li>
       <li className="flex gap-3">
-        <Mail className={icon} aria-hidden="true" />
+        <Mail className={icon} strokeWidth={1.5} aria-hidden="true" />
         <span>
           <span className={label}>{t('contact.email')}</span>
           {CONTACT.emails.map((email) => (
@@ -47,8 +47,8 @@ export default function ContactList({ tone = 'light', className }) {
         </span>
       </li>
       <li className="flex gap-3">
-        <MapPin className={icon} aria-hidden="true" />
-        <span className={dark ? 'text-navy-100' : 'text-navy-700'}>{t('contact.location')}</span>
+        <MapPin className={icon} strokeWidth={1.5} aria-hidden="true" />
+        <span className={dark ? 'text-navy-200' : 'text-navy-700'}>{t('contact.location')}</span>
       </li>
     </ul>
   )
