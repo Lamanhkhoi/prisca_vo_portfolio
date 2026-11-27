@@ -5,112 +5,242 @@
   "header": {
     "eyebrow": "Evidence",
     "title": "Evidence portfolio",
-    "lead": "Degrees, publication proof, teaching awards and certificates, each indexed with an evidence code."
+    "lead": "Verified academic degrees, conference publication proof, teaching records, awards, speaking engagements and professional certificates indexed according to the IU Evidence Checklist."
   },
-  "filterLabel": "Filter by type",
+  "categoryHeading": "Evidence categories",
+  "filterLabel": "Select evidence category",
   "filters": {
     "all": "All",
-    "degree": "Degrees",
-    "publication": "Publication",
-    "award": "Awards",
-    "certificate": "Certificates",
-    "event": "Events"
+    "B": "Degrees",
+    "C": "Publication",
+    "D": "Teaching",
+    "E": "Awards",
+    "F": "Talks & Mentoring",
+    "H": "Certificates"
   },
-  "pending": "Scan to be added",
-  "open": "Open document",
-  "codeLabel": "Evidence code",
-  "note": "Evidence codes match the accompanying Evidence Portfolio.",
+  "itemsCount": "{{count}} items",
+  "photosCount": "{{count}} photos",
+  "pending": "Image to be added",
+  "open": "Open original document",
+  "viewDetails": "View details",
+  "closeModal": "Close",
+  "previous": "Previous",
+  "next": "Next",
+  "codeLabel": "Checklist code",
+  "issuerLabel": "Issuing organisation",
+  "dateLabel": "Date / Year",
+  "categoryLabel": "Category",
+  "summaryLabel": "Credential details",
+  "galleryLabel": "Attached images",
+  "imagePending": "Certificate scan / image will be added here",
+  "note": "Select a category to browse verified credentials, then click any card to inspect images and details.",
   "items": [
     {
-      "code": "E-01",
-      "type": "degree",
+      "code": "B1",
+      "type": "B",
       "title": "Master of Business Administration (MBA)",
-      "issuer": "Maastricht School of Management",
-      "date": "2018"
+      "issuer": "Maastricht School of Management, The Netherlands",
+      "date": "24/11/2018",
+      "summary": "Official MBA degree, commemorative plaque, and full Transcript of Academic Record (70 credits, AMBA/ACBSP/IACBE/ATHEA accredited).",
+      "details": "Conferred by Maastricht School of Management (MSM), The Netherlands (Programme delivered in Ho Chi Minh City). Includes the official MBA Diploma (Student ID: VNSIM-1916016), commemorative plaque, and full Academic Transcript (70 credits, specialization in Multinational Strategic Management, Final Academic Research Paper on Strategic Sourcing in the Apparel Industry in Vietnam)."
     },
     {
-      "code": "E-02",
-      "type": "degree",
+      "code": "B2",
+      "type": "B",
+      "title": "Maastricht MBA Program Completion Acknowledgement",
+      "issuer": "MSM & HCMC University of Technology (HCMUT)",
+      "date": "24/11/2018",
+      "summary": "Official programme acknowledgement confirming completion of the Maastricht MBA Program and Master Thesis.",
+      "details": "Issued jointly by the Maastricht MBA Program and Ho Chi Minh City University of Technology (signed by Dr. Nguyen Thu Hien, Director of the Maastricht MBA Program), acknowledging completion of the MBA curriculum and Master Thesis on 24 November 2018."
+    },
+    {
+      "code": "B4",
+      "type": "B",
       "title": "Bachelor's Degree in English and Painting",
-      "issuer": "Hue University of Education",
-      "date": "1997"
+      "issuer": "Hue University of Education, Viet Nam",
+      "date": "1997",
+      "summary": "Full-time undergraduate diploma (Good standing) in English and Painting; also serves as formal proof of English proficiency.",
+      "details": "Official Bachelor's Diploma (Cử nhân Ngoại ngữ — ngành Tiếng Anh - Họa, hệ Chính quy, hạng Khá) conferred by Hue University of Education on 10 August 1997. Includes scanned diploma pages and downloadable original PDF."
     },
     {
-      "code": "E-03",
-      "type": "publication",
+      "code": "C1",
+      "type": "C",
       "title": "Strategic sourcing in the apparel industry in Vietnam",
       "issuer": "IU-AGBA-ULAW Proceedings, VNU-HCM Press",
-      "date": "2026"
+      "date": "2026",
+      "summary": "Corresponding-author conference proceedings paper (pp. 1784–1813, ISBN 978-632-608-802-1) with direct link to page 1784.",
+      "details": "Ha, M. T., & Vo, T. M. P. (2026). Published in Proceedings of the International Conference on Business and Entrepreneurship Development Across Vietnam in a Globalized and Digitalized Era (IU-AGBA-ULAW, 6 July 2025), VNU-HCM Press, pp. 1784–1813, ISBN 978-632-608-802-1. Click below to open the proceedings directly at page 1784."
     },
     {
-      "code": "E-04",
-      "type": "award",
-      "title": "Excellent Lecturer Award",
-      "issuer": "FPT University",
-      "date": "Summer 2024"
+      "code": "D2",
+      "type": "D",
+      "title": "13 University Courses Taught — Curriculum Archive",
+      "issuer": "FPT University, Ho Chi Minh City",
+      "date": "2022 – Present",
+      "summary": "Teaching archive covering 13 undergraduate courses across Supply Chain, Global Sourcing, Trade, Marketing, HR and Management.",
+      "details": "Course portfolio spanning Tier 1 (SCM201, SCM202, SCM301m, SCM302, IEI301, LOG321, IBS301m, IBC201, GLA301) and Tier 2 (MGT103, IBI101, MKT101, Entrepreneurship, Organisational Behaviour, HRM201c/202c) taught at FPT University HCMC and Greenwich Vietnam."
     },
     {
-      "code": "E-05",
-      "type": "award",
-      "title": "Excellent Lecturer Award",
-      "issuer": "FPT University",
-      "date": "Fall 2022"
+      "code": "D3",
+      "type": "D",
+      "title": "Invited Practitioner Lecturer & Thesis Panel Member",
+      "issuer": "CFVG — Master in Supply Chain Management",
+      "date": "14–16/04/2022",
+      "summary": "Delivered 'Operations Strategy and Supply Chain Management' (Focus Hours module) for postgraduate MSCM students.",
+      "details": "Classroom photo from the Focus Hours module 'Operations Strategy and Supply Chain Management' delivered at CFVG (14–16 April 2022), alongside service on the Master's Thesis Advisory and Assessment Panel."
     },
     {
-      "code": "E-06",
-      "type": "award",
-      "title": "Lecturer Commendation",
-      "issuer": "FPT University, Business Administration",
-      "date": "Spring 2023"
+      "code": "D4",
+      "type": "D",
+      "title": "University Lecturer & Visiting Lecturer Faculty IDs",
+      "issuer": "FPT University & University of Greenwich Vietnam",
+      "date": "2022 – Present",
+      "summary": "Official faculty identification badges for FPT University (Lecturer of Business) and University of Greenwich Vietnam.",
+      "details": "Official academic faculty credentials confirming active teaching appointments as Lecturer of Business at FPT University HCMC and Visiting Lecturer (Academic Department) at University of Greenwich Vietnam."
     },
     {
-      "code": "E-07",
-      "type": "award",
-      "title": "Certificate of Appreciation",
-      "issuer": "VALOMA",
-      "date": "06/2024"
+      "code": "D5",
+      "type": "D",
+      "title": "Faculty Development Trainer — Certificate of Appreciation",
+      "issuer": "Vietnam Association for Logistics Manpower Development (VALOMA)",
+      "date": "20–22/06/2024",
+      "summary": "Official VALOMA Certificate of Appreciation and cohort photo from the Logistics & SCM Lecturer Training Programme.",
+      "details": "Awarded by VALOMA (signed by Chairman Dr. Mai Xuan Thieu) in recognition of lecturing in the National Training Program on Logistics and Supply Chain Management for university lecturers from Central and Southern Viet Nam (20–22 June 2024 in Ho Chi Minh City)."
     },
     {
-      "code": "E-08",
-      "type": "award",
-      "title": "Certificate of Recognition, LogiChain competition",
+      "code": "E1",
+      "type": "E",
+      "title": "Excellent Lecturer Award — Fall 2022",
+      "issuer": "FPT University, Ho Chi Minh City",
+      "date": "Fall 2022",
+      "summary": "University-level Certificate of Merit and ceremony photos recognising Excellent Lecturer performance in Fall 2022.",
+      "details": "Official FPT University Certificate of Merit (Giấy khen Giảng viên xuất sắc học kỳ Fall 2022) along with award ceremony stage photos honouring outstanding teaching impact."
+    },
+    {
+      "code": "E2",
+      "type": "E",
+      "title": "Lecturer Commendation — Spring 2023",
+      "issuer": "FPT University, Business Administration Subject Group",
+      "date": "Spring 2023",
+      "summary": "Official semester summary commendation slide from the Business Administration Department for Spring 2023.",
+      "details": "Recognised during the Spring 2023 Semester Review & Leader Talks ('Happiness') as a commended lecturer of the Business Administration Subject Group at FPT University."
+    },
+    {
+      "code": "D8",
+      "type": "E",
+      "title": "Certificate of Recognition — LogiChain Competition",
       "issuer": "FPT Education",
-      "date": "2024"
+      "date": "29/06/2024",
+      "summary": "FPT Education Certificate of Recognition (Level 4 – FE) for successfully organising the LogiChain student competition.",
+      "details": "Digitally signed Certificate of Recognition awarded by FPT Education on 29 June 2024 for co-organising and leading the LogiChain student supply chain competition."
     },
     {
-      "code": "E-09",
-      "type": "certificate",
-      "title": "Strategic Sourcing",
-      "issuer": "Rutgers University",
-      "date": "11/2026"
+      "code": "F1",
+      "type": "F",
+      "title": "Mentor for Talent Students — BKSIM Mentoring",
+      "issuer": "BKSIM Talent Mentoring Program, HCMUT",
+      "date": "2023 – Present",
+      "summary": "Mentoring session with high-potential students developing Individual Development Plans (IDPs).",
+      "details": "Active mentor in the BKSIM Talent Mentoring Program at Ho Chi Minh City University of Technology (HCMUT), guiding students in career strategy, IDP execution, and readiness for multinational corporations."
     },
     {
-      "code": "E-10",
-      "type": "certificate",
+      "code": "F3",
+      "type": "F",
+      "title": "Workshop Leader & Field Visit — HCMC Export 2026",
+      "issuer": "HCMC Export 2026, WTC Expo",
+      "date": "10/2026",
+      "summary": "Photo gallery from the industry field visit with ~50 FPT University students and 'Job-Ready' sourcing workshop (4.9/5 survey).",
+      "details": "Six event photographs capturing the workshop 'Job-Ready: From Purchase Requirement to Shipment' and hands-on industry field visit for ~50 FPT University students at HCMC Export 2026 (WTC Expo), achieving a 4.9/5 post-event rating."
+    },
+    {
+      "code": "F4",
+      "type": "F",
+      "title": "Invited Speaker — ESG-Linked Supply Chain Financing",
+      "issuer": "Office for International Study Programs (OISP), HCMUT",
+      "date": "16/05/2026",
+      "summary": "Official speaker invitation and webinar posters for 'ESG-Linked Supply Chain Financing' at Bach Khoa International Master Programs.",
+      "details": "Official invitation letter from the Office for International Study Programs, Ho Chi Minh City University of Technology (VNU-HCM) and promotional webinar posters for the session 'ESG-Linked Supply Chain Financing' held on 16 May 2026."
+    },
+    {
+      "code": "F5",
+      "type": "F",
+      "title": "Invited Seminar Speaker — BKSIM Seminar (MBA)",
+      "issuer": "BKSIM Seminar, HCMUT",
+      "date": "04/04/2026",
+      "summary": "Speaker posters and live session photos from the BKSIM MBA Seminar on 'Why Talent Stays, Leaves & Thrives'.",
+      "details": "Official seminar announcement and live speaker photographs from the BKSIM MBA Programme seminar at Ho Chi Minh City University of Technology (4 April 2026)."
+    },
+    {
+      "code": "F6",
+      "type": "F",
+      "title": "Community Well-Being & International Healing Talks",
+      "issuer": "FPT University & Hue University (LGL Yoga International School)",
+      "date": "2024 – 2025",
+      "summary": "Event photography from community mindfulness and International Healing sessions across university campuses.",
+      "details": "Five photographs from invited community well-being talks including 'The Secret of a Smile: The Power of Mindfulness' (FPT University, 2024) and 'Discovering Inner Strength' (International Healing 2025, FPT University Da Nang & Hue University)."
+    },
+    {
+      "code": "H1",
+      "type": "H",
+      "title": "Strategic Sourcing & Strategic Procurement",
+      "issuer": "Rutgers, The State University of New Jersey (Coursera)",
+      "date": "11/2026",
+      "summary": "Two verified Rutgers University certificates in Strategic Sourcing and Strategic Procurement & Sourcing Conclusions.",
+      "details": "Completed through Rutgers, The State University of New Jersey on Coursera (November 2026). Includes both 'Strategic Sourcing' and 'Strategic Procurement and Sourcing Conclusions' course certificates."
+    },
+    {
+      "code": "H2",
+      "type": "H",
       "title": "ESG Investing: Setting Standards & Conducting Analysis",
-      "issuer": "",
-      "date": "11/2026"
+      "issuer": "Interactive Brokers (Coursera)",
+      "date": "11/2026",
+      "summary": "Verified certificate in ESG materiality standards, evaluation frameworks and sustainability analysis.",
+      "details": "Authorized by Interactive Brokers and completed on Coursera in November 2026, covering ESG standard-setting and quantitative sustainability analysis."
     },
     {
-      "code": "E-11",
-      "type": "certificate",
-      "title": "Leadership Certification",
-      "issuer": "Crestcom International",
-      "date": "06/2026"
-    },
-    {
-      "code": "E-12",
-      "type": "certificate",
+      "code": "H4",
+      "type": "H",
       "title": "Google Project Management Professional Certificate",
-      "issuer": "Google",
-      "date": "11/2025"
+      "issuer": "Google (Coursera)",
+      "date": "11/2025",
+      "summary": "7-course Professional Certificate covering traditional and Agile project management, execution and capstone delivery.",
+      "details": "Completed 7-course Professional Certificate authorized by Google on Coursera (14 November 2025), covering project initiation, planning, execution, Agile delivery, and applied capstone."
     },
     {
-      "code": "E-13",
-      "type": "event",
-      "title": "HCMC Export 2026 workshop and field visit",
-      "issuer": "WTC Expo, Ho Chi Minh City",
-      "date": "10/2026"
+      "code": "H5-1",
+      "type": "H",
+      "title": "HRCI Human Resource Associate Professional Certificate",
+      "issuer": "HRCI (Coursera)",
+      "date": "03/2025",
+      "summary": "5-course HRCI Professional Certificate covering talent acquisition, compliance, compensation and employee relations.",
+      "details": "Completed 5-course Professional Certificate authorized by HRCI (12 March 2025), covering talent acquisition, learning & development, compensation & benefits, employee relations, and compliance & risk management."
+    },
+    {
+      "code": "H5-2",
+      "type": "H",
+      "title": "Leading: Human Resource Management and Leadership",
+      "issuer": "Macquarie University (Coursera)",
+      "date": "12/2024",
+      "summary": "4-course Specialization on visionary leadership, adaptive management, organisational behaviour and design.",
+      "details": "Completed 4-course Specialization from Macquarie University (2 December 2024), covering visionary leadership, adapting leadership styles, organisational behaviour, and organisational design."
+    },
+    {
+      "code": "H5-3",
+      "type": "H",
+      "title": "Human Resource Management: HR for People Managers",
+      "issuer": "University of Minnesota (Coursera)",
+      "date": "11/2024",
+      "summary": "5-course Specialization covering recruiting, onboarding, performance management and compensation.",
+      "details": "Completed 5-course Specialization from the University of Minnesota (26 November 2024), covering HR management foundations, recruiting & onboarding, performance management, compensation, and capstone."
+    },
+    {
+      "code": "H6",
+      "type": "H",
+      "title": "AI in Office",
+      "issuer": "FPT University (Coursera)",
+      "date": "11/2024",
+      "summary": "Certificate in applying generative AI tools to office productivity, academic workflows and teaching.",
+      "details": "Course certificate authorized by FPT University and offered through Coursera (completed November 2024), focusing on practical AI workflows for educators and managers."
     }
   ]
 }

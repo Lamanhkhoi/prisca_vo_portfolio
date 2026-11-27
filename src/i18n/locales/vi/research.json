@@ -74,7 +74,14 @@
   "thesis": {
     "title": "Luận văn MBA",
     "name": "Strategic Sourcing in the Apparel Industry in Vietnam",
-    "school": "Maastricht School of Management, 2018"
+    "school": "Maastricht School of Management, Hà Lan (2018)",
+    "programme": "Chương trình đào tạo tại TP. Hồ Chí Minh",
+    "summary": "Nghiên cứu thực nghiệm về tìm nguồn chiến lược, quan hệ người mua và nhà cung cấp, đánh giá nhà cung cấp và hiệu quả tìm nguồn từ góc nhìn của các nhà mua hàng may mặc đa quốc gia tại Việt Nam — là nền tảng cho công bố kỷ yếu hội thảo quốc tế IU-AGBA-ULAW 2026.",
+    "tags": [
+      "Tìm nguồn chiến lược",
+      "Ngành may mặc",
+      "Việt Nam"
+    ]
   },
   "phd": {
     "title": "Đề tài nghiên cứu tiến sĩ dự kiến (PhD)",
@@ -88,6 +95,7 @@
   },
   "interests": {
     "title": "Hướng nghiên cứu chính",
+    "centerSubtitle": "6 trụ cột nghiên cứu",
     "items": [
       "Tìm nguồn có trách nhiệm",
       "Lựa chọn nhà cung cấp bền vững",

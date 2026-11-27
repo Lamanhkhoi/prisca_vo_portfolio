@@ -9,6 +9,8 @@
   },
   "events": {
     "title": "Talks, forums & mentoring",
+    "badge": "Engagements",
+    "summary": "Invited lectures, university-industry executive forums, practical sourcing workshops, and talent mentoring connecting students and faculty with multinational supply chain leaders.",
     "filterLabel": "Filter by type",
     "filters": {
       "all": "All",
@@ -74,12 +76,18 @@
     "period": "2024 - 2025",
     "items": [
       {
+        "role": "Invited Speaker",
+        "date": "2024",
         "title": "The Secret of a Smile: The Power of Mindfulness",
-        "org": "FPT University, 2024"
+        "org": "FPT University, Ho Chi Minh City Campus — Community Well-Being & Mindfulness Talk, 2024",
+        "text": "Invited speaker session for the university community at FPT University HCMC exploring mindful awareness, emotional balance, and everyday positive presence to support student and faculty well-being."
       },
       {
+        "role": "Invited Speaker",
+        "date": "2025",
         "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
-        "org": "International Healing 2025, FPT University Da Nang & Hue University, organised by LGL Yoga International School"
+        "org": "International Healing 2025, FPT University Da Nang & Hue University, organised by LGL Yoga International School",
+        "text": "Invited community well-being talks delivered across FPT University Da Nang and Hue University on cultivating inner resilience, self-healing, and returning to mindful presence."
       }
     ]
   }

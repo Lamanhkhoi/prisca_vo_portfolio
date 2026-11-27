@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
-import { ArrowRight, ArrowUpRight, Award, Building2, MapPin, Star } from 'lucide-react'
+import { ArrowRight, Award, Building2, MapPin, Star } from 'lucide-react'
 import { useContent, useDocumentTitle } from '@/hooks/useContent'
-import { NAV } from '@/config/site'
 import { EASE } from '@/lib/utils'
 import { Card, Chip, Container, Label, Section, SectionHeading } from '@/components/ui/Primitives'
 import Button from '@/components/ui/Button'
@@ -104,17 +103,17 @@ function Profile() {
 
   return (
     <Section aria-labelledby="profile-title">
-      <div className="grid gap-10 lg:grid-cols-12">
-        <div className="lg:col-span-7">
+      <div className="grid gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-10">
+        <div className="flex flex-col lg:col-span-7">
           <SectionHeading id="profile-title" title={t('profile.title')} />
           <Reveal>
             <p className="leading-relaxed text-navy-700 md:text-[17px]">{t('profile.text')}</p>
           </Reveal>
-          <Reveal delay={0.05}>
-            <div className="mt-8 rounded-xl border-l-2 border-gold bg-navy-50 p-5 md:p-6">
+          <Reveal delay={0.05} className="mt-8 flex flex-1 flex-col">
+            <div className="flex flex-1 flex-col justify-center rounded-xl border-l-2 border-lime bg-navy-50 p-5 md:p-6">
               <Label>{t('objective.title')}</Label>
               <p className="mt-2 flex items-center gap-2 text-sm font-bold text-navy">
-                <Building2 className="size-4 text-gold-dark" aria-hidden="true" />
+                <Building2 className="size-4 shrink-0 text-lime-dark" aria-hidden="true" />
                 {t('objective.org')}
               </p>
               <p className="mt-3 text-[15px] leading-relaxed text-navy-700">{t('objective.text')}</p>
@@ -122,35 +121,40 @@ function Profile() {
           </Reveal>
         </div>
 
-        <aside className="space-y-5 lg:col-span-5">
+        <aside className="flex flex-col gap-5 lg:col-span-5">
           <Reveal delay={0.06}>
-            <Card>
+            <Card className="h-full">
               <Label as="h3">{t('education.title')}</Label>
               <ol className="mt-4 space-y-4">
                 {list('education.items').map((e) => (
                   <li key={e.year} className="grid grid-cols-[3.25rem_1fr] gap-3">
-                    <span className="text-sm font-extrabold text-gold-dark">{e.year}</span>
+                    <span className="text-sm font-extrabold text-lime-dark">{e.year}</span>
                     <span>
                       <span className="block font-bold leading-snug">{e.degree}</span>
                       <span className="mt-0.5 block text-sm text-navy-600">{e.school}</span>
+                      {e.note && <span className="mt-1 block text-xs leading-relaxed text-navy-600">{e.note}</span>}
                     </span>
                   </li>
                 ))}
               </ol>
             </Card>
           </Reveal>
-          <Reveal delay={0.1}>
-            <Card>
-              <Label as="h3">{t('languages.title')}</Label>
-              <dl className="mt-4 space-y-3">
-                {list('languages.items').map((l) => (
-                  <div key={l.name}>
-                    <dt className="font-bold">{l.name}</dt>
-                    <dd className="mt-0.5 text-sm leading-relaxed text-navy-600">{l.level}</dd>
-                  </div>
-                ))}
-              </dl>
-              <p className="mt-4 border-t border-navy-100 pt-4 text-sm font-semibold text-navy-700">{common.t('contact.location')}</p>
+          <Reveal delay={0.1} className="flex flex-1 flex-col">
+            <Card className="flex h-full flex-1 flex-col justify-between">
+              <div>
+                <Label as="h3">{t('languages.title')}</Label>
+                <dl className="mt-4 space-y-3">
+                  {list('languages.items').map((l) => (
+                    <div key={l.name}>
+                      <dt className="font-bold">{l.name}</dt>
+                      <dd className="mt-0.5 text-sm leading-relaxed text-navy-600">{l.level}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <p className="mt-5 border-t border-navy-100 pt-4 text-sm font-semibold text-navy-700">
+                {common.t('contact.location')}
+              </p>
             </Card>
           </Reveal>
         </aside>
@@ -224,32 +228,6 @@ function Featured() {
   )
 }
 
-function Explore() {
-  const { t } = useContent('home')
-  const common = useContent('common')
-  const pages = NAV.filter((item) => item.key !== 'home')
-
-  return (
-    <Section aria-labelledby="explore-title">
-      <SectionHeading id="explore-title" title={t('explore.title')} />
-      <ul className="grid gap-px overflow-hidden rounded-xl border border-navy-100 bg-navy-100 sm:grid-cols-2 lg:grid-cols-5">
-        {pages.map((page, i) => (
-          <Reveal as="li" key={page.key} delay={i * 0.04} className="bg-white">
-            <Link to={page.path} className="group flex h-full flex-col gap-3 p-5 transition-colors hover:bg-navy-50">
-              <span className="flex items-center justify-between">
-                <span className="text-xs font-bold text-gold-dark">{String(i + 1).padStart(2, '0')}</span>
-                <ArrowUpRight className="size-4 text-navy-400 transition duration-300 group-hover:rotate-45 group-hover:text-navy" aria-hidden="true" />
-              </span>
-              <span className="font-bold">{common.t(`nav.${page.key}`)}</span>
-              <span className="text-sm leading-relaxed text-navy-600">{t(`explore.items.${page.key}`)}</span>
-            </Link>
-          </Reveal>
-        ))}
-      </ul>
-    </Section>
-  )
-}
-
 export default function HomePage() {
   const { t } = useContent('home')
   useDocumentTitle(t('meta.title'))
@@ -260,7 +238,6 @@ export default function HomePage() {
       <Stats />
       <Profile />
       <Featured />
-      <Explore />
     </>
   )
 }

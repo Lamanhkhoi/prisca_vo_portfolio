@@ -9,6 +9,8 @@
   },
   "events": {
     "title": "Báo cáo, diễn đàn & cố vấn",
+    "badge": "Hoạt động tiêu biểu",
+    "summary": "Báo cáo mời, diễn đàn kết nối nhà trường – doanh nghiệp, workshop thực tế và cố vấn sinh viên tài năng cùng các lãnh đạo chuỗi cung ứng từ các tập đoàn đa quốc gia.",
     "filterLabel": "Lọc theo loại hoạt động",
     "filters": {
       "all": "Tất cả",
@@ -74,12 +76,18 @@
     "period": "2024 - 2025",
     "items": [
       {
+        "role": "Diễn giả khách mời",
+        "date": "2024",
         "title": "The Secret of a Smile: The Power of Mindfulness",
-        "org": "Đại học FPT, 2024"
+        "org": "Đại học FPT, Cơ sở TP. Hồ Chí Minh — Chương trình Sức khoẻ Tinh thần & Chánh niệm, 2024",
+        "text": "Buổi chia sẻ khách mời dành cho cộng đồng sinh viên và giảng viên tại Đại học FPT TP.HCM về thực hành chánh niệm, cân bằng cảm xúc và năng lượng tích cực nhằm nâng cao sức khoẻ tinh thần."
       },
       {
+        "role": "Diễn giả khách mời",
+        "date": "2025",
         "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
-        "org": "International Healing 2025, Đại học FPT Đà Nẵng & Đại học Huế, do LGL Yoga International School tổ chức"
+        "org": "International Healing 2025, Đại học FPT Đà Nẵng & Đại học Huế, do LGL Yoga International School tổ chức",
+        "text": "Diễn giả khách mời trong khuôn khổ chương trình International Healing 2025 tại Đại học FPT Đà Nẵng và Đại học Huế, chia sẻ về nuôi dưỡng nội lực, chữa lành bên trong và trở về với giây phút hiện tại."
       }
     ]
   }

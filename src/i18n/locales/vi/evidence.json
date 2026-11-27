@@ -5,112 +5,242 @@
   "header": {
     "eyebrow": "Minh chứng",
     "title": "Hồ sơ minh chứng",
-    "lead": "Văn bằng, minh chứng công bố, giải thưởng giảng dạy và chứng chỉ, mỗi mục có một mã minh chứng."
+    "lead": "Văn bằng, minh chứng công bố, hồ sơ giảng dạy, giải thưởng, hội thảo và chứng chỉ chuyên môn được xác thực và phân loại theo đúng Danh mục Minh chứng (IU)."
   },
-  "filterLabel": "Lọc theo loại",
+  "categoryHeading": "Danh mục minh chứng",
+  "filterLabel": "Chọn danh mục minh chứng",
   "filters": {
     "all": "Tất cả",
-    "degree": "Văn bằng",
-    "publication": "Công bố",
-    "award": "Giải thưởng",
-    "certificate": "Chứng chỉ",
-    "event": "Sự kiện"
+    "B": "Bằng cấp",
+    "C": "Công bố",
+    "D": "Giảng dạy",
+    "E": "Khen thưởng",
+    "F": "Hội thảo & Cố vấn",
+    "H": "Chứng chỉ"
   },
-  "pending": "Bản scan sẽ được bổ sung",
-  "open": "Mở tài liệu",
+  "itemsCount": "{{count}} mục",
+  "photosCount": "{{count}} ảnh",
+  "pending": "Hình ảnh sẽ được bổ sung",
+  "open": "Mở tài liệu gốc",
+  "viewDetails": "Xem chi tiết",
+  "closeModal": "Đóng",
+  "previous": "Trước",
+  "next": "Tiếp",
   "codeLabel": "Mã minh chứng",
-  "note": "Mã minh chứng khớp với Hồ sơ minh chứng (Evidence Portfolio) đi kèm.",
+  "issuerLabel": "Đơn vị cấp",
+  "dateLabel": "Thời gian",
+  "categoryLabel": "Danh mục",
+  "summaryLabel": "Thông tin chi tiết",
+  "galleryLabel": "Bộ ảnh minh chứng",
+  "imagePending": "Hình ảnh / bản scan chứng chỉ sẽ được cập nhật tại đây",
+  "note": "Chọn từng danh mục bên dưới để xem các thẻ minh chứng, sau đó bấm vào từng thẻ để xem trọn bộ ảnh và thông tin chi tiết.",
   "items": [
     {
-      "code": "E-01",
-      "type": "degree",
+      "code": "B1",
+      "type": "B",
       "title": "Thạc sĩ Quản trị Kinh doanh (MBA)",
-      "issuer": "Maastricht School of Management",
-      "date": "2018"
+      "issuer": "Maastricht School of Management, Hà Lan",
+      "date": "24/11/2018",
+      "summary": "Bằng MBA chính thức, kỷ niệm chương tốt nghiệp và Bảng điểm học tập đầy đủ (70 tín chỉ, kiểm định AMBA/ACBSP/IACBE/ATHEA).",
+      "details": "Cấp bởi Maastricht School of Management (MSM), Hà Lan (Chương trình đào tạo tại TP. Hồ Chí Minh). Bộ ảnh gồm Bằng Thạc sĩ Quản trị Kinh doanh chính thức (Mã HV: VNSIM-1916016), kỷ niệm chương tốt nghiệp và Bảng điểm đầy đủ (70 tín chỉ, chuyên ngành Multinational Strategic Management, Luận văn tốt nghiệp về Tìm nguồn chiến lược trong ngành may mặc Việt Nam)."
     },
     {
-      "code": "E-02",
-      "type": "degree",
-      "title": "Cử nhân Tiếng Anh và Hội hoạ",
-      "issuer": "Trường Đại học Sư phạm Huế",
-      "date": "1997"
+      "code": "B2",
+      "type": "B",
+      "title": "Giấy xác nhận hoàn thành Chương trình MBA Maastricht",
+      "issuer": "MSM & Trường Đại học Bách khoa TP.HCM (HCMUT)",
+      "date": "24/11/2018",
+      "summary": "Giấy xác nhận chính thức hoàn thành chương trình Maastricht MBA và bảo vệ luận văn Thạc sĩ.",
+      "details": "Cấp bởi Chương trình Maastricht MBA phối hợp cùng Trường Đại học Bách khoa TP.HCM (TS. Nguyễn Thu Hiền – Giám đốc Chương trình ký xác nhận ngày 24/11/2018) xác nhận hoàn thành toàn bộ học phần và luận văn Thạc sĩ."
     },
     {
-      "code": "E-03",
-      "type": "publication",
+      "code": "B4",
+      "type": "B",
+      "title": "Bằng Tốt nghiệp Đại học — Tiếng Anh và Hội hoạ",
+      "issuer": "Trường Đại học Sư phạm Huế, Việt Nam",
+      "date": "1997",
+      "summary": "Bằng Cử nhân Ngoại ngữ chính quy (hạng Khá) ngành Tiếng Anh - Họa, đồng thời là minh chứng năng lực tiếng Anh.",
+      "details": "Bằng Tốt nghiệp Đại học (Cử nhân Ngoại ngữ – ngành Tiếng Anh - Họa, hệ Chính quy, hạng Khá) do Trường Đại học Sư phạm Huế cấp ngày 10/08/1997. Đính kèm ảnh scan mặt bằng, bìa bằng và file PDF gốc."
+    },
+    {
+      "code": "C1",
+      "type": "C",
       "title": "Strategic sourcing in the apparel industry in Vietnam",
       "issuer": "Kỷ yếu IU-AGBA-ULAW, NXB ĐHQG TP.HCM",
-      "date": "2026"
+      "date": "2026",
+      "summary": "Bài báo kỷ yếu hội thảo quốc tế với vai trò tác giả liên hệ (tr. 1784–1813, ISBN 978-632-608-802-1) kèm đường link trực tiếp trang 1784.",
+      "details": "Ha, M. T., & Vo, T. M. P. (2026). Công bố trong Kỷ yếu Hội thảo Quốc tế IU-AGBA-ULAW (ngày 06/07/2025), NXB Đại học Quốc gia TP.HCM, trang 1784–1813, ISBN 978-632-608-802-1. Bấm nút bên dưới để mở trực tiếp bài báo tại trang 1784."
     },
     {
-      "code": "E-04",
-      "type": "award",
-      "title": "Giải thưởng Giảng viên Xuất sắc",
-      "issuer": "Đại học FPT",
-      "date": "Summer 2024"
+      "code": "D2",
+      "type": "D",
+      "title": "Hồ sơ 13 học phần đã giảng dạy",
+      "issuer": "Trường Đại học FPT TP. Hồ Chí Minh",
+      "date": "2022 – Nay",
+      "summary": "Danh mục hồ sơ bài giảng 13 môn học bậc đại học về Chuỗi cung ứng, Tìm nguồn toàn cầu, Thương mại, Marketing, Nhân sự và Quản trị.",
+      "details": "Bao gồm hệ thống học liệu của các môn học nhóm lõi (SCM201, SCM202, SCM301m, SCM302, IEI301, LOG321, IBS301m, IBC201, GLA301) và nhóm quản trị bổ trợ (MGT103, IBI101, MKT101, Khởi nghiệp, Hành vi tổ chức, HRM201c/202c) đã giảng dạy tại Đại học FPT TP.HCM và Greenwich Việt Nam."
     },
     {
-      "code": "E-05",
-      "type": "award",
-      "title": "Giải thưởng Giảng viên Xuất sắc",
-      "issuer": "Đại học FPT",
-      "date": "Fall 2022"
+      "code": "D3",
+      "type": "D",
+      "title": "Giảng viên thỉnh giảng thực tiễn & Hội đồng Luận văn",
+      "issuer": "CFVG — Chương trình Thạc sĩ Quản trị Chuỗi cung ứng",
+      "date": "14–16/04/2022",
+      "summary": "Giảng dạy học phần 'Operations Strategy and Supply Chain Management' (Focus Hours) cho học viên Thạc sĩ MSCM.",
+      "details": "Hình ảnh lớp học thực tế từ học phần chuyên đề Focus Hours 'Operations Strategy and Supply Chain Management' tại CFVG (14–16/04/2022), song song với vai trò thành viên Hội đồng tư vấn và đánh giá Luận văn Thạc sĩ."
     },
     {
-      "code": "E-06",
-      "type": "award",
-      "title": "Khen thưởng Giảng viên",
+      "code": "D4",
+      "type": "D",
+      "title": "Thẻ Giảng viên Đại học FPT & Greenwich Việt Nam",
+      "issuer": "Đại học FPT & Đại học Greenwich Việt Nam",
+      "date": "2022 – Nay",
+      "summary": "Thẻ giảng viên chính thức tại Trường Đại học FPT (Lecturer of Business) và Đại học Greenwich Việt Nam.",
+      "details": "Minh chứng xác nhận vị trí giảng viên bộ môn Kinh doanh tại Trường Đại học FPT TP.HCM và giảng viên thỉnh giảng (Academic Department) tại Đại học Greenwich Việt Nam."
+    },
+    {
+      "code": "D5",
+      "type": "D",
+      "title": "Giảng viên Tập huấn Giảng viên Đại học — Giấy chứng nhận Tri ân",
+      "issuer": "Hiệp hội Phát triển Nhân lực Logistics Việt Nam (VALOMA)",
+      "date": "20–22/06/2024",
+      "summary": "Giấy chứng nhận tri ân chính thức của VALOMA cùng ảnh tập thể khóa tập huấn giảng viên Logistics & Chuỗi cung ứng.",
+      "details": "Do Chủ tịch VALOMA (TS. Mai Xuân Thiệu) trao tặng nhằm ghi nhận đóng góp giảng dạy tại Khóa tập huấn kiến thức Logistics và Quản lý Chuỗi cung ứng dành cho giảng viên đại học khu vực miền Trung và miền Nam (20–22/06/2024 tại TP.HCM)."
+    },
+    {
+      "code": "E1",
+      "type": "E",
+      "title": "Giải thưởng Giảng viên Xuất sắc — Fall 2022",
+      "issuer": "Trường Đại học FPT TP. Hồ Chí Minh",
+      "date": "Fall 2022",
+      "summary": "Giấy khen cấp trường và hình ảnh lễ vinh danh Giảng viên Xuất sắc học kỳ Fall 2022.",
+      "details": "Giấy khen chính thức của Trường Đại học FPT trao tặng danh hiệu Giảng viên xuất sắc học kỳ Fall 2022 kèm hình ảnh sân khấu lễ trao thưởng."
+    },
+    {
+      "code": "E2",
+      "type": "E",
+      "title": "Giảng viên được Tuyên dương — Spring 2023",
       "issuer": "Đại học FPT, Bộ môn Quản trị Kinh doanh",
-      "date": "Spring 2023"
+      "date": "Spring 2023",
+      "summary": "Slide tuyên dương giảng viên trong lễ Tổng kết học kỳ Spring 2023 của Bộ môn Quản trị Kinh doanh.",
+      "details": "Ghi nhận và tuyên dương tại Lễ tổng kết học kỳ Spring 2023 & Leader Talks ('Happiness') của Bộ môn Quản trị Kinh doanh, Trường Đại học FPT."
     },
     {
-      "code": "E-07",
-      "type": "award",
-      "title": "Giấy chứng nhận Tri ân",
-      "issuer": "VALOMA",
-      "date": "06/2024"
+      "code": "D8",
+      "type": "E",
+      "title": "Giấy chứng nhận Ghi nhận — Cuộc thi LogiChain",
+      "issuer": "Tổ chức Giáo dục FPT (FPT Education)",
+      "date": "29/06/2024",
+      "summary": "Certificate of Recognition (Level 4 – FE) ghi nhận đóng góp tổ chức thành công cuộc thi sinh viên LogiChain.",
+      "details": "Giấy chứng nhận ký số của Tổ chức Giáo dục FPT cấp ngày 29/06/2024 ghi nhận thành tích tổ chức thành công cuộc thi học thuật sinh viên LogiChain."
     },
     {
-      "code": "E-08",
-      "type": "award",
-      "title": "Giấy chứng nhận Ghi nhận, cuộc thi LogiChain",
-      "issuer": "Tổ chức Giáo dục FPT",
-      "date": "2024"
+      "code": "F1",
+      "type": "F",
+      "title": "Cố vấn Sinh viên Tài năng — BKSIM Mentoring",
+      "issuer": "Chương trình BKSIM Talent Mentoring, ĐH Bách khoa TP.HCM",
+      "date": "2023 – Nay",
+      "summary": "Hình ảnh buổi cố vấn trực tiếp cùng sinh viên tài năng xây dựng Kế hoạch Phát triển Cá nhân (IDP).",
+      "details": "Đồng hành cố vấn sinh viên trong chương trình BKSIM Talent Mentoring tại Trường Đại học Bách khoa TP.HCM, định hướng nghề nghiệp và phát triển năng lực ứng tuyển vào các tập đoàn đa quốc gia."
     },
     {
-      "code": "E-09",
-      "type": "certificate",
-      "title": "Strategic Sourcing",
-      "issuer": "Rutgers University",
-      "date": "11/2026"
+      "code": "F3",
+      "type": "F",
+      "title": "Chủ trì Workshop & Tham quan thực tế — HCMC Export 2026",
+      "issuer": "HCMC Export 2026, WTC Expo",
+      "date": "10/2026",
+      "summary": "Bộ ảnh sự kiện dẫn ~50 sinh viên Đại học FPT tham quan doanh nghiệp và chủ trì workshop (khảo sát 4.9/5).",
+      "details": "Bộ 6 hình ảnh thực tế từ chuyên đề 'Job-Ready: From Purchase Requirement to Shipment' và hoạt động dẫn ~50 sinh viên ĐH FPT tham quan thực tế tại HCMC Export 2026 (WTC Expo), đạt điểm khảo sát trung bình 4.9/5."
     },
     {
-      "code": "E-10",
-      "type": "certificate",
+      "code": "F4",
+      "type": "F",
+      "title": "Diễn giả khách mời — Webinar ESG-Linked Supply Chain Financing",
+      "issuer": "Văn phòng Đào tạo Quốc tế (OISP), ĐH Bách khoa TP.HCM",
+      "date": "16/05/2026",
+      "summary": "Thư mời diễn giả chính thức và bộ poster Webinar về Tài chính chuỗi cung ứng gắn với ESG.",
+      "details": "Thư mời từ Văn phòng Đào tạo Quốc tế, Trường Đại học Bách khoa – ĐHQG-HCM cùng poster truyền thông buổi Webinar 'ESG-Linked Supply Chain Financing' ngày 16/05/2026."
+    },
+    {
+      "code": "F5",
+      "type": "F",
+      "title": "Diễn giả Seminar — BKSIM Seminar (Chương trình MBA)",
+      "issuer": "BKSIM Seminar, ĐH Bách khoa TP.HCM",
+      "date": "04/04/2026",
+      "summary": "Poster giới thiệu diễn giả và ảnh trình bày trực tiếp tại Seminar MBA về 'Why Talent Stays, Leaves & Thrives'.",
+      "details": "Bộ 3 hình ảnh gồm ấn phẩm truyền thông và ảnh trình bày thực tế tại buổi BKSIM Seminar (Chương trình MBA, Đại học Bách khoa TP.HCM) ngày 04/04/2026."
+    },
+    {
+      "code": "F6",
+      "type": "F",
+      "title": "Hoạt động Sức khoẻ Tinh thần & International Healing",
+      "issuer": "Đại học FPT & Đại học Huế (LGL Yoga International School)",
+      "date": "2024 – 2025",
+      "summary": "Bộ ảnh thực tế từ các buổi chia sẻ chánh niệm và chương trình International Healing tại các trường đại học.",
+      "details": "Bộ 5 hình ảnh từ các buổi chia sẻ sức khoẻ tinh thần cộng đồng gồm 'The Secret of a Smile: The Power of Mindfulness' (ĐH FPT, 2024) và 'Discovering Inner Strength' (International Healing 2025 tại ĐH FPT Đà Nẵng & ĐH Huế)."
+    },
+    {
+      "code": "H1",
+      "type": "H",
+      "title": "Strategic Sourcing & Strategic Procurement",
+      "issuer": "Rutgers, The State University of New Jersey (Coursera)",
+      "date": "11/2026",
+      "summary": "Bộ 2 chứng chỉ của Đại học Rutgers về Tìm nguồn chiến lược và Mua sắm chiến lược.",
+      "details": "Hoàn thành trên nền tảng Coursera do Rutgers, The State University of New Jersey cấp tháng 11/2026, gồm hai chứng chỉ 'Strategic Sourcing' và 'Strategic Procurement and Sourcing Conclusions'."
+    },
+    {
+      "code": "H2",
+      "type": "H",
       "title": "ESG Investing: Setting Standards & Conducting Analysis",
-      "issuer": "",
-      "date": "11/2026"
+      "issuer": "Interactive Brokers (Coursera)",
+      "date": "11/2026",
+      "summary": "Chứng chỉ chuyên sâu về thiết lập tiêu chuẩn trọng yếu và phân tích đầu tư ESG.",
+      "details": "Do Interactive Brokers cấp thông qua Coursera vào tháng 11/2026, tập trung vào tiêu chuẩn đo lường và phương pháp phân tích ESG."
     },
     {
-      "code": "E-11",
-      "type": "certificate",
-      "title": "Chứng chỉ Lãnh đạo",
-      "issuer": "Crestcom International",
-      "date": "06/2026"
-    },
-    {
-      "code": "E-12",
-      "type": "certificate",
+      "code": "H4",
+      "type": "H",
       "title": "Google Project Management Professional Certificate",
-      "issuer": "Google",
-      "date": "11/2025"
+      "issuer": "Google (Coursera)",
+      "date": "11/2025",
+      "summary": "Chứng chỉ chuyên nghiệp gồm 7 học phần về quản trị dự án truyền thống, Agile và dự án thực tế.",
+      "details": "Hoàn thành chương trình 7 học phần do Google cấp trên Coursera (14/11/2025), bao gồm khởi tạo, lập kế hoạch, vận hành dự án, quản trị Agile và đồ án tổng hợp."
     },
     {
-      "code": "E-13",
-      "type": "event",
-      "title": "Workshop và tham quan thực tế HCMC Export 2026",
-      "issuer": "WTC Expo, TP. Hồ Chí Minh",
-      "date": "10/2026"
+      "code": "H5-1",
+      "type": "H",
+      "title": "HRCI Human Resource Associate Professional Certificate",
+      "issuer": "HRCI (Coursera)",
+      "date": "03/2025",
+      "summary": "Chứng chỉ chuyên nghiệp 5 học phần của HRCI về tuyển dụng, tuân thủ, đãi ngộ và quan hệ nhân sự.",
+      "details": "Hoàn thành chương trình 5 học phần do HRCI cấp (12/03/2025), bao gồm thu hút nhân tài, đào tạo & phát triển, lương thưởng phúc lợi, quan hệ nhân sự và quản trị rủi ro tuân thủ."
+    },
+    {
+      "code": "H5-2",
+      "type": "H",
+      "title": "Leading: Human Resource Management and Leadership",
+      "issuer": "Macquarie University (Coursera)",
+      "date": "12/2024",
+      "summary": "Chứng chỉ chuyên sâu 4 học phần về lãnh đạo tầm nhìn, quản trị thích ứng và thiết kế tổ chức.",
+      "details": "Hoàn thành chương trình Specialization 4 học phần của Đại học Macquarie (02/12/2024) về lãnh đạo tạo ý nghĩa, điều chỉnh phong cách lãnh đạo, hành vi tổ chức và thiết kế tổ chức."
+    },
+    {
+      "code": "H5-3",
+      "type": "H",
+      "title": "Human Resource Management: HR for People Managers",
+      "issuer": "University of Minnesota (Coursera)",
+      "date": "11/2024",
+      "summary": "Chứng chỉ chuyên sâu 5 học phần về tuyển dụng, hội nhập, quản trị hiệu suất và đãi ngộ nhân sự.",
+      "details": "Hoàn thành chương trình Specialization 5 học phần của Đại học Minnesota (26/11/2024) về nền tảng quản trị nhân sự, tuyển dụng, đánh giá hiệu suất, chính sách lương thưởng và đồ án ứng dụng."
+    },
+    {
+      "code": "H6",
+      "type": "H",
+      "title": "AI in Office",
+      "issuer": "Trường Đại học FPT (Coursera)",
+      "date": "11/2024",
+      "summary": "Chứng chỉ ứng dụng trí tuệ nhân tạo vào công việc văn phòng, học thuật và giảng dạy.",
+      "details": "Chứng chỉ học phần do Trường Đại học FPT cấp qua Coursera (hoàn thành tháng 11/2024), tập trung vào kỹ năng ứng dụng AI hiệu quả trong giảng dạy và quản lý."
     }
   ]
 }

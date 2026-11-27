@@ -36,23 +36,149 @@ export const INDUSTRY_ORGS = [
   'PHTSO',
 ]
 
+const asset = (p) => encodeURI(p)
+
 /**
- * Evidence scans, keyed by evidence code (text is in locales/<lang>/evidence.json).
- * thumb: small preview image in /public/evidence, file: full scan or PDF opened on click.
- * Example: 'E-04': { thumb: '/evidence/E-04.jpg', file: '/evidence/E-04.pdf' }
+ * Verified evidence assets mapped to Checklist-evidence codes (B, C, D, E, F, H).
+ * images: array of displayable images (first image is used as card thumbnail; all images browseable in detail modal).
+ * file: optional direct PDF or external URL opened from the detail modal.
  */
 export const EVIDENCE_FILES = {
-  'E-01': { thumb: '', file: '' },
-  'E-02': { thumb: '', file: '' },
-  'E-03': { thumb: '', file: '' },
-  'E-04': { thumb: '', file: '' },
-  'E-05': { thumb: '', file: '' },
-  'E-06': { thumb: '', file: '' },
-  'E-07': { thumb: '', file: '' },
-  'E-08': { thumb: '', file: '' },
-  'E-09': { thumb: '', file: '' },
-  'E-10': { thumb: '', file: '' },
-  'E-11': { thumb: '', file: '' },
-  'E-12': { thumb: '', file: '' },
-  'E-13': { thumb: '', file: '' },
+  // B. Degrees
+  B1: {
+    images: [
+      asset('/img-evidence/B-x/B1-1.jpg'),
+      asset('/img-evidence/B-x/B1-0.jpg'),
+      asset('/img-evidence/B-x/B1-2.jpg'),
+    ],
+    file: '',
+  },
+  B2: {
+    images: [asset('/img-evidence/B-x/B2.jpg')],
+    file: '',
+  },
+  B4: {
+    images: [
+      asset('/img-evidence/B-x/extracted/B4-bachelor-1.jpg'),
+      asset('/img-evidence/B-x/extracted/B4-bachelor-2.jpg'),
+    ],
+    file: asset('/img-evidence/B-x/B4.pdf'),
+  },
+
+  // C. Research & Publication
+  C1: {
+    images: [asset('/img-evidence/B-x/extracted/C1-proceedings-1.jpg')],
+    file: SITE.publicationUrl,
+  },
+
+  // D. Teaching & Academic Service
+  D2: {
+    images: [asset('/img-evidence/D-x/D2/D2.jpg')],
+    file: '',
+  },
+  D3: {
+    images: [asset('/img-evidence/D-x/D3/CFVG-14–16_04_2022.jpg')],
+    file: '',
+  },
+  D4: {
+    images: [asset('/img-evidence/D-x/D4/Greenwich_Vietnam-Visiting_Lecturer-(1).jpg')],
+    file: '',
+  },
+  D5: {
+    images: [
+      asset('/img-evidence/D-x/D5/Valoma-2024-(1).jpg'),
+      asset('/img-evidence/D-x/D5/Valoma-2024.jpg'),
+    ],
+    file: '',
+  },
+
+  // E. Honours & Awards
+  E1: {
+    images: [asset('/img-evidence/E-x/E1/E1-Fall23.jpg')],
+    file: '',
+  },
+  E2: {
+    images: [asset('/img-evidence/E-x/E2/E2-SP23.jpg')],
+    file: '',
+  },
+  D8: {
+    images: [asset('/img-evidence/E-x/E1/E1-SU24.jpg')],
+    file: '',
+  },
+
+  // F. Mentoring, Invited Talks & Community
+  F1: {
+    images: [asset('/img-evidence/F-x/F1/BKSIM Talent Mentoring.jpg')],
+    file: '',
+  },
+  F3: {
+    images: [
+      asset('/img-evidence/F-x/F3/1792769243731_199753770517897253_336276238426818890_829dce63519b306853b3c66d173218ba.jpg'),
+      asset('/img-evidence/F-x/F3/Copy of NGI_5619.JPG'),
+      asset('/img-evidence/F-x/F3/Copy of NGI_5622.JPG'),
+      asset('/img-evidence/F-x/F3/Copy of NGI_5639.JPG'),
+      asset('/img-evidence/F-x/F3/Copy of NGI_5684.JPG'),
+      asset('/img-evidence/F-x/F3/Copy of NGI_5701.JPG'),
+    ],
+    file: '',
+  },
+  F4: {
+    images: [
+      asset('/img-evidence/F-x/F4/Thu moi- Speaker cho Seminar ESG.jpg'),
+      asset('/img-evidence/F-x/F5/F5-2/Bksim- Webinar- ESG_QTKD-Phuong (002).jpg'),
+      asset('/img-evidence/F-x/F5/F5-2/Bksim- Webinar- ESG_QTKD-04 (004).jpg'),
+    ],
+    file: '',
+  },
+  F5: {
+    images: [
+      asset('/img-evidence/F-x/F5/F5-1/BKSIM Seminar- photo- 4.4.2026/Seminar- Photo post- Phương Võ.jpg'),
+      asset('/img-evidence/F-x/F5/F5-1/BKSIM Seminar- photo- 4.4.2026/Photo seminar-Phương.jpg'),
+      asset('/img-evidence/F-x/F5/F5-1/BKSIM Seminar- photo- 4.4.2026/Photo seminar-7.jpg'),
+    ],
+    file: '',
+  },
+  F6: {
+    images: [
+      asset('/img-evidence/F-x/F6/DSC00853.JPG'),
+      asset('/img-evidence/F-x/F6/DSC00855.JPG'),
+      asset('/img-evidence/F-x/F6/DSC00857.JPG'),
+      asset('/img-evidence/F-x/F6/DSC00860.JPG'),
+      asset('/img-evidence/F-x/F6/20250301_184840.jpg'),
+    ],
+    file: '',
+  },
+
+  // H. Professional Certificates (cropped from Coursera.pptx)
+  H1: {
+    images: [
+      asset('/img-evidence/H-x/certs/rutgers-sourcing.png'),
+      asset('/img-evidence/H-x/certs/rutgers-procurement.png'),
+    ],
+    file: '',
+  },
+  H2: {
+    images: [asset('/img-evidence/H-x/certs/esg-investing.png')],
+    file: '',
+  },
+  H4: {
+    images: [asset('/img-evidence/H-x/certs/google-pm.png')],
+    file: '',
+  },
+  'H5-1': {
+    images: [asset('/img-evidence/H-x/certs/hrci-hr.png')],
+    file: '',
+  },
+  'H5-2': {
+    images: [asset('/img-evidence/H-x/certs/macquarie-hr.png')],
+    file: '',
+  },
+  'H5-3': {
+    images: [asset('/img-evidence/H-x/certs/minnesota-hr.png')],
+    file: '',
+  },
+  H6: {
+    images: [asset('/img-evidence/H-x/certs/fpt-ai-office.png')],
+    file: '',
+  },
 }
