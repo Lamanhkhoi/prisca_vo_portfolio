@@ -1,0 +1,71 @@
+{
+  "meta": { "title": "Other | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Other",
+    "title": "Beyond the classroom",
+    "lead": "The industry leadership that informs her teaching, and her engagement in community well-being."
+  },
+  "industry": {
+    "title": "Industry leadership experience",
+    "badge": "27+ years",
+    "summary": "Over 27 years of progressive buyer-side global sourcing and supply chain management across US, UK, European and Asian retail and brand organisations, spanning supplier evaluation, product and brand merchandising, production governance, quality and social compliance, and multi-functional team building.",
+    "items": [
+      {
+        "period": "02/2021 - Present",
+        "role": "Director, Global Sourcing and Supply Chain",
+        "org": "PH Transform Solution (PHTSO)",
+        "text": "Leads global sourcing advisory, supply chain governance, and CSR/ESG and audit-readiness consulting for manufacturers serving international buyers."
+      },
+      {
+        "period": "12/2017 - 12/2020",
+        "role": "Senior Manager / Manager, Global Sourcing",
+        "org": "Bioworld Merchandising (US) & Goldbug (US), Vietnam & SEA",
+        "text": "Established regional sourcing teams, onboarded new client accounts, and led supplier capability, capacity and compliance readiness for US/EU private and licensed brands, including Walmart, Target, Disney/Marvel and Primark."
+      },
+      {
+        "period": "09/2013 - 11/2017",
+        "role": "Manager, Global Sourcing (Apparel)",
+        "org": "Walmart Global Sourcing Vietnam",
+        "text": "Directed apparel supplier selection, costing and development alignment, performance evaluation and capability upgrading with category, quality and compliance teams."
+      },
+      {
+        "period": "01/2006 - 10/2007 & 08/2012 - 09/2013",
+        "role": "Divisional Merchandising Manager (Textiles & Apparel)",
+        "org": "William E. Connor Associates Ltd.",
+        "text": "Built and led apparel and accessories merchandising and sourcing teams, aligning local execution with regional Hong Kong sourcing leadership."
+      },
+      {
+        "period": "10/2007 - 07/2012",
+        "role": "Office Manager & Merchandising Manager",
+        "org": "Li & Fung (Vietnam) Ltd., Just Jamie UK Team",
+        "text": "Directed local operations and apparel merchandising for a 30-person office of merchandisers, technicians and QA, reporting directly to the Chief Representative."
+      },
+      {
+        "period": "01/2004 - 01/2006",
+        "role": "Technical Production Manager (Garments)",
+        "org": "Decathlon Vietnam",
+        "text": "Managed technical production, product quality execution, and factory audit and compliance governance."
+      },
+      {
+        "period": "02/1998 - 12/2003",
+        "role": "Senior Merchandiser (Garment)",
+        "org": "Bumin Corporation (Korea)",
+        "text": "Executed end-to-end garment merchandising, production follow-up and buyer coordination for international retail accounts."
+      }
+    ]
+  },
+  "community": {
+    "title": "Community well-being & mindfulness talks",
+    "period": "2024 - 2025",
+    "items": [
+      {
+        "title": "The Secret of a Smile: The Power of Mindfulness",
+        "org": "FPT University, 2024"
+      },
+      {
+        "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
+        "org": "International Healing 2025, FPT University Da Nang & Hue University, organised by LGL Yoga International School"
+      }
+    ]
+  }
+}

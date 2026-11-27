@@ -1,0 +1,71 @@
+{
+  "meta": { "title": "Khác | Prisca Vo, MBA" },
+  "header": {
+    "eyebrow": "Khác",
+    "title": "Ngoài giảng đường",
+    "lead": "Kinh nghiệm lãnh đạo trong ngành làm nền tảng cho việc giảng dạy, cùng các hoạt động vì sức khoẻ tinh thần cộng đồng."
+  },
+  "industry": {
+    "title": "Kinh nghiệm lãnh đạo trong ngành",
+    "badge": "27+ năm",
+    "summary": "Hơn 27 năm phát triển liên tục trong lĩnh vực tìm nguồn hàng toàn cầu và quản trị chuỗi cung ứng phía bên mua, tại các tổ chức bán lẻ và thương hiệu của Mỹ, Anh, châu Âu và châu Á, bao gồm đánh giá nhà cung cấp, merchandising sản phẩm và thương hiệu, quản trị sản xuất, tuân thủ chất lượng và xã hội, và xây dựng đội ngũ đa chức năng.",
+    "items": [
+      {
+        "period": "02/2021 - Nay",
+        "role": "Giám đốc Tìm nguồn hàng toàn cầu và Chuỗi cung ứng",
+        "org": "PH Transform Solution (PHTSO)",
+        "text": "Dẫn dắt tư vấn tìm nguồn hàng toàn cầu, quản trị chuỗi cung ứng, tư vấn CSR/ESG và sẵn sàng đánh giá (audit) cho các nhà sản xuất phục vụ người mua quốc tế."
+      },
+      {
+        "period": "12/2017 - 12/2020",
+        "role": "Quản lý cấp cao / Quản lý, Tìm nguồn hàng toàn cầu",
+        "org": "Bioworld Merchandising (Mỹ) & Goldbug (Mỹ), Việt Nam & Đông Nam Á",
+        "text": "Thành lập đội ngũ tìm nguồn khu vực, tiếp nhận khách hàng mới, và nâng cao năng lực, công suất, mức sẵn sàng tuân thủ của nhà cung cấp cho các thương hiệu riêng và thương hiệu được cấp phép của Mỹ/EU, gồm Walmart, Target, Disney/Marvel và Primark."
+      },
+      {
+        "period": "09/2013 - 11/2017",
+        "role": "Quản lý Tìm nguồn hàng toàn cầu (May mặc)",
+        "org": "Walmart Global Sourcing Việt Nam",
+        "text": "Điều phối lựa chọn nhà cung cấp may mặc, thống nhất chi phí và phát triển sản phẩm, đánh giá hiệu quả và nâng cao năng lực nhà cung cấp cùng các nhóm ngành hàng, chất lượng và tuân thủ."
+      },
+      {
+        "period": "01/2006 - 10/2007 & 08/2012 - 09/2013",
+        "role": "Quản lý Merchandising khối (Dệt may)",
+        "org": "William E. Connor Associates Ltd.",
+        "text": "Xây dựng và dẫn dắt đội ngũ merchandising và tìm nguồn hàng may mặc, phụ kiện, gắn kết hoạt động tại Việt Nam với ban lãnh đạo tìm nguồn khu vực tại Hồng Kông."
+      },
+      {
+        "period": "10/2007 - 07/2012",
+        "role": "Trưởng văn phòng & Quản lý Merchandising",
+        "org": "Li & Fung (Việt Nam) Ltd., nhóm Just Jamie UK",
+        "text": "Điều hành hoạt động và merchandising may mặc cho văn phòng 30 người gồm merchandiser, kỹ thuật viên và QA, báo cáo trực tiếp cho Trưởng đại diện."
+      },
+      {
+        "period": "01/2004 - 01/2006",
+        "role": "Quản lý Kỹ thuật Sản xuất (May mặc)",
+        "org": "Decathlon Việt Nam",
+        "text": "Quản lý kỹ thuật sản xuất, chất lượng sản phẩm, đánh giá nhà máy và quản trị tuân thủ."
+      },
+      {
+        "period": "02/1998 - 12/2003",
+        "role": "Merchandiser cấp cao (May mặc)",
+        "org": "Bumin Corporation (Hàn Quốc)",
+        "text": "Thực hiện trọn quy trình merchandising may mặc, theo dõi sản xuất và phối hợp với người mua cho các khách hàng bán lẻ quốc tế."
+      }
+    ]
+  },
+  "community": {
+    "title": "Hoạt động sức khoẻ tinh thần & chánh niệm",
+    "period": "2024 - 2025",
+    "items": [
+      {
+        "title": "The Secret of a Smile: The Power of Mindfulness",
+        "org": "Đại học FPT, 2024"
+      },
+      {
+        "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
+        "org": "International Healing 2025, Đại học FPT Đà Nẵng & Đại học Huế, do LGL Yoga International School tổ chức"
+      }
+    ]
+  }
+}
