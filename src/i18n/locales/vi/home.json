@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Võ Thị Minh Phương (Prisca Vo), MBA | Giảng viên & Trưởng bộ môn" },
+  "meta": {
+    "title": "Võ Thị Minh Phương (Prisca Vo), MBA | Giảng viên & Trưởng bộ môn"
+  },
   "hero": {
     "eyebrow": "Hồ sơ học thuật",
     "name": "Võ Thị Minh Phương",
@@ -17,45 +19,87 @@
   "stats": {
     "title": "Tổng quan",
     "items": [
-      { "value": 4, "suffix": "+", "decimals": 0, "label": "năm giảng dạy bậc đại học và sau đại học" },
-      { "value": 13, "suffix": "", "decimals": 0, "label": "môn học đã giảng dạy tại Đại học FPT" },
-      { "value": 2, "suffix": "", "decimals": 0, "label": "giải thưởng Giảng viên Xuất sắc" },
-      { "value": 4.9, "suffix": "/5", "decimals": 1, "label": "điểm đánh giá của sinh viên tại workshop HCMC Export 2026" }
-    ]
-  },
-  "highlights": {
-    "title": "Nổi bật",
-    "items": [
       {
-        "icon": "graduation",
-        "title": "Thạc sĩ MBA, Maastricht School of Management",
-        "text": "Năm 2018. Luận văn: Strategic Sourcing in the Apparel Industry in Vietnam."
+        "value": 27,
+        "suffix": "+",
+        "decimals": 0,
+        "label": "năm lãnh đạo tìm nguồn hàng toàn cầu phía bên mua"
       },
       {
-        "icon": "book",
-        "title": "Công bố hội thảo, 2026",
-        "text": "Kỷ yếu Hội thảo Quốc tế IU-AGBA-ULAW, NXB ĐHQG TP.HCM, tr. 1784-1813. Tác giả liên hệ."
+        "value": 4,
+        "suffix": "+",
+        "decimals": 0,
+        "label": "năm giảng dạy bậc đại học và sau đại học"
       },
       {
-        "icon": "award",
-        "title": "Ghi nhận giảng dạy",
-        "text": "Giải thưởng Giảng viên Xuất sắc, Đại học FPT (Fall 2022, Summer 2024) và Khen thưởng Giảng viên (Spring 2023)."
+        "value": 13,
+        "suffix": "",
+        "decimals": 0,
+        "label": "môn học đã giảng dạy tại Đại học FPT"
       },
       {
-        "icon": "users",
-        "title": "Trưởng bộ môn từ năm 2022",
-        "text": "Quản trị Kinh doanh, Khoa Kinh tế và Luật, Đại học FPT TP. Hồ Chí Minh."
+        "value": 2,
+        "suffix": "",
+        "decimals": 0,
+        "label": "giải Giảng viên Xuất sắc, Đại học FPT"
       }
     ]
   },
+  "profile": {
+    "title": "Hồ sơ",
+    "text": "Giảng viên đại học, Trưởng bộ môn và Giám đốc Tìm nguồn hàng toàn cầu với hơn 27 năm kinh nghiệm lãnh đạo phía bên mua tại các tập đoàn đa quốc gia và hơn bốn năm giảng dạy bậc đại học, sau đại học. Bà có chuyên môn thực tiễn sâu về quản trị quan hệ người mua và nhà cung cấp quốc tế, chiến lược tìm nguồn xuyên biên giới, triển khai thương hiệu và sản phẩm cho thị trường bán lẻ toàn cầu, tuân thủ nhà máy và vận hành sản xuất, đồng thời kết nối các khung học thuật chặt chẽ với tình huống thực tế, mô phỏng và mạng lưới lãnh đạo doanh nghiệp."
+  },
+  "objective": {
+    "title": "Mục tiêu học thuật & nghiên cứu sinh",
+    "org": "School of Business, Trường Đại học Quốc tế (IU), ĐHQG TP.HCM",
+    "text": "Mong muốn đóng góp với vai trò giảng viên, đồng thời theo học chương trình tiến sĩ (PhD) tại School of Business, Trường Đại học Quốc tế (IU), ĐHQG TP.HCM. Cam kết làm phong phú các học phần bậc đại học và sau đại học về Chuỗi cung ứng toàn cầu, Kinh doanh quốc tế và Tìm nguồn chiến lược, tăng cường liên kết giữa nhà trường và doanh nghiệp, và thúc đẩy nghiên cứu thực nghiệm về cách các tiêu chí CSR và ESG định hình quyết định lựa chọn nhà cung cấp của người mua quốc tế trong chuỗi cung ứng may mặc xuất khẩu của Việt Nam."
+  },
+  "education": {
+    "title": "Học vấn",
+    "items": [
+      {
+        "year": "2018",
+        "degree": "Thạc sĩ Quản trị Kinh doanh (MBA)",
+        "school": "Maastricht School of Management, Hà Lan",
+        "note": "Chương trình đào tạo tại TP. Hồ Chí Minh. Luận văn thạc sĩ: Strategic Sourcing in the Apparel Industry in Vietnam."
+      },
+      {
+        "year": "1997",
+        "degree": "Cử nhân Tiếng Anh và Hội hoạ",
+        "school": "Trường Đại học Sư phạm Huế, Việt Nam",
+        "note": ""
+      }
+    ]
+  },
+  "languages": {
+    "title": "Ngoại ngữ",
+    "items": [
+      {
+        "name": "Tiếng Việt",
+        "level": "Bản ngữ"
+      },
+      {
+        "name": "Tiếng Anh",
+        "level": "Thành thạo ở mức chuyên môn trong giảng dạy học thuật, hội thảo quốc tế, đàm phán kinh doanh và nghiên cứu khoa học. Có bằng Cử nhân Tiếng Anh."
+      }
+    ]
+  },
+  "featured": {
+    "title": "Công bố tiêu biểu",
+    "cta": "Xem nghiên cứu"
+  },
+  "recognitionTeaser": {
+    "title": "Ghi nhận giảng dạy",
+    "cta": "Xem giảng dạy & giải thưởng"
+  },
   "explore": {
-    "title": "Khám phá hồ sơ",
+    "title": "Khám phá",
     "items": {
-      "about": "Hồ sơ học thuật, mục tiêu nghiên cứu sinh, học vấn và ngoại ngữ.",
+      "teaching": "Vị trí giảng dạy, 13 môn học, giải thưởng và chứng chỉ.",
       "research": "Công bố khoa học, đề tài tiến sĩ dự kiến và hướng nghiên cứu.",
-      "talks": "Vị trí giảng dạy, môn học, báo cáo mời, diễn đàn và cố vấn.",
-      "recognition": "Danh hiệu, giải thưởng, chứng chỉ và minh chứng.",
-      "other": "Kinh nghiệm lãnh đạo trong ngành và hoạt động cộng đồng."
+      "industry": "Hơn 27 năm lãnh đạo tìm nguồn hàng phía bên mua.",
+      "talks": "Báo cáo mời, diễn đàn, cố vấn và hoạt động cộng đồng.",
+      "evidence": "Văn bằng, giải thưởng và chứng chỉ, đánh mã minh chứng."
     }
   }
 }

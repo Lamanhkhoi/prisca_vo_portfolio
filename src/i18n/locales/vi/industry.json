@@ -1,9 +1,11 @@
 {
-  "meta": { "title": "Khác | Prisca Vo, MBA" },
+  "meta": {
+    "title": "Kinh nghiệm doanh nghiệp | Prisca Vo, MBA"
+  },
   "header": {
-    "eyebrow": "Khác",
-    "title": "Ngoài giảng đường",
-    "lead": "Kinh nghiệm lãnh đạo trong ngành làm nền tảng cho việc giảng dạy, cùng các hoạt động vì sức khoẻ tinh thần cộng đồng."
+    "eyebrow": "Doanh nghiệp",
+    "title": "Kinh nghiệm doanh nghiệp",
+    "lead": "Hơn 27 năm lãnh đạo tìm nguồn hàng toàn cầu phía bên mua tại Walmart, Li & Fung, William E. Connor và Decathlon: nền tảng thực tiễn cho giảng dạy và nghiên cứu."
   },
   "industry": {
     "title": "Kinh nghiệm lãnh đạo trong ngành",
@@ -52,20 +54,7 @@
         "org": "Bumin Corporation (Hàn Quốc)",
         "text": "Thực hiện trọn quy trình merchandising may mặc, theo dõi sản xuất và phối hợp với người mua cho các khách hàng bán lẻ quốc tế."
       }
-    ]
-  },
-  "community": {
-    "title": "Hoạt động sức khoẻ tinh thần & chánh niệm",
-    "period": "2024 - 2025",
-    "items": [
-      {
-        "title": "The Secret of a Smile: The Power of Mindfulness",
-        "org": "Đại học FPT, 2024"
-      },
-      {
-        "title": "Discovering Inner Strength: Healing the Inner Self and Returning to the Present Moment",
-        "org": "International Healing 2025, Đại học FPT Đà Nẵng & Đại học Huế, do LGL Yoga International School tổ chức"
-      }
-    ]
+    ],
+    "orgsTitle": "Tổ chức đã làm việc"
   }
 }

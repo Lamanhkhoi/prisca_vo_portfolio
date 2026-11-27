@@ -3,7 +3,7 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll, useSpring } fr
 import { useTranslation } from 'react-i18next'
 import { ArrowUp } from 'lucide-react'
 
-/** Thin lime reading-progress bar under the header. */
+/** Thin gold reading-progress bar under the header. */
 export function ScrollProgress() {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, { stiffness: 220, damping: 32, restDelta: 0.001 })
@@ -11,7 +11,7 @@ export function ScrollProgress() {
     <motion.div
       aria-hidden="true"
       style={{ scaleX }}
-      className="fixed inset-x-0 top-0 z-50 h-[3px] origin-left bg-lime"
+      className="fixed inset-x-0 top-0 z-50 h-[3px] origin-left bg-gold"
     />
   )
 }
@@ -35,7 +35,7 @@ export function BackToTop() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 16, scale: 0.9 }}
           transition={{ duration: 0.25 }}
-          className="fixed bottom-6 right-6 z-40 grid size-12 place-items-center rounded-full bg-navy text-white shadow-lg shadow-navy/20 transition-colors hover:bg-lime hover:text-navy"
+          className="fixed bottom-6 right-6 z-40 grid size-12 place-items-center rounded-full bg-navy text-white shadow-lg shadow-navy/20 transition-colors hover:bg-gold-light hover:text-navy"
         >
           <ArrowUp className="size-5" aria-hidden="true" />
         </motion.button>

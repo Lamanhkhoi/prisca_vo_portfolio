@@ -2,40 +2,30 @@ import { motion } from 'motion/react'
 import { EASE } from '@/lib/utils'
 import { Container } from './Primitives'
 
-/** Top band of every inner page: eyebrow, title and one-line lead. */
-export default function PageHeader({ eyebrow, title, lead }) {
+const rise = (delay) => ({
+  initial: { opacity: 0, y: 12 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.55, delay, ease: EASE },
+})
+
+/** Compact navy band at the top of every inner page. */
+export default function PageHeader({ eyebrow, title, lead, children }) {
   return (
-    <header className="relative overflow-hidden border-b border-navy-100 bg-navy-50">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-24 right-[-8%] size-[22rem] rounded-full border-[44px] border-navy-100"
-      />
-      <Container className="relative py-14 md:py-20">
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: EASE }}
-          className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-navy-600"
-        >
-          <span aria-hidden="true" className="size-2 rounded-full bg-lime" />
+    <header className="relative overflow-hidden bg-navy-950 text-white">
+      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(60%_120%_at_100%_0%,rgba(48,216,72,0.14),transparent_60%)]" />
+      <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-lime/50 to-transparent" />
+      <Container className="relative py-10 md:py-14">
+        <motion.p {...rise(0)} className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-lime">
+          <span aria-hidden="true" className="h-px w-8 bg-lime" />
           {eyebrow}
         </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.06, ease: EASE }}
-          className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight md:text-5xl"
-        >
+        <motion.h1 {...rise(0.05)} className="mt-4 max-w-3xl text-3xl font-extrabold tracking-tight md:text-[2.6rem] md:leading-[1.1]">
           {title}
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.12, ease: EASE }}
-          className="mt-5 max-w-2xl text-base leading-relaxed text-navy-600 md:text-lg"
-        >
+        <motion.p {...rise(0.1)} className="mt-4 max-w-2xl leading-relaxed text-navy-200 md:text-lg">
           {lead}
         </motion.p>
+        {children}
       </Container>
     </header>
   )

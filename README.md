@@ -4,6 +4,8 @@ Read-only, bilingual (English / Vietnamese) academic portfolio for **Vo Thi Minh
 
 Built with React 19, Vite, Tailwind CSS v4, React Router, react-i18next and Motion.
 
+> Working on this repo with an AI assistant? Start with **`PROJECT_HISTORY.md`**: decisions, timeline, open items and tool pitfalls.
+
 ## Getting started
 
 ```bash
@@ -23,12 +25,14 @@ npm run dev          # http://localhost:5173
 
 | Route | Page | Content file |
 |---|---|---|
-| `/` | Home | `src/i18n/locales/*/home.json` |
-| `/about` | About | `about.json` |
-| `/research` | Research | `research.json` |
-| `/talks-events` | Talks & Events | `talks.json` |
-| `/recognition` | Recognition | `recognition.json` |
-| `/other` | Other (non-academic) | `other.json` |
+| `/` | Home: profile, objective, education, stats, highlights | `src/i18n/locales/*/home.json` |
+| `/teaching` | Teaching: appointments, courses, awards, certifications | `teaching.json` |
+| `/research` | Research: publication, PhD proposal, interests | `research.json` |
+| `/industry` | Industry experience | `industry.json` |
+| `/talks` | Talks & Community | `talks.json` |
+| `/evidence` | Evidence portfolio (cards by evidence code) | `evidence.json` + `EVIDENCE_FILES` in `src/config/site.js` |
+
+Old URLs (`/about`, `/recognition`, `/talks-events`, `/other`) redirect to the new pages.
 
 ## Project structure
 
@@ -60,17 +64,16 @@ src/
 - **Text:** edit the JSON file for that page in **both** `locales/en` and `locales/vi`, then run `npm run check:i18n`. No visible text is hard-coded in components.
 - **Portrait:** put the photo in `public/images/` and set `SITE.portraitUrl` in `src/config/site.js` (e.g. `'/images/portrait.jpg'`).
 - **CV download:** put the PDF in `public/files/` and set `SITE.cvUrl`.
-- **Evidence portfolio:** set `SITE.evidenceUrl` (Drive link or a PDF in `public/files/`).
+- **Evidence scans:** put files in `public/evidence/` and fill `EVIDENCE_FILES` in `src/config/site.js` (e.g. `'E-04': { thumb: '/evidence/E-04.jpg', file: '/evidence/E-04.pdf' }`).
 
 ## Brand
 
 | Role | Colour | Usage |
 |---|---|---|
-| 60% | White `#FFFFFF` | page background |
-| 30% | Maastricht Blue `#0A2338` (+ tints) | text, stats band, buttons, footer, section tints |
-| 10% | Lime Green `#30D848` | accents only: active nav, bars, dots, progress bar |
+| Base | White `#FFFFFF`, Navy 50 `#F3F5F7` | page and alternate section backgrounds |
+| Primary | Maastricht Blue `#0A2338`, Navy 950 `#061827` | text, hero, page headers, footer, feature cards |
+| Accent | Gold `#B8914A` (rules), `#C9A15A` (text on navy, 6.7:1), `#8C6A2B` (text on white, 5.0:1) | used sparingly: rules, dates, active nav |
 
-Lime is never used for text on white (contrast 1.9:1). Green text uses `#1C812B` (5.0:1).
 Font: Montserrat (variable, includes the Vietnamese subset).
 
 ## Deploy (Vercel)

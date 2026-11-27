@@ -10,9 +10,9 @@ export default function ContactList({ tone = 'light', className }) {
   const dark = tone === 'dark'
   const link = cn(
     'break-words underline-offset-4 transition-colors hover:underline',
-    dark ? 'text-white decoration-lime' : 'text-navy decoration-lime decoration-2',
+    dark ? 'text-white decoration-gold' : 'text-navy decoration-gold decoration-2',
   )
-  const icon = cn('mt-0.5 size-4 shrink-0', dark ? 'text-lime' : 'text-lime-700')
+  const icon = cn('mt-0.5 size-4 shrink-0', dark ? 'text-gold-light' : 'text-gold-dark')
   const label = cn('block text-xs font-semibold uppercase tracking-wider', dark ? 'text-navy-300' : 'text-navy-600')
 
   return (

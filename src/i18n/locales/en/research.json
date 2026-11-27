@@ -74,7 +74,14 @@
   "thesis": {
     "title": "MBA thesis",
     "name": "Strategic Sourcing in the Apparel Industry in Vietnam",
-    "school": "Maastricht School of Management, 2018"
+    "school": "Maastricht School of Management, The Netherlands (2018)",
+    "programme": "Programme delivered in Ho Chi Minh City",
+    "summary": "Empirical study investigating strategic sourcing, buyer-supplier relationships, supplier evaluation, and sourcing performance from the perspective of multinational apparel buyers in Vietnam. Formed the research foundation for the 2026 IU-AGBA-ULAW conference proceedings publication.",
+    "tags": [
+      "Strategic sourcing",
+      "Apparel industry",
+      "Vietnam"
+    ]
   },
   "phd": {
     "title": "Proposed doctoral research (PhD)",
@@ -88,6 +95,7 @@
   },
   "interests": {
     "title": "Core research interests",
+    "centerSubtitle": "6 research pillars",
     "items": [
       "Responsible sourcing",
       "Sustainable supplier selection",

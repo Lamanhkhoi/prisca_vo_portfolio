@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Vo Thi Minh Phuong (Prisca Vo), MBA | Lecturer & Subject Leader" },
+  "meta": {
+    "title": "Vo Thi Minh Phuong (Prisca Vo), MBA | Lecturer & Subject Leader"
+  },
   "hero": {
     "eyebrow": "Academic portfolio",
     "name": "Vo Thi Minh Phuong",
@@ -17,45 +19,87 @@
   "stats": {
     "title": "At a glance",
     "items": [
-      { "value": 4, "suffix": "+", "decimals": 0, "label": "years of undergraduate and postgraduate teaching" },
-      { "value": 13, "suffix": "", "decimals": 0, "label": "courses taught at FPT University" },
-      { "value": 2, "suffix": "", "decimals": 0, "label": "Excellent Lecturer Awards" },
-      { "value": 4.9, "suffix": "/5", "decimals": 1, "label": "student rating at the HCMC Export 2026 workshop" }
-    ]
-  },
-  "highlights": {
-    "title": "Highlights",
-    "items": [
       {
-        "icon": "graduation",
-        "title": "MBA, Maastricht School of Management",
-        "text": "2018. Thesis: Strategic Sourcing in the Apparel Industry in Vietnam."
+        "value": 27,
+        "suffix": "+",
+        "decimals": 0,
+        "label": "years of buyer-side global sourcing leadership"
       },
       {
-        "icon": "book",
-        "title": "Conference publication, 2026",
-        "text": "IU-AGBA-ULAW International Conference Proceedings, VNU-HCM Press, pp. 1784-1813. Corresponding author."
+        "value": 4,
+        "suffix": "+",
+        "decimals": 0,
+        "label": "years of undergraduate and postgraduate teaching"
       },
       {
-        "icon": "award",
-        "title": "Teaching recognition",
-        "text": "Excellent Lecturer Award, FPT University (Fall 2022, Summer 2024) and Lecturer Commendation (Spring 2023)."
+        "value": 13,
+        "suffix": "",
+        "decimals": 0,
+        "label": "courses taught at FPT University"
       },
       {
-        "icon": "users",
-        "title": "Subject Leader since 2022",
-        "text": "Business Administration, Faculty of Economics and Law, FPT University, Ho Chi Minh City."
+        "value": 2,
+        "suffix": "",
+        "decimals": 0,
+        "label": "Excellent Lecturer Awards, FPT University"
       }
     ]
   },
+  "profile": {
+    "title": "Profile",
+    "text": "University Lecturer, Subject Leader and Global Sourcing Director with more than 27 years of buyer-side industry leadership across multinational corporations (MNCs) and over four years of undergraduate and postgraduate teaching experience. She brings deep practitioner expertise in international buyer-supplier governance, cross-border sourcing strategy, brand and product execution for global retail markets, factory compliance and production operations, connecting rigorous academic frameworks with real-world industry cases, simulations and executive networks."
+  },
+  "objective": {
+    "title": "Academic & doctoral candidacy objective",
+    "org": "School of Business, International University (IU), VNU-HCM",
+    "text": "Seeking an opportunity to contribute as a faculty member while pursuing doctoral studies (PhD) at the School of Business, International University (IU), VNU-HCM. Committed to enriching undergraduate and graduate courses in Global Supply Chain, International Business and Strategic Sourcing, strengthening university-industry linkages, and advancing empirical research on how CSR and ESG criteria shape international buyers' supplier selection decisions in Vietnam's export garment supply chain."
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "year": "2018",
+        "degree": "Master of Business Administration (MBA)",
+        "school": "Maastricht School of Management, The Netherlands",
+        "note": "Programme delivered in Ho Chi Minh City. Master's thesis: Strategic Sourcing in the Apparel Industry in Vietnam."
+      },
+      {
+        "year": "1997",
+        "degree": "Bachelor's Degree in English and Painting",
+        "school": "Hue University of Education, Viet Nam",
+        "note": ""
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "name": "Vietnamese",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Full professional working proficiency in academic teaching, international seminars, business negotiation and scholarly research. Bachelor's degree in English."
+      }
+    ]
+  },
+  "featured": {
+    "title": "Featured publication",
+    "cta": "Read the research"
+  },
+  "recognitionTeaser": {
+    "title": "Teaching recognition",
+    "cta": "See teaching & awards"
+  },
   "explore": {
-    "title": "Explore the portfolio",
+    "title": "Explore",
     "items": {
-      "about": "Academic profile, doctoral objective, education and languages.",
+      "teaching": "Appointments, 13 courses, awards and certifications.",
       "research": "Publication, proposed PhD research and research interests.",
-      "talks": "Teaching appointments, courses, invited talks, forums and mentoring.",
-      "recognition": "Honours, awards, certifications and supporting evidence.",
-      "other": "Industry leadership experience and community engagement."
+      "industry": "27+ years of buyer-side sourcing leadership.",
+      "talks": "Invited talks, forums, mentoring and community talks.",
+      "evidence": "Degrees, awards and certificates, indexed by evidence code."
     }
   }
 }
