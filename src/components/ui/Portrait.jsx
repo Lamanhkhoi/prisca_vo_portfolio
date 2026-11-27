@@ -16,9 +16,9 @@ export default function Portrait({ className }) {
           <img
             src={SITE.portraitUrl}
             alt={t('placeholder.portraitAlt')}
-            width="900"
-            height="1125"
-            className="size-full object-cover"
+            width="960"
+            height="1280"
+            className="size-full object-cover object-[60%_20%]"
             fetchPriority="high"
           />
         ) : (
