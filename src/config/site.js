@@ -4,8 +4,8 @@ export const SITE = {
   // Files live in /public: put the file there and set the path, e.g. '/files/Prisca-Vo-CV.pdf'
   cvUrl: '/files/Prisca-Vo-CV.pdf',
   portraitUrl: '/images/portrait.jpg',
-  // Publisher page of the 2026 conference proceedings (the full paper is not hosted here, see its copyright page)
-  publicationUrl: 'https://vnuhcmpress.edu.vn',
+  // Publisher page of the 2026 conference proceedings (direct link to page 1784)
+  publicationUrl: 'https://demo.vnuhcmpress.edu.vn/html/ky-yeu-dai-hoc-quoc-te/index.html#p=1784',
 }
 
 export const CONTACT = {

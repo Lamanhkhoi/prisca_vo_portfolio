@@ -103,7 +103,7 @@ function Publication() {
           </div>
 
           {SITE.publicationUrl && (
-            <Button href={SITE.publicationUrl} target="_blank" rel="noopener noreferrer" variant="outline" className="mt-6">
+            <Button href={SITE.publicationUrl} target="_blank" rel="noopener noreferrer" variant="lime" className="mt-6">
               {t('publication.publisherLink')}
               <ExternalLink className="size-4" aria-hidden="true" />
             </Button>

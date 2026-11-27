@@ -4,7 +4,8 @@ import { cn } from '@/lib/utils'
 const VARIANTS = {
   primary: 'bg-navy text-white hover:bg-navy-800',
   outline: 'border border-navy text-navy hover:bg-navy-50',
-  gold: 'bg-gold-light text-navy hover:bg-gold',
+  lime: 'bg-lime text-navy font-bold shadow-sm hover:bg-lime-light',
+  gold: 'bg-lime text-navy font-bold shadow-sm hover:bg-lime-light',
   light: 'border border-white/40 text-white hover:bg-white/10',
 }
 

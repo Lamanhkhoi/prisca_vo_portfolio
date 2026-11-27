@@ -23,18 +23,18 @@ function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(55%_80%_at_85%_10%,rgba(201,161,90,0.18),transparent_60%)]" />
+      <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(55%_80%_at_85%_10%,rgba(48,216,72,0.16),transparent_60%)]" />
       <Container className="relative grid items-center gap-10 pb-24 pt-12 md:pb-28 md:pt-16 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-7">
-          <motion.p {...rise(0)} className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-gold-light">
-            <span aria-hidden="true" className="h-px w-8 bg-gold-light" />
+          <motion.p {...rise(0)} className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-lime">
+            <span aria-hidden="true" className="h-px w-8 bg-lime" />
             {t('hero.eyebrow')}
           </motion.p>
           <motion.h1 {...rise(0.06)} className="mt-5 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]">
             {t('hero.name')}
             <span className="mt-2 block text-xl font-semibold text-navy-200 sm:text-2xl">{t('hero.alias')}</span>
           </motion.h1>
-          <motion.p {...rise(0.12)} className="mt-5 text-sm font-bold uppercase tracking-[0.12em] text-gold-light sm:text-base">
+          <motion.p {...rise(0.12)} className="mt-5 text-sm font-bold uppercase tracking-[0.12em] text-lime sm:text-base">
             {t('hero.role')}
           </motion.p>
           <motion.p {...rise(0.18)} className="mt-4 max-w-xl leading-relaxed text-navy-200 md:text-lg">
@@ -48,13 +48,13 @@ function Hero() {
             ))}
           </motion.ul>
           <motion.div {...rise(0.28)} className="mt-8 flex flex-wrap items-center gap-3">
-            <Button to="/research" variant="gold">
+            <Button to="/research" variant="lime">
               {t('hero.cta')}
               <ArrowRight className="size-4" aria-hidden="true" />
             </Button>
             <CvButton variant="light" />
             <span className="ml-1 flex items-center gap-2 text-sm text-navy-300">
-              <MapPin className="size-4 text-gold-light" aria-hidden="true" />
+              <MapPin className="size-4 text-lime" aria-hidden="true" />
               {common.t('contact.location')}
             </span>
           </motion.div>

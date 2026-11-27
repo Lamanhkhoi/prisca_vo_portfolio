@@ -5,14 +5,23 @@ import { useTranslation } from 'react-i18next'
 import { Menu, X } from 'lucide-react'
 import { NAV } from '@/config/site'
 import { EASE, cn } from '@/lib/utils'
+import logoMark from '@/assets/logo-mark.png'
 import LanguageSwitcher from './LanguageSwitcher'
 
 function Brand() {
   const { t } = useTranslation()
   return (
-    <Link to="/" aria-label={t('brand.home')} className="flex shrink-0 items-center gap-3 whitespace-nowrap">
-      <span className="text-lg font-extrabold tracking-tight">{t('brand.name')}</span>
-      <span aria-hidden="true" className="hidden h-5 w-px bg-gold sm:block xl:hidden" />
+    <Link to="/" aria-label={t('brand.home')} className="flex shrink-0 items-center gap-2.5 whitespace-nowrap">
+      <img
+        src={logoMark}
+        alt=""
+        aria-hidden="true"
+        width="36"
+        height="36"
+        className="size-8 shrink-0 object-contain md:size-9"
+      />
+      <span className="text-lg font-extrabold tracking-tight text-navy">{t('brand.name')}</span>
+      <span aria-hidden="true" className="hidden h-5 w-px bg-lime sm:block xl:hidden" />
       <span className="hidden text-xs font-semibold text-navy-600 sm:block xl:hidden">{t('brand.suffix')}</span>
     </Link>
   )
@@ -68,7 +77,7 @@ export default function Header() {
                         <motion.span
                           layoutId="nav-underline"
                           aria-hidden="true"
-                          className="absolute inset-x-3 bottom-0 h-0.5 bg-gold"
+                          className="absolute inset-x-3 bottom-0 h-0.5 bg-lime"
                           transition={{ type: 'spring', stiffness: 420, damping: 36 }}
                         />
                       )}
@@ -128,7 +137,7 @@ export default function Header() {
                     {({ isActive }) => (
                       <>
                         {t(`nav.${item.key}`)}
-                        {isActive && <span aria-hidden="true" className="h-0.5 w-6 bg-gold" />}
+                        {isActive && <span aria-hidden="true" className="h-0.5 w-6 bg-lime" />}
                       </>
                     )}
                   </NavLink>
